@@ -8,7 +8,7 @@ import { AboutMe } from '../Components/AboutMe/AboutMe'
 function AppUi(){
     return(
         <React.Fragment>
-            <Header/>
+            {/* <Header/> */}
 
             <main>
                 <AboutMe />

@@ -8,9 +8,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
     entry: './src/index.js',
     output: {
+        filename: 'bundle.[hash].js',
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
-        path: "/"
+        // path: "/"
     },
     resolve: {
         extensions: ['.js', '.jsx'],
@@ -18,7 +18,7 @@ module.exports = {
             //Estructura de archivos
             '@components': path.resolve(__dirname, 'src/components/'),
             '@app': path.resolve(__dirname, 'src/app/'),
-            // '@data': path.resolve(__dirname, 'src/data/'),
+            '@data': path.resolve(__dirname, 'src/data/'),
             '@style': path.resolve(__dirname, 'src/styles/')
         }
     },
@@ -39,11 +39,10 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(css|scss)$/,
+                test: /\.css$/,
                 use: [
                     'style-loader',
                     'css-loader',
-                    'sass-loader'
                 ]
             },
         ]

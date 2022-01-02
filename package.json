@@ -13,6 +13,7 @@
   "author": "Francisco García",
   "license": "MIT",
   "dependencies": {
+    "core-js": "^3.20.2",
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
@@ -35,5 +36,14 @@
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.2"
-  }
+  },
+  "browserslist": ">025%, not dead, not ie 11",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frangardev/frangardev.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/frangardev/frangardev.github.io/issues"
+  },
+  "homepage": "https://github.com/frangardev/frangardev.github.io#readme"
 }

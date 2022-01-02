@@ -1,0 +1,17 @@
+.AboutMe{
+     width: 80%;
+     max-width: 850px;
+}
+.AboutMe, .Photo__container{
+    margin: 0 auto;
+}
+
+.Photo__container{
+     width: 45%;
+     max-width: 16em;
+}
+.Photo{
+     width: 100%;
+     height: auto;
+     border-radius: 50%;
+ }
