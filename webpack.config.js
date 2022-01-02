@@ -14,12 +14,13 @@ module.exports = {
     },
     resolve: {
         extensions: ['.js', '.jsx'],
-        // alias:{
-        //     //Estructura de archivos
-        //     '@components': path.resolve(__dirname, 'src/components/'),
-        //     '@app': path.resolve(__dirname, 'src/app/'),
-        //     // '@data': path.resolve(__dirname, 'src/data/'),
-        // }
+        alias:{
+            //Estructura de archivos
+            '@components': path.resolve(__dirname, 'src/components/'),
+            '@app': path.resolve(__dirname, 'src/app/'),
+            // '@data': path.resolve(__dirname, 'src/data/'),
+            '@style': path.resolve(__dirname, 'src/styles/')
+        }
     },
     mode: 'production',
     module: {
