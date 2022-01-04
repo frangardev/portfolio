@@ -32,114 +32,132 @@
     const proyectos = [
         todoReactApp={
             name: "Todo React App",
-            image: "../assets/image/",
-            url: "https//frangardev.github.io/",
-            repository: "fa",
+            image: "https://i.ibb.co/9c14pGP/To-Do-React-App.png",
+            url: "https://frangardev.github.io/todo-react-app/",
+            repository: "https://github.com/frangardev/todo-react-app",
             description: "",
             tech: [technologies.CSS, technologies.React],
         },
         lazyFoxy={
             name: "Lazy Foxy",
-            image: "../assets/image/",
-            url: "https//frangardev.github.io/",
-            repository: "fa",
+            image: "https://i.ibb.co/x865zyx/lazy-foxy.png",
+            url: "https://frangardev.github.io/lazy-foxy/",
+            repository: "https://github.com/frangardev/lazy-foxy",
             description: "",
             tech: [technologies.CSS, technologies.JavaScript],
         },
         cateDeMiCorazon={
             name: "Cate de mi Corazón",
-            image: "../assets/image/",
-            url: "https//frangardev.github.io/",
-            repository: "fa",
+            image: "https://i.ibb.co/Z8H2h9y/cate-de-mi-corazon.pn",
+            url: "https://frangardev.github.io/cate-de-mi-corazon/",
+            repository: "https://github.com/frangardev/cate-de-mi-corazon",
             description: "",
             tech: [technologies.HTML,technologies.CSS,technologies.JavaScript],
         },
         profesionalJavascript={
-            name: 'Proyecto del curso profesional de JavaScript',
-            image: "../assets/image/",
-            url: "https//frangardev.github.io/",
-            repository: "fa",
+            name: 'Proyecto del Curso Profesional de JavaScript',
+            image: "https://i.ibb.co/MD3q7fz/proyecto-del-curso-profesional-de-javascript.png",
+            url: "https://frangardev.github.io/profesional-javascript/",
+            repository: "https://github.com/frangardev/profesional-javascript",
             description: "",
             tech: [technologies.HTML,technologies.CSS,technologies.JavaScript],
         },
         bataBit={
-            name: "Bata Bit",
-            image: "../assets/image/",
-            url: "https//frangardev.github.io/",
-            repository: "fa",
+            name: "Batabit",
+            image: "https://i.ibb.co/4mnBZ20/batabit.png",
+            url: "https://frangardev.github.io/bata-bit/",
+            repository: "https://github.com/frangardev/bata-bit",
             description: "",
             tech: [technologies.HTML,technologies.CSS],
         },
         clonGoogle={
             name: "Clon de Google",
-            image: "../assets/image/",
-            url: "https//frangardev.github.io/",
-            repository: "fa",
+            image: "https://i.ibb.co/LYf3ZLQ/clon-de-google.png",
+            url: "https://frangardev.github.io/Clon-de-Google/",
+            repository: "https://github.com/frangardev/Clon-de-Google",
             description: "",
             tech: [technologies.HTML,technologies.CSS],
         },
         redesLink={
-            name: "Links de mis redes sociales",
-            image: "../assets/image/",
-            url: "https//frangardev.github.io/",
-            repository: "fa",
+            name: "Mis redes",
+            image: "https://i.ibb.co/NK7kB9c/mis-redes.png",
+            url: "https://frangardev.github.io/redes/",
+            repository: "https://github.com/frangardev/redes",
             description: "",
             tech: [technologies.HTML,technologies.CSS,technologies.JavaScript,technologies.webpack],
         },
         primeraWeb={
-            name: "Mi primera página web",
-            image: "../assets/image/",
-            url: "https//frangardev.github.io/",
-            repository: "fa",
+            name: "Tarea de la universidad - Mi primera página web",
+            image: "https://i.ibb.co/xhFpLGk/tarea-de-la-universidad.png",
+            url: "https://frangardev.github.io/Tarea-Universidad/",
+            repository: "https://github.com/frangardev/Tarea-Universidad",
             description: "",
             tech: [technologies.HTML,technologies.CSS],
         },
         calcFiguras={
-            name: "Calculadora de figuras geométricas",
-            image: "../assets/image/",
-            url: "https//frangardev.github.io/",
-            repository: "fa",
+            name: "Calculadora de Figuras Geométricas",
+            image: "https://i.ibb.co/xMngcpk/calculadora-de-figuras-geom-tricas.png",
+            url: "https://frangardev.github.io/ejercicios-javascript/figuras/index.html",
+            repository: "https://github.com/frangardev/ejercicios-javascript/tree/main/figuras",
             description: "",
             tech: [technologies.HTML,technologies.CSS,technologies.JavaScript],
         },
         pokeball={
             name: "Dibujo de Pokeball con CSS",
-            image: "../assets/image/",
-            url: "https//frangardev.github.io/",
-            repository: "fa",
+            image: "https://i.ibb.co/DLhvVfy/css-pokeball.png",
+            url: "https://frangardev.github.io/CSS-PokeBall/",
+            repository: "https://github.com/frangardev/CSS-PokeBall",
             description: "",
             tech: [technologies.HTML,technologies.CSS],
         },
     
     
-        superCAt={
-            name: "Súper Cat",
-            image: "../assets/image/",
-            url: "https//frangardev.github.io/",
-            repository: "fa",
-            description: "",
-            tech: [technologies.HTML,technologies.CSS],
-        },
+        // superCAt={
+        //     name: "Súper Cat",
+        //     image: "../assets/image/",
+        //     url: "https//frangardev.github.io/",
+        //     repository: "fa",
+        //     description: "",
+        //     tech: [technologies.HTML,technologies.CSS],
+        // },
     
     
     
         spaMarvel={
             name: "SPA Marvel",
-            image: "../assets/image/spa-marvel",
-            url: "https//frangardev.github.io/spa-marvel",
-            repository: "fa",
+            image: ["https://i.ibb.co/wLJnQFJ/spa-marvel-home.png", "https://i.ibb.co/Qcpm7QK/spa-marvel-character.png"],
+            url: "https://frangardev.github.io/SPA-Marvel/",
+            repository: "https://github.com/frangardev/SPA-Marvel",
             description: "SPA hecha en javscript vanila, en la cual me conecte a la api de marvel para mostrar la información.",
             tech: [technologies.CSS,technologies.JavaScript,technologies.webpack]
         },
         gridGallery={
             name: "Grid Gallery",
-            image: "../assets/image/grid-gallery",
-            url: "https//frangardev.github.io/grid-gallery",
-            repository: "fa",
+            image: "https://i.ibb.co/ygRKzqf/grid-gallery.png",
+            url: "https://frangardev.github.io/Grid-Gallery/",
+            repository: "https://github.com/frangardev/Grid-Gallery",
             description: "-------------------------",
             tech: [technologies.HTML,technologies.CSS]
         }
     ]
+
+
+
+
+    // <img src="https://i.ibb.co/wLJnQFJ/spa-marvel-home.png" alt="spa-marvel-home" border="0">
+    {/* <img src="https://i.ibb.co/xhFpLGk/tarea-de-la-universidad.png" alt="tarea-de-la-universidad" border="0"> */}
+    {/* <img src="https://i.ibb.co/9c14pGP/To-Do-React-App.png" alt="To-Do-React-App" border="0"> */}
+    {/* <img src="https://i.ibb.co/4mnBZ20/batabit.png" alt="batabit" border="0"> */}
+    {/* <img src="https://i.ibb.co/xMngcpk/calculadora-de-figuras-geom-tricas.png" alt="calculadora-de-figuras-geom-tricas" border="0"> */}
+    {/* <img src="https://i.ibb.co/Z8H2h9y/cate-de-mi-corazon.png" alt="cate-de-mi-corazon" border="0"> */}
+    {/* <img src="https://i.ibb.co/LYf3ZLQ/clon-de-google.png" alt="clon-de-google" border="0"> */}
+    {/* <img src="https://i.ibb.co/DLhvVfy/css-pokeball.png" alt="css-pokeball" border="0"> */}
+    // <img src="https://i.ibb.co/ygRKzqf/grid-gallery.png" alt="grid-gallery" border="0">
+    {/* <img src="https://i.ibb.co/x865zyx/lazy-foxy.png" alt="lazy-foxy" border="0"> */}
+    {/* <img src="https://i.ibb.co/NK7kB9c/mis-redes.png" alt="mis-redes" border="0"> */}
+    {/* <img src="https://i.ibb.co/MD3q7fz/proyecto-del-curso-profesional-de-javascript.png" alt="proyecto-del-curso-profesional-de-javascript" border="0"> */}
+    {/* <img src="https://i.ibb.co/Qcpm7QK/spa-marvel-character.png" alt="spa-marvel-character" border="0"> */}
+
     
     export {proyectos}
     
