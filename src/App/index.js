@@ -36,7 +36,6 @@ function App(){
                             image = {item.image}
                             url = {item.url}
                             repository = {item.repository}
-                            description = {item.description}
                             tech = {item.tech}
                         />)
                     })}
