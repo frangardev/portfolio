@@ -109,7 +109,7 @@ const Data = [
         url: "https://frangardev.github.io/CSS-PokeBall/",
         repository: "https://github.com/frangardev/CSS-PokeBall",
         description: "",
-        tech: [technologies.HTML,technologies.CSS],
+        tech: [technologies.CSS],
     },
 
 

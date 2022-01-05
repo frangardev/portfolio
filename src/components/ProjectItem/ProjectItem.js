@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './ProjectItem.css'
 
 function ProjectItem({
@@ -9,29 +9,27 @@ function ProjectItem({
     tech
 }){
 
-    const hover = ( props )=>{
-        if(props.isTrusted){
-            console.log('hola', props.isTrusted);
-        }else if(!props.isTrusted){
-            console.log('Adios');
-        }
-        console.log(props);
+    const [hover, setHover] = useState(false)
+
+    const isHover = ( hoverValue )=>{
+        setHover(hoverValue)
     }
-    console.log(tech);
 
     return(
         <figure
             className="ProjectItem" 
-            onMouseOutCapture={hover}
+            onMouseEnter={()=> isHover(true)}
+            onMouseLeave={()=> isHover(false)}
         >
             <img className="ImageProject" src={image} alt={name}/>
-            <figcaption className="data-project">
+
+            <figcaption className={`data-project ${hover && 'hover__item'}`}>
                 <h4 className="data-project__name">{name}</h4>
-                <a className="data-project__url button" href={url}><samp>i</samp> Ver proyecto</a>
-                <a className="data-project__githun" href={repository}>Github</a>
+                <a className="data-project__url button" href={url} target="_blank" rel="noopener noreferrer"><samp>i</samp> ver proyecto</a>
+                <a className="data-project__githun" href={repository} target="_blank" rel="noopener noreferrer">Github</a>
                 <div className="data-technologies">
                     {tech.map(item =>{
-                        return(<p>{item.name}</p>)
+                        return(<p key={item.name}>{item.name}</p>)
                     })}
                 </div>
             </figcaption>
