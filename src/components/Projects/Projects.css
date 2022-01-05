@@ -1,0 +1,11 @@
+.Projects__container{
+    column-count: 2;
+    column-gap: 1em;
+}
+
+@media (min-width: 500px) {
+    .Projects__container{
+        column-count: 3;
+        column-gap: 1em;
+    }
+}

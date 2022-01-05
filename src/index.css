@@ -1,4 +1,20 @@
+/* 
+ Tareas CSS:
+    - Al hacer hover (En los dispositivos que soportan el hover) o al sostener el clik (en dispositivos que no soportan el hover) se muestra :
+        Las tecnologias
+        el nombre
+        un elace a la página
+        el cursor muestra la lupa con el + un más para darle click 
+    -Mostrar las imagenes en un formato pinterest  
+*/
+:root{
+    --white: #F2F4F6;
+    --black: #02132C;
+    --dark: #312D47;
+    --primary-color: #887EC8;
+    --secondary-color: #73C4EB;
+}
 body{
-    background-color: rgb(234, 230, 240);
+    background-color: var(--white);
     text-align: center;
 }
