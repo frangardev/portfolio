@@ -5,22 +5,11 @@ import { AboutMe } from '../Components/AboutMe/AboutMe'
 import { Data } from '../Data/Data'
 import { Projects } from '../Components/Projects/Projects'
 import { ProjectItem } from '../Components/ProjectItem/ProjectItem'
+import { Contact } from '../Components/Contact/Contact'
 
  
 function App(){
-    // const itemProject = []
-    // Data.map(item => {
-    //         itemProject = <ProjectItem
-    //             key={item.name}
-    //             name = {item.name}
-    //             image = {item.image}
-    //             url = {item.url}
-    //             repository = {item.repository}
-    //             description = {item.description}
-    //             tech = {item.tech}
-    //         />
-    // }) 
-    console.log(Data[2].image);
+
     return(
         <React.Fragment>
             {/* <Header/> */}
@@ -41,7 +30,7 @@ function App(){
                     })}
                 </Projects>
 
-                {/* <Contact/> */}
+                <Contact/>
             </main>
 
         </React.Fragment>
