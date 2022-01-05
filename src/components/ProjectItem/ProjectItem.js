@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "../Button/Button";
 import './ProjectItem.css'
 
 function ProjectItem({
@@ -25,7 +26,14 @@ function ProjectItem({
 
             <figcaption className={`data-project ${hover && 'hover__item'}`}>
                 <h4 className="data-project__name">{name}</h4>
-                <a className="data-project__url button" href={url} target="_blank" rel="noopener noreferrer"><samp>i</samp> ver proyecto</a>
+
+                {/* <a className="data-project__url button" href={url} target="_blank" rel="noopener noreferrer"></a> */}
+                <Button
+                    type='secondary button__data-project'
+                    text={<samp>i</samp>, <samp>ver proyecto</samp>}
+                    url={url}
+                />
+
                 <a className="data-project__githun" href={repository} target="_blank" rel="noopener noreferrer">Github</a>
                 <div className="data-technologies">
                     {tech.map(item =>{
