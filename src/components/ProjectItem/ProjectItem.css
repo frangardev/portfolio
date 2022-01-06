@@ -2,6 +2,7 @@
     margin: 0 auto 1em;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 .ImageProject{
     width: 100%;

@@ -69,7 +69,7 @@ const Data = [
         url: "https://frangardev.github.io/cate-de-mi-corazon/",
         repository: "https://github.com/frangardev/cate-de-mi-corazon",
         description: "",
-        tech: [technologies.HTML,technologies.CSS,technologies.JavaScript],
+        tech: [technologies.CSS,technologies.JavaScript],
     },
     {
         name: "Clon de Google",

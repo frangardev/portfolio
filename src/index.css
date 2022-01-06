@@ -14,7 +14,15 @@
     --primary-color: #887EC8;
     --secondary-color: #73C4EB;
 }
+
+@font-face {
+    font-family: 'la-chida';
+    src: url(./assets/fonts/dogicapixel.woff);
+}
+
 body{
     background-color: var(--white);
     text-align: center;
+    font-family: 'la-chida';
+    color: var(--dark);
 }
