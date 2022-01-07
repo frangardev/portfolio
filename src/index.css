@@ -26,3 +26,17 @@ body{
     font-family: 'la-chida';
     color: var(--dark);
 }
+
+/* Global style */
+
+.Sub-title{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 10px;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: .8rem;
+}

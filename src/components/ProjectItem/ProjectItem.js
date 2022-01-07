@@ -37,7 +37,7 @@ function ProjectItem({
                 <a className="data-project__githun" href={repository} target="_blank" rel="noopener noreferrer">Github</a>
                 <div className="data-technologies">
                     {tech.map(item =>{
-                        return(<p key={item.name}>{item.name}</p>)
+                        return(<i key={item.name} className={item.icon}></i>)
                     })}
                 </div>
             </figcaption>

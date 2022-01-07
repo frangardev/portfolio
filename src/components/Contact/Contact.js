@@ -6,10 +6,10 @@ import { Button } from '../Button/Button'
 function Contact(){
     return(
         <section className="Contact">
-            <h2>Contacto</h2>
+            <h2 className="Sub-title">Contacto</h2>
             <p>Lorrem hfahso asoihfa hafhpasfas asdhfasiof asfhiaf asdihfpasf asdfhiasif</p>
             <Button
-                type = "primary"
+                type = "primary wide"
                 text= 'Crescamos Juntos'
                 url='mailto:frangardev@outlook.com'
             />

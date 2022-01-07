@@ -1,6 +1,6 @@
 .button{
     overflow: hidden;
-    font-size: 2rem;
+    font-size: 1rem;
     text-decoration: none;
     width: 80%;
     max-width: 350px;
@@ -64,4 +64,10 @@
     width: calc(100% - 14px);
     left: 7px;
     box-shadow: 7px 0  var(--dark), -7px 0 var(--dark), 0 0px transparent, 0 -0px transparent;
+}
+
+.wide{
+    width: 60%;
+    max-width: 350px;
+    font-size: 1.3rem;
 }

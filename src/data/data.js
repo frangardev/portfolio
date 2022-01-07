@@ -10,23 +10,19 @@
 const technologies = {
     HTML:{
         name: "HTML",
-        icon: "url-del icono"
+        icon: "fab fa-html5"
     },
     CSS:{
         name: "CSS",
-        icon: "url-del icono"
+        icon: "fab fa-css3-alt"
     },
     JavaScript:{
         name: "JavaScript",
-        icon: "url-del icono"
+        icon: "fab fa-js"
     },
     React:{
         name: "React",
-        icon: "url-del icono"
-    },
-    webpack:{
-        name: "webpack",
-        icon: '../assets/icon/webpack'
+        icon: "fab fa-react"
     }
 }
 
@@ -85,7 +81,7 @@ const Data = [
         url: "https://frangardev.github.io/redes/",
         repository: "https://github.com/frangardev/redes",
         description: "",
-        tech: [technologies.HTML,technologies.CSS,technologies.JavaScript,technologies.webpack],
+        tech: [technologies.HTML,technologies.CSS,technologies.JavaScript],
     },
     {
         name: "Tarea de la universidad - Mi primera página web",
@@ -130,7 +126,7 @@ const Data = [
         url: "https://frangardev.github.io/SPA-Marvel/",
         repository: "https://github.com/frangardev/SPA-Marvel",
         description: "SPA hecha en javscript vanila, en la cual me conecte a la api de marvel para mostrar la información.",
-        tech: [technologies.CSS,technologies.JavaScript,technologies.webpack]
+        tech: [technologies.CSS,technologies.JavaScript]
     },
     {
         name: "Grid Gallery",

@@ -1,9 +1,11 @@
+.AboutMe, .Photo__container{
+    margin: 0 auto 30px;
+}
+
 .AboutMe{
      width: 80%;
      max-width: 850px;
-}
-.AboutMe, .Photo__container{
-    margin: 0 auto;
+     margin-bottom: 40px;
 }
 
 .Photo__container{
@@ -14,4 +16,23 @@
      width: 100%;
      height: auto;
      border-radius: 50%;
+ }
+
+ .Name__title{
+     font-weight: bold;
+     font-size: 14px;
+     line-height: 18px;
+ }
+ .work__title{
+     font-weight: bold;
+     font-size: 13px;
+     line-height: 115%;
+     color: var(--black);
+ }
+ .about{
+     font-size: .7rem;
+     line-height: 150%;
+     letter-spacing: -0.08em;
+     margin: 12px 0 5px;
+     color: rgba(49, 45, 71, 0.8);
  }

@@ -4,7 +4,7 @@ import './Projects.css'
 function Projects(props){
     return(
         <section >
-            <h2>Proyectos</h2>
+            <h2 className="Sub-title">Mis Proyectos</h2>
             <div className="Projects__container">
                 {props.children}
             </div>
