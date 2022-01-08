@@ -1,0 +1,36 @@
+.Contact{
+    width: 80%;
+    max-width: 850px;
+    margin: 0 auto 40px;
+}
+.text--contact{
+    margin-bottom: 30px;
+}
+
+.contact__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact__button img{
+    width: 25%;
+    margin-left: 10px;
+}
+
+.Social{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0;
+}
+.Social li{
+    display: inline-block;
+	text-decoration: none;
+}
+.Social__icon{
+    width: 4em;
+    margin: 0;
+}
