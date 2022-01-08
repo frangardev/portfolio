@@ -119,6 +119,15 @@ const Data = [
     // },
 
 
+    {
+        name: "Grid Gallery",
+        image: "https://i.ibb.co/ygRKzqf/grid-gallery.png",
+        url: "https://frangardev.github.io/Grid-Gallery/",
+        repository: "https://github.com/frangardev/Grid-Gallery",
+        description: "-------------------------",
+        tech: [technologies.HTML,technologies.CSS]
+    },
+
 
     {
         name: "SPA Marvel",
@@ -128,14 +137,6 @@ const Data = [
         description: "SPA hecha en javscript vanila, en la cual me conecte a la api de marvel para mostrar la información.",
         tech: [technologies.CSS,technologies.JavaScript]
     },
-    {
-        name: "Grid Gallery",
-        image: "https://i.ibb.co/ygRKzqf/grid-gallery.png",
-        url: "https://frangardev.github.io/Grid-Gallery/",
-        repository: "https://github.com/frangardev/Grid-Gallery",
-        description: "-------------------------",
-        tech: [technologies.HTML,technologies.CSS]
-    }
 ]
     
     export { Data }

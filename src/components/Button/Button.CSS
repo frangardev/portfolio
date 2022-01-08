@@ -52,7 +52,7 @@
 
 .button__data-project{
     position: absolute;
-    bottom: -20px;
+    bottom: -25px;
     left: 20px;
     font-size: 1rem;
     width: auto;
@@ -66,8 +66,20 @@
     box-shadow: 7px 0  var(--dark), -7px 0 var(--dark), 0 0px transparent, 0 -0px transparent;
 }
 
+.button__data-project .text__container-card{
+    position: absolute;
+    opacity: 0;
+}
+
 .wide{
     width: 60%;
     max-width: 350px;
     font-size: 1.3rem;
+}
+
+@media (min-width: 720px) {
+    .button__data-project .text__container-card{
+        position: relative;
+        opacity: 1;
+    }
 }

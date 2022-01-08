@@ -11,7 +11,7 @@
 
 .data-project{
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -22,13 +22,14 @@
 .data-project__name{
     position: absolute;
     color: white;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size:2.5vw;
     text-align: start;
     display: block;
     width: 75%;
-    height: auto;
-    top: -25px;
-    left: 15px;
+    top: -1px;
+    left: 10px;
+    overflow: unset;
 }
 .data-technologies{
     /* width: 25%; */
@@ -43,15 +44,52 @@
 }
 .data-technologies i{
     margin-bottom: 3px;
+    /* font-size: 1.5rem; */
+    font-size:2.5vw;
+}
+
+.links-card__container{
+    background-color: turquoise;
+    width: 100%;
 }
 
 .data-project__githun{
     position: absolute;
     bottom: 5px;
-    right: 20px;
-    width: 35px;
-    height: 35px;
-    background-color: var(--dark);
+    right: 15px;
+    background-color: var(--white);
+    border-radius: 50%;
+    /* width: 2vh; */
+    z-index: 20;
+}
+.data-project__githun i{
+    font-size: 5vh;
+    color: var(--dark);
+}
+.icon__container-card i{
+    transform: rotate(-45deg);
+}
+
+/* 
+    media a los 700px 
+    
+*/
+
+@media (min-width: 600px) {
+    .data-project__name{
+        top: -25px;
+    }
+}
+@media (min-width: 1200px) {
+    .data-project__name{
+        top: -45px;
+    }
+}
+
+@media (max-width: 320px) {
+    .data-project__name{
+        font-size: 1rem;
+    }
 }
 
 .hover__item{

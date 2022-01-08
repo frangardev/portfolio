@@ -1,7 +1,9 @@
 .Projects__container{
     column-count: 2;
+    column-width: 150px;
+    column-rule-width: 350px;
     column-gap: 1em;
-    width: 90%;
+    width: 95%;
     max-width: 1250px;
     margin: 0 auto;
     position: relative;
