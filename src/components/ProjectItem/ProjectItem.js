@@ -9,7 +9,8 @@ function ProjectItem({
     repository,
     tech,
     openModal,
-    setOpenModal
+    setOpenModal,
+    setDataProject
 }){
 
     const [hover, setHover] = useState(false)
@@ -25,7 +26,10 @@ function ProjectItem({
     }
 
     const seeProject =()=>{
-        (openModal) ? setOpenModal(false) : setOpenModal (true)
+        if(!openModal){
+            setDataProject(name)
+            setOpenModal (true)
+        }   
     }
    
 

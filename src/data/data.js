@@ -32,7 +32,7 @@ const Data = [
         image: "https://i.ibb.co/9c14pGP/To-Do-React-App.png",
         url: "https://frangardev.github.io/todo-react-app/",
         repository: "https://github.com/frangardev/todo-react-app",
-        description: "",
+        description: "Holasss",
         tech: [technologies.CSS, technologies.React],
     },
     {
