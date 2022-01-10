@@ -7,7 +7,9 @@ function ProjectItem({
     image,
     url,
     repository,
-    tech
+    tech,
+    openModal,
+    setOpenModal
 }){
 
     const [hover, setHover] = useState(false)
@@ -21,6 +23,10 @@ function ProjectItem({
     if(name.length > 9){
         cutName = cutName.substring(0, 9) + '...'
     }
+
+    const seeProject =()=>{
+        (openModal) ? setOpenModal(false) : setOpenModal (true)
+    }
    
 
     return(
@@ -28,8 +34,10 @@ function ProjectItem({
             className="ProjectItem" 
             onMouseEnter={()=> isHover(true)}
             onMouseLeave={()=> isHover(false)}
+            onClick={seeProject}
         >
             <img className="ImageProject" src={image} alt={name}/>
+
 
             <figcaption className={`data-project ${hover && 'hover__item'}`}>
                 <h4 className="data-project__name">{cutName}</h4>
