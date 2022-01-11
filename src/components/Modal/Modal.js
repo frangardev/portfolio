@@ -5,10 +5,14 @@ import './Modal.css'
 function Modal({setOpenModal,children}){
 
     return ReactDom.createPortal(
-        <div 
-            className="ModalBackground"
-            // onClick={ ()=> setOpenModal(false) }
+        <div
+            className="Modal"
         >
+            <div 
+                className="ModalBackground"
+                onClick={ ()=> setOpenModal(false) }
+                >
+            </div>
             {children}
         </div>,
         document.getElementById('modal')

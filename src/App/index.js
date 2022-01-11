@@ -14,6 +14,12 @@ function App(){
 
     const [dataProject, setDataProject] = React.useState('')
 
+    if(openModal){
+        document.body.classList.add('active-modal')
+    }else{
+        document.body.classList.remove('active-modal')
+    }
+
     
 
     return(
@@ -47,6 +53,7 @@ function App(){
                         <ProjectModal 
                                 nameProject = {dataProject}
                                 data = {Data}
+                                setOpenModal = {setOpenModal}
                         />
                     </Modal>
                 )}

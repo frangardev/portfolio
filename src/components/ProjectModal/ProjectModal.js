@@ -1,26 +1,30 @@
 import React from 'react'
-import reactDom from 'react-dom';
 import { Button } from '../Button/Button';
 import './ProjectModal.css'
 
 function ProjectModal({
     nameProject,
-    data
+    data,
+    setOpenModal
 }){
 
     const project = data.find( item => item.name == nameProject) 
     
     return (
         <article 
-            className="Project__container"
-            // onClick={ 
-            //     (e)=>{
-            //         e.stopPropagation()
-            //     }
-            // }    
+            className="Project__container"  
         >  
             <img className="image-project" src={project.image} alt={project.name}/>
-        
+
+            <div className="Close-modal__button__container">
+                <div className="Close-modal__button-bg"></div>
+                <button 
+                    className='Close-modal__button'
+                    onClick={ ()=> setOpenModal(false) }
+                    >
+                    <i className="fas fa-chevron-left"></i>
+                </button>
+            </div>
             
             <h2 className="Title-project">{project.name}</h2>
             
