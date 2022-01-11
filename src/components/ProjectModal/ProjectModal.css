@@ -105,8 +105,9 @@
     top: 10px;
     left: 15px;
     border: none;
-    padding: 3px 5px;
+    padding: 5px 8px;
     background-color: transparent;
+    cursor: pointer;
   }
   
   .Close-modal__button i{
@@ -142,5 +143,9 @@
       .borde-left-down{
         grid-column-start: 2;
         grid-row-start: 8;
+      }
+
+      .Close-modal__button__container{
+        width: calc(100% - 20px);
       }
   }

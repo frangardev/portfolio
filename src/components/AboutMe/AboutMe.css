@@ -20,19 +20,22 @@
 
  .Name__title{
      font-weight: bold;
-     font-size: 14px;
+     font-size: 1.1rem;
      line-height: 18px;
+     line-height: 150%;
  }
  .work__title{
      font-weight: bold;
-     font-size: 13px;
+     font-size: 1rem;
      line-height: 115%;
      color: var(--black);
  }
- .text{
-     font-size: .7rem;
-     line-height: 150%;
-     letter-spacing: -0.08em;
-     margin: 12px 0 5px;
-     color: rgba(49, 45, 71, 0.8);
- }
+ @media (min-width: 1000px) {
+    .Name__title{
+        font-size: 1.7rem;
+        line-height: 70%;
+    }
+    .work__title{
+        font-size: 1.4rem;
+    }
+}

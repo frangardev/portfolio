@@ -27,6 +27,7 @@ function ProjectItem({
 
     const seeProject =()=>{
         if(!openModal){
+            isHover(false)
             setDataProject(name)
             setOpenModal (true)
         }   

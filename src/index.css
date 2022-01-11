@@ -1,12 +1,4 @@
-/* 
- Tareas CSS:
-    - Al hacer hover (En los dispositivos que soportan el hover) o al sostener el clik (en dispositivos que no soportan el hover) se muestra :
-        Las tecnologias
-        el nombre
-        un elace a la página
-        el cursor muestra la lupa con el + un más para darle click 
-    -Mostrar las imagenes en un formato pinterest  
-*/
+
 :root{
     --white: #F2F4F6;
     --black: #02132C;
@@ -16,14 +8,18 @@
 }
 
 @font-face {
-    font-family: 'la-chida';
+    font-family: 'dogicalPixel';
     src: url(./assets/fonts/dogicapixel.woff);
+}
+@font-face {
+    font-family: 'DM-Sans';
+    src: url(./assets/fonts/DMSans-Regular.woff);
 }
 
 body{
     background-color: var(--white);
     text-align: center;
-    font-family: 'la-chida';
+    font-family: 'dogicalPixel';
     color: var(--dark);
 }
 
@@ -33,7 +29,7 @@ body{
 
 .Sub-title{
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1.1rem;
     line-height: 10px;
 }
 
@@ -41,4 +37,22 @@ body{
     text-decoration: none;
     color: var(--secondary-color);
     font-size: .8rem;
+}
+
+.text{
+    font-family: 'DM-Sans';
+    font-size: .9rem;
+    line-height: 150%;
+    margin: 12px 0 5px;
+    color: rgba(49, 45, 71, 0.8);
+    
+}
+
+@media (min-width: 1000px) {
+    .text{
+        font-size: 1rem;
+    }
+    .Sub-title{
+        font-size: 1.3rem;
+    }
 }

@@ -11,7 +11,7 @@ function AboutMe(){
             </figure>
             <h2 className="Name__title">Francisco Alejandro García Munguía</h2>
             <h3 className="work__title">Frontend Developer</h3>
-            <p className="text about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt corporis velit rerum amet eius, tempore aperiam ipsam minima ut eligendi recusandae soluta quas. Odit praesentium dicta minima error repudiandae aspernatur.</p>
+            <p className="text about">Soy desarrollador front-end con muchas ganas de crecer y aportar con todos mis conocimientos en desarrollo web. Me apasiona la tecnología y aprender.  Me considero una persona creativa y muy proactiva.</p>
             <a className="link" href="#">ver mas ></a>
         </section>
     )
