@@ -22,8 +22,6 @@ function Home(){
         document.body.classList.remove('active-modal')
     }
 
-    
-
     return(
         <React.Fragment>
             {/* <Header/> */}
