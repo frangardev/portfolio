@@ -6,18 +6,21 @@ import { Button } from '../Button/Button'
 function Contact(){
     return(
         <section className="Contact">
-            <h2 className="Sub-title">Crescamos Juntos</h2>
-            <p className="text text--contact">Lorrem hfahso asoihfa hafhpasfas asdhfasiof asfhiaf asdihfpasf asdfhiasif</p>
-            <Button
-                type = "primary wide"
-                text= {
-                    <span className="contact__button">
-                        <img src="https://i.ibb.co/qyww5Fz/icon-mail.png" alt="icon-mail" border="0"/>
-                        <span>Contacto</span>
-                    </span>
-                }
-                url='mailto:frangardev@outlook.com'
-            />
+            <div className="Contact__container--text">
+                <h2 className="Sub-title">Crescamos Juntos</h2>
+                <p className="text text--contact">Lorrem hfahso asoihfa hafhpasfas asdhfasiof asfhiaf asdihfpasf asdfhiasif</p>
+                <Button
+                    type = "primary wide"
+                    text= {
+                        <span className="contact__button">
+                            <img src="https://i.ibb.co/qyww5Fz/icon-mail.png" alt="icon-mail" border="0"/>
+                            <span className="contact__buton__text">Contacto</span>
+                        </span>
+                    }
+                    url='mailto:frangardev@outlook.com'
+                />
+            </div>
+
             <ul className="Social">
                 <li>
                     <a href="https://www.linkedin.com/in/frangardev/" target="_blank" rel="noopener noreferrer" >

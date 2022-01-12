@@ -1,10 +1,16 @@
 .Contact{
-    width: 80%;
-    max-width: 850px;
-    margin: 0 auto 40px;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
 }
 .text--contact{
     margin-bottom: 30px;
+    color: var(--white);
 }
 
 .contact__button{
@@ -16,6 +22,9 @@
     width: 25%;
     margin-left: 10px;
 }
+.Contact__container--text{
+    /* margin: 0 auto; */
+}
 
 .Social{
     display: flex;
@@ -23,7 +32,6 @@
     justify-content: space-around;
     width: 100%;
     max-width: 350px;
-    margin: 0 auto;
     padding: 0;
 }
 .Social li{
@@ -33,4 +41,15 @@
 .Social__icon{
     width: 4em;
     margin: 0;
+}
+
+.contact__buton__text{
+    color: var(--white);
+}
+
+@media (min-width: 850px) {
+    .Social{
+       flex-direction: column;
+       gap: 10px;
+    }
 }
