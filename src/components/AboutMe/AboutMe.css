@@ -33,7 +33,7 @@
  @media (min-width: 1000px) {
     .Name__title{
         font-size: 1.7rem;
-        line-height: 70%;
+        /* line-height: 70%; */
     }
     .work__title{
         font-size: 1.4rem;

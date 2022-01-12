@@ -1,13 +1,13 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://frangardev.github.io",
+  "homepage": "http://frangardev.com",
   "description": "My portfolio made in react.js",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development --config webpack.config.dev.js",
     "build": "webpack --mode production --config webpack.config.js",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo frangardev.com > ./build/CNAME",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [

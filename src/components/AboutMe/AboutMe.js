@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom'
 import './AboutMe.css'
 
-const photo = 'https://media-exp1.licdn.com/dms/image/D5603AQHOEPcEBzwsHQ/profile-displayphoto-shrink_800_800/0/1640922039126?e=1646870400&v=beta&t=QF8r1gl_XOi5q5EY4cBrefJJRcF8p1JKucn-GhZP_GU'
+const photo = 'https://i.ibb.co/pfrTZHw/Francisco-Alejandro-Garc-a-Mungu-a-frangardev.jpg'
 
 function AboutMe(){
     return(
