@@ -45,15 +45,15 @@ module.exports = {
                     'css-loader',
                 ]
             },
-            {
-                test: /\.(woff|woff2|eot|ttf|svg)$/,
-                loader: 'url-loader',
-                options: {
-                    publicPath: './fonts/',
-                    name: './fonts/[name].[ext]',
-                    limit: 1000
-                }
-            }
+            // {
+            //     test: /\.(woff|woff2|eot|ttf|svg)$/,
+            //     loader: 'url-loader',
+            //     options: {
+            //         publicPath: './fonts/',
+            //         name: './fonts/[name].[ext]',
+            //         limit: 1000
+            //     }
+            // }
         ]
     },
     plugins: [

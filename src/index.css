@@ -7,19 +7,10 @@
     --secondary-color: #73C4EB;
 }
 
-@font-face {
-    font-family: 'dogicalPixel';
-    src: url(./assets/fonts/dogicapixel.woff);
-}
-@font-face {
-    font-family: 'DM-Sans';
-    src: url(./assets/fonts/DMSans-Regular.woff);
-}
-
 body{
     background-color: var(--white);
     text-align: center;
-    font-family: 'dogicalPixel';
+    font-family: 'Press Start 2P', cursive;
     color: var(--dark);
 }
 
@@ -40,7 +31,7 @@ body{
 }
 
 .text{
-    font-family: 'DM-Sans';
+    font-family: 'DM Sans', sans-serif;
     font-size: .9rem;
     line-height: 150%;
     margin: 12px 0 5px;
