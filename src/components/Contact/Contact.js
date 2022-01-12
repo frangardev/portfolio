@@ -12,7 +12,7 @@ function Contact(){
                 type = "primary wide"
                 text= {
                     <span className="contact__button">
-                        <img src="https://i.ibb.co/Q9Qq9R5/logo-gmail.png" alt="logo-gmail" border="0"/>
+                        <img src="https://i.ibb.co/qyww5Fz/icon-mail.png" alt="icon-mail" border="0"/>
                         <span>Contacto</span>
                     </span>
                 }
@@ -26,7 +26,7 @@ function Contact(){
                 </li>
                 <li>
                     <a href="https://github.com/frangardev" target="_blank" rel="noopener noreferrer" >
-                        <img className="Social__icon" src="https://i.ibb.co/Kh2H9nF/logo-github.png" alt="logo-github" border="0"/>
+                        <img className="Social__icon" src="https://i.ibb.co/zV2Vb4C/logo-github.png" alt="logo-github" border="0"/>
                     </a>
                 </li>
                 <li>

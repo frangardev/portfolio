@@ -10,9 +10,9 @@ function About (){
 
                 {/* <Navbar/> */}
 
-                <span>Hola, yo soy</span>
+                <span>Hola, soy</span>
                 <h1 className="about__title-page">Francisco Alejandro García Munguía</h1>
-                <span>Dessarrollador Front-End</span>
+                <span>Desarrollador Front-End</span>
             </div>
 
             <p className="text about__text">
