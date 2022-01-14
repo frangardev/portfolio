@@ -46,9 +46,7 @@ function ProjectItem({
 
             <figcaption className={`data-project ${hover && 'hover__item'}`}>
                 <h4 className="data-project__name">{cutName}</h4>
-
-                {/* <a className="data-project__url button" href={url} target="_blank" rel="noopener noreferrer"></a> */}
-               <div className="links-card__container">
+               {/* <div className="links-card__container"> */}
                     <Button
                         type='secondary button__data-project'
                         text={
@@ -67,7 +65,7 @@ function ProjectItem({
                     <a className="data-project__githun" href={repository} target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
                     </a>
-               </div>
+               {/* </div> */}
                 <div className="data-technologies">
                     {tech.map(item =>{
                         return(<i key={item.name} className={item.icon}></i>)

@@ -14,7 +14,7 @@ function Contact(){
                     text= {
                         <span className="contact__button">
                             <img src="https://i.ibb.co/qyww5Fz/icon-mail.png" alt="icon-mail" border="0"/>
-                            <span className="contact__buton__text">Contacto</span>
+                            <span className="contact__buton__text">Contactar</span>
                         </span>
                     }
                     url='mailto:frangardev@outlook.com'

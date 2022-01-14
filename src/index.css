@@ -5,6 +5,7 @@
     --dark: #312D47;
     --primary-color: #887EC8;
     --secondary-color: #73C4EB;
+    --square-bg: rgba(49, 45, 71, .5);
 }
 
 body{
