@@ -7,8 +7,39 @@
         "usr    usr     nav"
         "title  title   title"
         "draw   draw    draw"
-        "btn    btn     btn"
+        "btn-1  btn-2   btn-2"
     ;
+    background-color: var(--primary-color);
+    margin-bottom: 35px;
+    color: var(--white);
+}
+
+.nav{
+    grid-area: nav;
+}
+.username{
+    grid-area: usr;
+    place-self: center start;
+    margin-left: 10px;
+}
+.title-header{
+    grid-area: title;
+    z-index: 10;
+}
+.title-header__span{
+    display: block;
+    font-size: 1.5rem;
+}
+.btn__header-secondary{
+    grid-area: btn-2;    
+}
+.btn__header-primary{
+    grid-area: btn-1;
+}
+.btn__header-primary,
+.btn__header-secondary,
+.title-header{
+    place-self: center;
 }
 
 /* Drawing ----------------------------------------------------------------------------------------------------- */
@@ -16,6 +47,7 @@
 
 .drawing-header__container{
     grid-area: draw;
+    place-self: end center;
     position: relative;
     min-width:320px;
     width:100%;
@@ -164,8 +196,9 @@
     animation-fill-mode: forwards;
   } 
   
-  /* Media Query------------------------------------------------------------------------------------- */
+  /* Media Querys  ------------------------------------------------------------------------------------------- */
   
+  /* Dibujo */
   @media (min-width: 620px) {
       .drawing-header__container{
           grid-template:  repeat(4, 1fr) / repeat(10, 1fr);
@@ -226,6 +259,35 @@
           left: -125%;
         }
   }
+  
+  
+  /* Header */
+@media (min-width: 900px) {
+    .header{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 90px 120px auto auto;
+        grid-template-areas: 
+            "nav    nav     nav     nav     nav"
+            ".      .       .       .       ."
+            "title  title   title   .       usr"
+            "btn-1  btn-2   .       .       ."
+        ;
+    }
+    .drawing-header__container{
+        grid-column: 2 / 6;
+        grid-row: 3 / 5;
+        place-self: end;
+        margin: 0;
+    }
+    .username{
+        transform: rotate(90deg);
+    }
+    .btn__header-primary,
+    .btn__header-secondary,
+    .username{
+        place-self: center end;
+    }
+}
   
   
   /* Animaciones --------------------------------------------------------------------------*/

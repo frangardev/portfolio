@@ -1,13 +1,13 @@
 import React from "react";
 
-// import { Header } from '../Components/Header/Header'
 import { Data } from '../Data/Data'
 
+import { Header } from '../Components/Header/Header'
 import { AboutMe } from '../Components/AboutMe/AboutMe'
 import { Contact } from '../Components/Contact/Contact'
-
 import { Projects } from '../Components/Projects/Projects'
 import { ProjectItem } from '../Components/ProjectItem/ProjectItem'
+
 import { Modal } from '../Components/Modal/Modal'
 import { ProjectModal } from '../Components/ProjectModal/ProjectModal'
 
@@ -24,7 +24,7 @@ function Home(){
 
     return(
         <React.Fragment>
-            {/* <Header/> */}
+            <Header />
 
             <main>
                 <AboutMe />
