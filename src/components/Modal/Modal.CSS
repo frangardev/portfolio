@@ -19,6 +19,7 @@ body.active-modal{
   /* padding: 20px 0; */
 }
 .ModalBackground {
-    background: rgba(32,35,41,.8);
+    background: rgba(21, 22, 26, 0.7);
+    backdrop-filter: blur(2px);
     z-index: 10;
   }
