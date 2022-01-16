@@ -42,6 +42,18 @@
     place-self: center;
 }
 
+a.btn__header-secondary,
+a.btn__header-primary{
+    width: 70%;
+    height: 50px;
+    margin: 0;
+    padding: 5px 7px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Drawing ----------------------------------------------------------------------------------------------------- */
 
 
@@ -285,7 +297,7 @@
     .btn__header-primary,
     .btn__header-secondary,
     .username{
-        place-self: center end;
+        place-self: start end;
     }
 }
   

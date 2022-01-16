@@ -29,7 +29,7 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader'
+                    loader: 'babel-loader',                
                 }
             },
             {
@@ -43,8 +43,24 @@ module.exports = {
                 use: [
                     'style-loader',
                     'css-loader',
-                ]
+                ],
             },
+
+        // Configuración para trabajar con modulos css
+            // {
+            //     test: /\.css$/i,
+            //     // exclude: /node_modules/, // excuido por normalize
+            //     use: [
+            //     'style-loader',
+            //     {
+            //         loader: 'css-loader',
+            //         options: {
+            //         modules: true,
+            //         },
+            //     },
+            //     ],
+            // }
+
             // {
             //     test: /\.(woff|woff2|eot|ttf|svg)$/,
             //     loader: 'url-loader',

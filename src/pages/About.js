@@ -1,4 +1,5 @@
 import React from "react";
+import { Navbar } from "../Components/Navbar/Navbar";
 import './About.css'
 
 function About (){
@@ -8,7 +9,7 @@ function About (){
 
             <div className="title-about__content">
 
-                {/* <Navbar/> */}
+                <Navbar/>
 
                 <span>Hola, soy</span>
                 <h1 className="about__title-page">Francisco Alejandro García Munguía</h1>

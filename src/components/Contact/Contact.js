@@ -5,7 +5,7 @@ import { Button } from '../Button/Button'
 
 function Contact(){
     return(
-        <section className="Contact">
+        <section className="Contact" id="contact">
             <div className="Contact__container--text">
                 <h2 className="Sub-title">Crescamos Juntos</h2>
                 <p className="text text--contact">Lorrem hfahso asoihfa hafhpasfas asdhfasiof asfhiaf asdihfpasf asdfhiasif</p>

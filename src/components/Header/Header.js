@@ -2,17 +2,18 @@ import React from "react";
 import './Header.css'
 
 import { Button } from '../Button/Button'
+import { Navbar } from '../Navbar/Navbar'
 
 function Header(){
     return(
         <header className="header" id="home">
 
-            {/* <Navbar/> */}
-            <p className="nav">--- <br/>--</p>
+            <Navbar/>
+            {/* <p className="nav">--- <br/>--</p> */}
 
             <p className="username">@frangardev</p>
 
-            <h1 className="title-header">Francisco Alejandro García Munguia <span className="title-header__span">Frontend Developr</span></h1>
+            <h1 className="title-header">¡Hola! Soy Fran <span className="title-header__span">Frontend Developr</span></h1>
 
     
             <figure className="drawing-header__container">
@@ -31,10 +32,7 @@ function Header(){
             <Button
                 type = "secondary btn__header-secondary"
                 text= {
-                        <span className="contact__button">
-                        <img src="https://i.ibb.co/qyww5Fz/icon-mail.png" alt="icon-mail" border="0"/>
-                        <span className="contact__buton__text">Contactar</span>
-                    </span>
+                    <span>CV</span>
                 }
                 url='mailto:frangardev@outlook.com'
             />
@@ -42,7 +40,7 @@ function Header(){
             <Button
                 type = "primary btn__header-primary"
                 text= {
-                        <span className="contact__button">
+                    <span className="contact__button">
                         <img src="https://i.ibb.co/qyww5Fz/icon-mail.png" alt="icon-mail" border="0"/>
                         <span className="contact__buton__text">Contactar</span>
                     </span>
