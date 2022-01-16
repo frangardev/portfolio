@@ -8,7 +8,8 @@ function Button({
     url, //A donde te enivia el boton
 }){
     return(
-        <a className={`button ${type}`} href={url} target="_blank" rel="noopener noreferrer">
+        <a className={`button ${type}`} href={url} target="_blank" rel="noopener noreferrer"
+        onClick={(e)=> e.stopPropagation() }>
             {text}
         </a>
     )
