@@ -2,14 +2,13 @@ import React from "react";
 import './Header.css'
 
 import { Button } from '../Button/Button'
-import { Navbar } from '../Navbar/Navbar'
+import { NavbarHome } from '../Navbar/NavbarHome'
 
 function Header(){
     return(
         <header className="header" id="home">
 
-            <Navbar/>
-            {/* <p className="nav">--- <br/>--</p> */}
+            <NavbarHome />
 
             <p className="username">@frangardev</p>
 
