@@ -16,6 +16,7 @@
 
 .nav{
     grid-area: nav;
+    place-self: center;
 }
 .username{
     grid-area: usr;

@@ -9,8 +9,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    z-index: 50;
 }
-
 .Menu{
     list-style: none;
     width: 100%;
@@ -31,6 +31,7 @@
 }
 .Menu li a:hover{
     text-decoration: line-through;
+    cursor: pointer;
 }
 .Menu li{
     padding: 1em;
@@ -81,4 +82,37 @@
     position: absolute;
     top: 25px;
     left: 0;
+}
+
+@media (min-width: 1000px) {
+    .Menu__container{
+        position: static;
+        width: auto;
+        /* max-width: 1000px; */
+        height: auto;
+        background-color: transparent;
+        /* grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        z-index: 10; */
+        margin-bottom: 50px;
+    }
+    .Menu{
+        background-color: transparent;
+        color: var(--dark);
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: .8rem;
+        transform: translateX(0);
+    }
+    .Menu li{
+        padding: 0;
+        margin: 0;
+        color: var(--white);
+    }
+    .nav .Menu li{
+        margin: 0 35px 0 0;
+    }
+    .Menu-icon{
+        display: none;
+    }
 }

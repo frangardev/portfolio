@@ -19,7 +19,8 @@ function Navbar (){
 
             <ul className='Menu'>
                 <li>
-                <NavLink to='/'>
+                <NavLink to='/'
+                    onClick={()=> setOpenMenu(!openMenu) }>
                         Inicio
                     </NavLink>
                 </li>
@@ -27,6 +28,7 @@ function Navbar (){
                 <NavLink to='/'
                         onClick={() =>{
                             scroll.scrollMore(600)
+                            setOpenMenu(!openMenu)
                         }}
                     >
                         Sobre Mi
@@ -36,6 +38,7 @@ function Navbar (){
                 <NavLink to='/'
                         onClick={() =>{
                             scroll.scrollMore(1150)
+                            setOpenMenu(!openMenu)
                         }}
                     >
                         Proyectos
@@ -45,6 +48,7 @@ function Navbar (){
                     <NavLink to='/'
                         onClick={() =>{
                             scroll.scrollMore(2800)
+                            setOpenMenu(!openMenu)
                         }}
                     >
                         Contacto
