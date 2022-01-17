@@ -1,0 +1,84 @@
+.Menu__container{
+    position: fixed;
+    /* padding-top: 10px; */
+    /* right: -60px; */
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Menu{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    color: var(--dark);
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    transform: translateX(100%);
+    transition: transform .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Menu li a{
+    text-decoration: none;
+}
+.Menu li a:hover{
+    text-decoration: line-through;
+}
+.Menu li{
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.Menu-icon{
+    width: 3em;
+    height: 3em;
+    padding: 10px 15px 0 0;
+    position: relative;
+    cursor: pointer;
+}
+.Menu-icon::after,
+.Menu-icon::before{
+    content: '';
+    display: inline-block;
+    height: .5em;
+    background-color: var(--dark);
+    transition: transform .3s;
+}
+.Menu-icon::after{
+    width: 60%;
+    margin-left: 40%;
+}
+.Menu-icon::before{
+    width: 100%;
+}
+
+.translate .Menu{
+    transform: translateX(0);
+}
+.translate{
+    background-color: var(--white);
+}
+ 
+.translate .Menu-icon::before{
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 70%;
+    left: 0;
+    top: 25px;
+}
+.translate .Menu-icon::after{
+    width: 70%;
+    transform: rotate(45deg);
+    margin-left: 0;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}

@@ -7,10 +7,8 @@ function About (){
         <article className="About__container">
             <img className="about__image" src="https://i.ibb.co/sKZtN0t/francisco-garc-a-amor-a-la-programaci-n.jpg" alt="Fotografía de Francisco García" />
 
-            <div className="title-about__content">
-
                 <Navbar/>
-
+            <div className="title-about__content">
                 <span>Hola, soy</span>
                 <h1 className="about__title-page">Francisco Alejandro García Munguía</h1>
                 <span>Desarrollador Front-End</span>
