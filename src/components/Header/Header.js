@@ -12,11 +12,11 @@ function Header(){
 
             <p className="username">@frangardev</p>
 
-            <h1 className="title-header">¡Hola! Soy Fran <span className="title-header__span">Frontend Developr</span></h1>
+            <h1 className="title-header">¡Hola! Soy Fran <span className="title-header__span">Frontend Developer</span></h1>
 
     
             <figure className="drawing-header__container">
-            <img className="drawing-header" src="https://frangardev.com/redes/assets/img/frangardev-pixelart.png" alt="Dibjo de Fran"/>
+            <img className="drawing-header" src="https://i.ibb.co/D4LKV3M/frangardev-pixelart.png" alt="Dibjo de Fran"/>
             
             <div className="square square-1"></div>
             <div className="square square-2"></div>

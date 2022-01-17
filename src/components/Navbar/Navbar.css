@@ -1,11 +1,9 @@
 .Menu__container{
     position: fixed;
-    /* padding-top: 10px; */
-    /* right: -60px; */
+    width: auto;
+    height: auto;
     top: 0;
     right: 0;
-    width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -60,12 +58,13 @@
 .Menu-icon::before{
     width: 100%;
 }
-
 .translate .Menu{
     transform: translateX(0);
 }
 .translate{
     background-color: var(--white);
+    width: 100%;
+    height: 100vh;
 }
  
 .translate .Menu-icon::before{
