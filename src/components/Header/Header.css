@@ -277,10 +277,12 @@ a.btn__header-primary{
   /* Header */
 @media (min-width: 900px) {
     .header{
+        padding-left: 90px;
+        width: calc(100% - 90px);
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 90px 120px auto auto;
         grid-template-areas: 
-            "nav    nav     nav     nav     nav"
+            ".    nav     nav     nav       ."
             ".      .       .       .       ."
             "title  title   title   .       usr"
             "btn-1  btn-2   .       .       ."
@@ -293,13 +295,19 @@ a.btn__header-primary{
         margin: 0;
     }
     .username{
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
+        place-self: center end;
+        position: relative;
+        left: 50px;
+    }
+    .title-header{
+        place-self: center start;
     }
     .btn__header-primary,
-    .btn__header-secondary,
-    .username{
-        place-self: start end;
+    .btn__header-secondary{
+        place-self: start;
     }
+
 }
   
   
