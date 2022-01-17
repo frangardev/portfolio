@@ -33,7 +33,7 @@ function Header(){
                 text= {
                     <span>CV</span>
                 }
-                url='mailto:frangardev@outlook.com'
+                url='https://drive.google.com/file/d/19ZdneEzQhAgJTfXCbHAUy8fcSMDlIuzF/view?usp=sharing'
             />
 
             <Button
