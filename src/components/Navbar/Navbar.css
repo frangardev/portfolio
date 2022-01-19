@@ -1,18 +1,19 @@
 .Menu__container{
     position: fixed;
-    width: auto;
-    height: auto;
+    width: 0;
+    height: 0;
     top: 0;
     right: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     z-index: 50;
+    background-color: rebeccapurple;
 }
 .Menu{
     list-style: none;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: var(--white);
     color: var(--dark);
     font-size: 1.5rem;
@@ -98,6 +99,7 @@
     .Menu{
         background-color: transparent;
         color: var(--dark);
+        height: 100%;
         flex-direction: row;
         justify-content: space-evenly;
         font-size: .8rem;

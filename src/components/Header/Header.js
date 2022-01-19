@@ -16,16 +16,16 @@ function Header(){
 
     
             <figure className="drawing-header__container">
-            <img className="drawing-header" src="https://i.ibb.co/D4LKV3M/frangardev-pixelart.png" alt="Dibjo de Fran"/>
-            
-            <div className="square square-1"></div>
-            <div className="square square-2"></div>
-            <div className="square square-3"></div>
-            <div className="square square-4"></div>
-            <div className="square square-5"></div>
-            <div className="square square-6"></div>
-            <div className="square square-7"></div>
-            
+                <img className="drawing-header" src="https://i.ibb.co/D4LKV3M/frangardev-pixelart.png" alt="Dibjo de Fran"/>
+                
+                <div className="square square-1"></div>
+                <div className="square square-2"></div>
+                <div className="square square-3"></div>
+                <div className="square square-4"></div>
+                <div className="square square-5"></div>
+                <div className="square square-6"></div>
+                <div className="square square-7"></div>
+                
             </figure>
 
             <Button

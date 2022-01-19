@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 2000px;
     min-height: 100vh;
-    margin: auto 0;
+    margin: 25px auto 0;
     display: grid;
     grid-template-areas: 
         "title"
@@ -58,6 +58,7 @@
         ;
         grid-template-columns: 45% auto;
         grid-template-rows: auto auto;
+        margin: auto 0;
     }
     .title-about__content,
     .about__text{

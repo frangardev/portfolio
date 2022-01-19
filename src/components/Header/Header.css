@@ -302,6 +302,7 @@ a.btn__header-primary{
     }
     .title-header{
         place-self: center start;
+        z-index: 20;
     }
     .btn__header-primary,
     .btn__header-secondary{

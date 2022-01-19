@@ -6,6 +6,8 @@ import './Navbar.css'
 function NavbarHome (){
     const [openMenu, setOpenMenu] = React.useState(false)
 
+    {(openMenu) ? document.body.classList.add('active-modal') : document.body.classList.remove('active-modal')}
+
     return(
         <nav className={`Menu__container nav ${openMenu && 'translate'}`}>
             <div 
