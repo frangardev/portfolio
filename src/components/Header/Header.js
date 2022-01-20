@@ -2,13 +2,13 @@ import React from "react";
 import './Header.css'
 
 import { Button } from '../Button/Button'
-import { NavbarHome } from '../Navbar/NavbarHome'
 
-function Header(){
+
+function Header({children}){
     return(
         <header className="header" id="home">
 
-            <NavbarHome />
+            {children}
 
             <p className="username">@frangardev</p>
 

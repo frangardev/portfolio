@@ -10,7 +10,7 @@
         "text"
     ;
     grid-template-columns: 100%;
-    grid-template-rows: 250px auto auto;
+    grid-template-rows: auto auto auto;
     justify-items: center;
     justify-content: center;
 }
@@ -40,7 +40,7 @@
 .title-about__content{
     grid-area: title;
     /* margin: 50px auto 60px; */
-    margin: 0 auto 40px;
+    margin: 0 auto 20px;
 }
 .about__text{
     grid-area: text;

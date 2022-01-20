@@ -3,24 +3,24 @@ import { Link } from 'react-scroll'
 
 import './Navbar.css'
 
-function NavbarHome (){
+function NavbarHome ({modal}){
     const [openMenu, setOpenMenu] = React.useState(false)
-
-    {(openMenu) ? document.body.classList.add('active-modal') : document.body.classList.remove('active-modal')}
-
+    
     return(
         <nav className={`Menu__container nav ${openMenu && 'translate'}`}>
             <div 
                 className="Menu-icon"
                 onClick={()=>{
-                    setOpenMenu(!openMenu)
+                    if(!modal){
+                        setOpenMenu(!openMenu)
+                    }
                 }}
             ></div>
 
             <ul className="Menu">
                 <li>
                     <Link 
-                    onClick={()=> setOpenMenu(!openMenu) }     
+                    onClick={()=> setOpenMenu(!openMenu)}     
                     to="home"
                     smooth={true}
                     duration={600}>
