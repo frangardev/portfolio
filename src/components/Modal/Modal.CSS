@@ -20,7 +20,7 @@ body.active-modal{
   z-index: 10;
 }
 .ModalBackground {
-    background: rgba(21, 22, 26, 0.7);
+    background: rgba(6, 55, 83, 0.37);
     backdrop-filter: blur(2px);
     z-index: 100;
   }

@@ -1,7 +1,7 @@
 .Project__container{
     z-index: 120;
     position: relative;
-    background: MediumPurple;
+    background: var(--primary-color);
     border-radius: 50px;
     width:80%;
     min-width: 320px;
@@ -11,14 +11,14 @@
     min-height: 500px; 
     display:grid;
     grid-template-areas: 
-        ".            .                   borde-up      borde-up      .                   ."
-        ".           image     image          .         borde-right-up    ."
-        "borde-left     image       image       title       title       borde-right"
-        "borde-left   image               image           description     description         borde-right"
-        "borde-left   image               image           tech            tech                borde-right"
-        "borde-left   image               image           button        button            borde-right"
-        ".           image     image          .         borde-right-down    ."
-        ".            .                   borde-down      borde-down      .                   ."
+        ".            .         borde-up      borde-up      .                   .          "
+        ".            image     image         .             borde-right-up      .          "
+        "borde-left   image     image         title         title               borde-right"
+        "borde-left   image     image         description   description         borde-right"
+        "borde-left   image     image         tech          tech                borde-right"
+        "borde-left   image     image         button        button              borde-right"
+        ".            image     image          .            borde-right-down    .          "
+        ".            .         borde-down    borde-down    .                   .          "
     ;
     grid-template-columns: 10px 10px 1fr 1fr 10px 10px;
     grid-template-rows: 10px 10px repeat(4, auto) 10px 10px;
@@ -27,7 +27,6 @@
   .image-project{
     grid-area: image;
     width: 100%;
-    background-color: red;
   }
   .Title-project{
     grid-area:title;
@@ -48,7 +47,7 @@
   
   /* Bordes----- */
   .borde{
-    background-color: Indigo;
+    background-color: var(--dark);
     /* position: absolute; */
     z-index: 40;
   }
@@ -111,7 +110,7 @@
   }
   
   .Close-modal__button i{
-    color: white;
+    color: var(--white);
     font-size: 1.2rem;
     opacity: 1;
   }

@@ -46,7 +46,6 @@ function ProjectItem({
 
             <figcaption className={`data-project ${hover && 'hover__item'}`}>
                 <h4 className="data-project__name">{cutName}</h4>
-               {/* <div className="links-card__container"> */}
                     <Button
                         type='secondary button__data-project'
                         text={
@@ -66,7 +65,6 @@ function ProjectItem({
                     onClick={(e)=> e.stopPropagation() }>
                         <i class="fab fa-github"></i>
                     </a>
-               {/* </div> */}
                 <div className="data-technologies">
                     {tech.map(item =>{
                         return(<i key={item.name} className={item.icon}></i>)
