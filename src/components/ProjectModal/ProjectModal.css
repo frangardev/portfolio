@@ -33,9 +33,18 @@
   }
   .Description-project{
     grid-area: description;
+    text-align: start;
+    margin: 0 15px;
+  }
+  .Description-project__li{
+    margin-bottom: 10px;
   }
   .Tech-project{
     grid-area: tech;
+  }
+  .Tech-project i{
+    font-size: 2rem;
+    margin: 5px 10px 20px;
   }
   .buttons__container-project{
     grid-area: button;

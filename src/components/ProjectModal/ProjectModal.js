@@ -33,22 +33,20 @@ function ProjectModal({
                 {
                     (project.description.isList)
                         ?
-                            <ul>
+                            <ul className="Description-project__ul">
                                 {project.description.text.map(element => {
-                                   console.log(element);
                                    return(
-                                       <li key = {element}>
+                                       <li key = {element} className="Description-project__li">
                                            {element}
                                         </li>
                                    )
                                 })}
                             </ul>
                         :   
-                            <p>
+                            <p className="Description-project__text">
                                 {project.description.text[0]} 
                             </p>
-                }
-                  
+                }    
             </div>
             
             <div className="Tech-project">{
