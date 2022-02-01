@@ -9,7 +9,8 @@ function ProjectModal({
 }){
 
     const project = data.find( item => item.name == nameProject) 
-    
+
+
     return (
         <article 
             className="Project__container"  
@@ -21,15 +22,33 @@ function ProjectModal({
                 <button 
                     className='Close-modal__button'
                     onClick={ ()=> setOpenModal(false) }
-                    >
+                >
                     <i className="fas fa-chevron-left"></i>
                 </button>
             </div>
             
             <h2 className="Title-project">{project.name}</h2>
             
-            <div className="Description-project">
-                {project.description}
+            <div className="Description-project" >
+                {
+                    (project.description.isList)
+                        ?
+                            <ul>
+                                {project.description.text.map(element => {
+                                   console.log(element);
+                                   return(
+                                       <li key = {element}>
+                                           {element}
+                                        </li>
+                                   )
+                                })}
+                            </ul>
+                        :   
+                            <p>
+                                {project.description.text[0]} 
+                            </p>
+                }
+                  
             </div>
             
             <div className="Tech-project">{
