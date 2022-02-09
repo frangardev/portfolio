@@ -41,7 +41,7 @@ function ProjectItem({
             onMouseLeave={()=> isHover(false)}
             onClick={seeProject}
         >
-            <img className="ImageProject" src={image} alt={name}/>
+            <img className="ImageProject" loading="lazy" src={image} alt={name}/>
 
 
             <figcaption className={`data-project ${hover && 'hover__item'}`}>

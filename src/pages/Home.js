@@ -22,6 +22,7 @@ function Home(){
     }else{
         document.body.classList.remove('active-modal')
     }
+    
 
     return(
         <React.Fragment>

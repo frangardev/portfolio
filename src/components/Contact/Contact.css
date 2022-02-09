@@ -11,6 +11,7 @@
 .text--contact{
     margin-bottom: 30px;
     color: var(--white);
+    max-width: 600px;
 }
 
 .contact__button{
@@ -22,9 +23,9 @@
     width: 25%;
     margin-left: 10px;
 }
-.Contact__container--text{
+/* .Contact__container--text{ */
     /* margin: 0 auto; */
-}
+/* } */
 
 .Social{
     display: flex;

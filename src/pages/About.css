@@ -18,9 +18,11 @@
     grid-area: img;
     width: 100%;
     height: auto;
+    min-height: 420px;
     /* margin-bottom: 30px; */
     object-fit: cover;
     object-position: center top;
+    background-color: #c2c2c2;
 }
 
 .title-about__content,

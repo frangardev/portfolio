@@ -5,7 +5,7 @@ import './About.css'
 function About (){
     return(
         <article className="About__container">
-            <img className="about__image" src="https://i.ibb.co/sKZtN0t/francisco-garc-a-amor-a-la-programaci-n.jpg" alt="Fotografía de Francisco García" />
+            <img className="about__image" src="https://i.ibb.co/8NvFYrr/francisco-garc-a-amor-a-la-programaci-n.jpg" alt="Fotografía de Francisco García" />
 
             <div className="title-about__content">
                 <Navbar/>

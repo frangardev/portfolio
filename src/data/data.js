@@ -29,7 +29,7 @@ const technologies = {
 const Data = [
     {
         name: "Todo React App",
-        image: "https://i.ibb.co/9c14pGP/To-Do-React-App.png",
+        image: ["https://i.ibb.co/ydd38XW/todo-react-app.png"],
         url: "https://frangardev.github.io/todo-react-app/",
         repository: "https://github.com/frangardev/todo-react-app",
         description: {
@@ -44,7 +44,7 @@ const Data = [
     },
     {
         name: "Lazy Foxy",
-        image: "https://i.ibb.co/x865zyx/lazy-foxy.png",
+        image: ["https://i.ibb.co/2KLB90H/lazy-foxy.png"],
         url: "https://frangardev.github.io/lazy-foxy/",
         repository: "https://github.com/frangardev/lazy-foxy",
         description: {
@@ -60,7 +60,7 @@ const Data = [
     },
     {
         name: 'Proyecto del Curso Profesional de JavaScript',
-        image: "https://i.ibb.co/MD3q7fz/proyecto-del-curso-profesional-de-javascript.png",
+        image: ["https://i.ibb.co/fSkGV9r/proyecto-del-curso-profesional-de-javascript.png"],
         url: "https://frangardev.github.io/profesional-javascript/",
         repository: "https://github.com/frangardev/profesional-javascript",
         description: {
@@ -77,7 +77,7 @@ const Data = [
     },
     {
         name: "Batabit",
-        image: "https://i.ibb.co/4mnBZ20/batabit.png",
+        image: ["https://i.ibb.co/1f0wvph/batabit.png"],
         url: "https://frangardev.github.io/bata-bit/",
         repository: "https://github.com/frangardev/bata-bit",
         description: {
@@ -91,7 +91,7 @@ const Data = [
     },
     {
         name: "Cate de mi Corazón",
-        image: "https://i.ibb.co/Z8H2h9y/cate-de-mi-corazon.png",
+        image: ["https://i.ibb.co/hsk08TZ/cate-de-mi-corazon.png"],
         url: "https://frangardev.github.io/cate-de-mi-corazon/",
         repository: "https://github.com/frangardev/cate-de-mi-corazon",
         description: {
@@ -104,7 +104,7 @@ const Data = [
     },
     {
         name: "Clon de Google",
-        image: "https://i.ibb.co/LYf3ZLQ/clon-de-google.png",
+        image: ["https://i.ibb.co/rGFfnBx/clon-de-google-white.png", "https://i.ibb.co/h8dKf0Q/clon-de-google-black.png"],
         url: "https://frangardev.github.io/Clon-de-Google/",
         repository: "https://github.com/frangardev/Clon-de-Google",
         description: {
@@ -118,7 +118,7 @@ const Data = [
     },
     {
         name: "Mis redes",
-        image: "https://i.ibb.co/NK7kB9c/mis-redes.png",
+        image: ["https://i.ibb.co/r7MkQP3/mis-redes.png"],
         url: "https://frangardev.github.io/redes/",
         repository: "https://github.com/frangardev/redes",
         description: {
@@ -132,7 +132,7 @@ const Data = [
     },
     {
         name: "Tarea de la universidad - Mi primera página web",
-        image: "https://i.ibb.co/xhFpLGk/tarea-de-la-universidad.png",
+        image: ["https://i.ibb.co/br6mJr6/tarea-de-la-universidad.png"],
         url: "https://frangardev.github.io/Tarea-Universidad/",
         repository: "https://github.com/frangardev/Tarea-Universidad",
         description: {
@@ -145,7 +145,7 @@ const Data = [
     },
     {
         name: "Calculadora de Figuras Geométricas",
-        image: "https://i.ibb.co/xMngcpk/calculadora-de-figuras-geom-tricas.png",
+        image: ["https://i.ibb.co/jLXkgCN/calculadora-de-figuras-geometricas.png"],
         url: "https://frangardev.github.io/ejercicios-javascript/figuras/index.html",
         repository: "https://github.com/frangardev/ejercicios-javascript/tree/main/figuras",
         description: {
@@ -160,7 +160,7 @@ const Data = [
     },
     {
         name: "Dibujo de Pokeball con CSS",
-        image: "https://i.ibb.co/DLhvVfy/css-pokeball.png",
+        image: ["https://i.ibb.co/xXdR7CM/css-pokeball.png"],
         url: "https://frangardev.github.io/CSS-PokeBall/",
         repository: "https://github.com/frangardev/CSS-PokeBall",
         description: {
@@ -190,7 +190,7 @@ const Data = [
 
     {
         name: "Grid Gallery",
-        image: "https://i.ibb.co/ygRKzqf/grid-gallery.png",
+        image: ["https://i.ibb.co/023Frxz/grid-gallery.png"],
         url: "https://frangardev.github.io/Grid-Gallery/",
         repository: "https://github.com/frangardev/Grid-Gallery",
         description: {
@@ -206,7 +206,7 @@ const Data = [
 
     {
         name: "SPA Marvel",
-        image: ["https://i.ibb.co/wLJnQFJ/spa-marvel-home.png", "https://i.ibb.co/Qcpm7QK/spa-marvel-character.png"],
+        image: ["https://i.ibb.co/qrQb0y6/spa-marvel-frond.png", "https://i.ibb.co/wRdgNZN/spa-marvel-2.png"],
         url: "https://frangardev.github.io/SPA-Marvel/",
         repository: "https://github.com/frangardev/SPA-Marvel",
         description:{

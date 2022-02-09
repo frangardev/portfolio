@@ -49,11 +49,14 @@ function ProjectModal({
                 }    
             </div>
             
-            <div className="Tech-project">{
-                project.tech.map(item =>{
-                    return(<i key={item.name} className={item.icon}></i>)
-                })
-            }</div>
+            <div className="Tech-project">
+                <h3></h3>
+                {
+                    project.tech.map(item =>{
+                        return(<i key={item.name} className={item.icon}></i>)
+                    })
+                }
+            </div>
             
             <div className="buttons__container-project">
                  <Button
