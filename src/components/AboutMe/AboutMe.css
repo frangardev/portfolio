@@ -16,7 +16,13 @@
      width: 100%;
      height: auto;
      border-radius: 50%;
+     opacity: 0;
+     position: absolute;
  }
+.Photo-loaded{
+    opacity: 1;
+    position: relative;
+}
 
  .Name__title{
      font-weight: bold;

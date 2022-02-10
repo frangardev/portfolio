@@ -2,10 +2,20 @@ import React from "react";
 import { Navbar } from "../Components/Navbar/Navbar";
 import './About.css'
 
+import { SkeletonProject } from '../Components/SkeletonProject/SkeletonProject'
+
 function About (){
+    const[loadPhoto, setLoadPhoto] = React.useState(true)
     return(
         <article className="About__container">
-            <img className="about__image" src="https://i.ibb.co/8NvFYrr/francisco-garc-a-amor-a-la-programaci-n.jpg" alt="Fotografía de Francisco García" />
+            <img 
+                className={`about__image ${!loadPhoto && 'about__image-load'}`} 
+                src="https://i.ibb.co/8NvFYrr/francisco-garc-a-amor-a-la-programaci-n.jpg" 
+                alt="Fotografía de Francisco García" 
+                onLoad={()=>setLoadPhoto(false)}
+            />
+
+            {loadPhoto && (<SkeletonProject type='about-photo'/>)}
 
             <div className="title-about__content">
                 <Navbar/>

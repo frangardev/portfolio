@@ -103,20 +103,6 @@ const Data = [
         tech: [technologies.HTML, technologies.CSS,technologies.JavaScript],
     },
     {
-        name: "Mis redes",
-        image: ["https://i.ibb.co/r7MkQP3/mis-redes.png"],
-        url: "https://frangardev.github.io/redes/",
-        repository: "https://github.com/frangardev/redes",
-        description: {
-            isList: true,
-            text:[
-                'Página con los enlaces de mis redes sociales.',
-                'Animación del username con efecto Glish.',
-            ]
-        },
-        tech: [technologies.HTML,technologies.CSS,technologies.JavaScript],
-    },
-    {
         name: "Clon de Google",
         image: ["https://i.ibb.co/rGFfnBx/clon-de-google-white.png", "https://i.ibb.co/h8dKf0Q/clon-de-google-black.png"],
         url: "https://frangardev.github.io/Clon-de-Google/",
@@ -131,6 +117,20 @@ const Data = [
         tech: [technologies.HTML,technologies.CSS],
     },
     {
+        name: "Mis redes",
+        image: ["https://i.ibb.co/r7MkQP3/mis-redes.png"],
+        url: "https://frangardev.github.io/redes/",
+        repository: "https://github.com/frangardev/redes",
+        description: {
+            isList: true,
+            text:[
+                'Página con los enlaces de mis redes sociales.',
+                'Animación del username con efecto Glish.',
+            ]
+        },
+        tech: [technologies.HTML,technologies.CSS,technologies.JavaScript],
+    },
+    {
         name: "Tarea de la universidad - Mi primera página web",
         image: ["https://i.ibb.co/br6mJr6/tarea-de-la-universidad.png"],
         url: "https://frangardev.github.io/Tarea-Universidad/",
@@ -142,6 +142,19 @@ const Data = [
             ]
         },
         tech: [technologies.HTML,technologies.CSS],
+    },
+    {
+        name: "Dibujo de Pokeball con CSS",
+        image: ["https://i.ibb.co/xXdR7CM/css-pokeball.png"],
+        url: "https://frangardev.github.io/CSS-PokeBall/",
+        repository: "https://github.com/frangardev/CSS-PokeBall",
+        description: {
+            isList: false,
+            text:[
+                'Mi primer dibujo utlizando CSS.'
+            ]
+        },
+        tech: [technologies.HTML, technologies.CSS],
     },
     {
         name: "Calculadora de Figuras Geométricas",
@@ -158,19 +171,7 @@ const Data = [
         },
         tech: [technologies.HTML,technologies.CSS,technologies.JavaScript],
     },
-    {
-        name: "Dibujo de Pokeball con CSS",
-        image: ["https://i.ibb.co/xXdR7CM/css-pokeball.png"],
-        url: "https://frangardev.github.io/CSS-PokeBall/",
-        repository: "https://github.com/frangardev/CSS-PokeBall",
-        description: {
-            isList: false,
-            text:[
-                'Mi primer dibujo utlizando CSS.'
-            ]
-        },
-        tech: [technologies.HTML, technologies.CSS],
-    },
+
 
 
     // superCAt={

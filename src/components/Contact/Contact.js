@@ -8,7 +8,7 @@ function Contact(){
         <section className="Contact" id="contact">
             <div className="Contact__container--text">
                 <h2 className="Sub-title">Crescamos Juntos</h2>
-                <p className="text text--contact">No lo pienses más y empecemos desde ahora mismo a trabajar y cumplir nuestros sueños juntos.</p>
+                <p className="text text--contact">Empecemos desde ahora mismo a trabajar y cumplir todos nuestros sueños, juntos &lt;3.</p>
                 <Button
                     type = "primary wide"
                     text= {

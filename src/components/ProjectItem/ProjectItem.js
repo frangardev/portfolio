@@ -44,7 +44,7 @@ function ProjectItem({
             onClick={seeProject}
         >
 
-            {!loadingImage && ( <SkeletonProject/> )}
+            {!loadingImage && ( <SkeletonProject type='loading-item-project' /> )}
 
             <img 
                 className={`ImageProject `} 

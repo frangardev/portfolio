@@ -1,9 +1,9 @@
 import React from "react"
 import './SkeletonProject.css'
 
-function SkeletonProject(){
+function SkeletonProject(props){
     return(
-        <div className="loading loading-item-project"></div>
+        <div className={`loading ${props.type}`}></div>
     )
 }
 
