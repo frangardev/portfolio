@@ -66,7 +66,8 @@
     box-shadow: 7px 0  var(--dark), -7px 0 var(--dark), 0 0px transparent, 0 -0px transparent;
 }
 
-.button__data-project .text__container-card{
+.button__data-project .text__container-card,
+.btn__header-primary .icon-button-contact__header{
     position: absolute;
     opacity: 0;
 }
@@ -78,11 +79,17 @@
     font-size: 1.2rem;
     padding: 0;
 }
-
+.btn__header-primary{
+    font-size: .8rem;
+}
 
 @media (min-width: 720px) {
-    .button__data-project .text__container-card{
+    .button__data-project .text__container-card,
+    .btn__header-primary .icon-button-contact__header{
         position: relative;
         opacity: 1;
+    }
+    .btn__header-primary{
+        font-size: 1rem;
     }
 }

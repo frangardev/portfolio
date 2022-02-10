@@ -40,7 +40,7 @@ function Header({children}){
                 type = "primary btn__header-primary"
                 text= {
                     <span className="contact__button">
-                        <img src="https://i.ibb.co/qyww5Fz/icon-mail.png" alt="icon-mail" border="0"/>
+                        <img className="icon-button-contact__header" src="https://i.ibb.co/qyww5Fz/icon-mail.png" alt="icon-mail" border="0"/>
                         <span className="contact__buton__text">Contactar</span>
                     </span>
                 }
