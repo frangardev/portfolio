@@ -6,6 +6,50 @@ import { SkeletonProject } from '../Components/SkeletonProject/SkeletonProject'
 
 function About (){
     const[loadPhoto, setLoadPhoto] = React.useState(true)
+    
+    const tecnologias = [
+        {
+            name: 'HTML',
+            img: ''
+        },
+        {
+            name: 'CSS',
+            img: ''
+        },
+        {
+            name: 'JavaScript',
+            img: ''
+        },
+        {
+            name: 'React',
+            img: ''
+        },
+        {
+            name: 'Git',
+            img: ''
+        },
+        {
+            name: 'GitHub',
+            img: ''
+        },
+        {
+            name: 'Webpack',
+            img: ''
+        },
+        {
+            name: 'Figma',
+            img: ''
+        },
+        {
+            name: 'Illustrator',
+            img: ''
+        },
+        {
+            name: 'Photoshop',
+            img: ''
+        },
+    ]
+
     return(
         <article className="About__container">
             <img 
@@ -20,7 +64,7 @@ function About (){
             <div className="title-about__content">
                 <Navbar/>
                 <span>Hola, soy</span>
-                <h1 className="about__title-page">Francisco Alejandro García Munguía</h1>
+                <h2 className="about__title-page">Francisco Alejandro García Munguía</h2>
                 <span>Desarrollador Front-End</span>
             </div>
 
@@ -37,7 +81,15 @@ function About (){
                 Me considero una persona proactiva y como buen programador siempre intento encontrar la manera más eficiente de hacer las cosas.
             </p>
             
-
+            <section className="skills">
+                <h3>skills</h3>
+                <div>
+                    <figure>
+                        <img src="" alt="" loading="lazy"/>
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+            </section>
 
         </article>
     )

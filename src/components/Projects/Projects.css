@@ -1,4 +1,5 @@
 .Projects__container{
+    position: relative;
     column-count: 2;
     column-width: 150px;
     column-rule-width: 350px;
@@ -6,13 +7,12 @@
     width: 95%;
     max-width: 1250px;
     margin: 0 auto 50px;
-    position: relative;
 }
 
 @media (min-width: 500px) {
     .Projects__container{
-        width: 80%;
         column-count: 3;
         column-gap: 1em;
+        width: 80%;
     }
 }

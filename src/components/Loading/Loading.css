@@ -4,19 +4,19 @@
     left: -10px;
     right: -10px;
     bottom: -10px;
-    background-color: var(--white);
-    z-index: 200;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--white);
+    z-index: 200;
 }
 .loading__draw{
-    width: 20px;
-    height: 20px;
-  margin-left: 15px;
-    background-color: var(--dark);
   position: relative;
-  }
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  background-color: var(--dark);
+}
 
 .loading-square-1{
   animation: moveLoad 0.5s 0.2s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate infinite;

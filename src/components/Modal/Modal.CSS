@@ -13,10 +13,7 @@ body.active-modal{
   display: flex; 
   justify-content: center;
   align-items: baseline;
-  /* display: grid;
-  grid-template-rows: 50px auto 50px; */
   overflow-y: auto;
-  /* padding: 20px 0; */
   z-index: 10;
 }
 .ModalBackground {

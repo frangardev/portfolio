@@ -6,6 +6,14 @@
     --primary-color: #887EC8;
     --secondary-color: #73C4EB;
     --square-bg: rgba(49, 45, 71, .5);
+
+/* Dark colors */
+    --dark-white: #a79cb1;
+    --dark-black: #01081d;
+    --dark-dark: #241f3d;
+    --dark-primary-color: #6c6696;
+    --dark-secondary-color: #6996aa;
+    --dark-square-bg: rgba(32, 29, 53, 0.5);
 }
 
 body{

@@ -59,120 +59,113 @@ a.btn__header-primary{
 
 
 .drawing-header__container{
-    grid-area: draw;
-    place-self: end center;
+  position: relative;
+  grid-area: draw;
+  place-self: end center;
+  min-width:320px;
+  width:100%;
+  max-width: 850px;
+  height: auto;
+  display: grid;
+  gap: 10px;
+  grid-template:  repeat(4, 1fr) / repeat(9, 1fr);
+  grid-template-areas:
+    "sq1     sq1     sq2     .       .      .     sq3     .       ."
+    "sq1     sq1     sq4     sq4     sq4    sq4   sq4     sq4     ."
+    "sq6     .       sq4     sq4     sq4    sq4   sq4     sq4     ."
+    ".       .       sq4     sq4     sq4    sq4   sq4     sq4     ."
+  ;
+}
+
+.drawing-header{
+    grid-column: 1 / 10;
+    grid-row: 1 / 5;
+    align-self: end;
+    width: 100%;
+    z-index: 10;
+}
+
+.square{
+  background: var(--square-bg);
+}
+
+.square-1{
     position: relative;
-    min-width:320px;
-    width:100%;
-    max-width: 850px;
-    height: auto;
-    display: grid;
-    gap: 10px;
-    grid-template:  repeat(4, 1fr) / repeat(9, 1fr);
-    grid-template-areas:
-      "sq1     sq1     sq2     .       .      .     sq3     .       ."
-      "sq1     sq1     sq4     sq4     sq4    sq4   sq4     sq4     ."
-      "sq6     .       sq4     sq4     sq4    sq4   sq4     sq4     ."
-      ".       .       sq4     sq4     sq4    sq4   sq4     sq4     ."
-    ;
-  }
-  
-  .drawing-header{
-      grid-column: 1 / 10;
-      grid-row: 1 / 5;
-      align-self: end;
-      width: 100%;
-      z-index: 10;
-  }
-  
-  .square{
-    background: var(--square-bg);
-  }
-  
-  .square-1{
-      grid-column: 2 / 4;
-      grid-row: 2 / 3;
-      width: 80%;
-      height: 100%;
-      margin: 0 10px;
-      place-self: center start;
-  
-      /* position: relative;  
-  
-      animation: moveSquare-1 1s 1;
-      animation-delay: .6s;
-      animation-timing-function: ease-in-out; */
-      position: relative;
-      top: 100%;
-      left: 100%;
-      opacity: .1;
-      
-      animation: moveSquare 1s 1;
-      animation-delay: .6s;
-      animation-timing-function: ease-in-out;
-      animation-fill-mode: forwards;
-  }
-  .square-2{
+    top: 100%;
+    left: 100%;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    width: 80%;
+    height: 100%;
+    margin: 0 10px;
+    place-self: center start;
+    
+    animation: moveSquare 1s 1;
+    animation-delay: .6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+    opacity: .1;
+}
+.square-2{
     grid-area: sq2;
+
+    position: relative;
+    top: 130%;
+    left: -100%;
+    opacity: 0;
     width: 1em;
     height: 1em;
     place-self: start end;
     margin-bottom: 30px;
   
-    position: relative;
-    top: 130%;
-    left: -100%;
-    opacity: 0;
-  
     animation: moveSquare .5s 1;
     animation-delay: 1.7s;
     animation-timing-function: cubic-bezier(.59,-0.08,1,.54);
     animation-fill-mode: forwards;
-  }
-  .square-3{
+}
+.square-3{
     grid-area: sq3;
-    width: .8em;
-    height: .8em;
-    place-self: start center;
-  
+
     position: relative;
     top: 120%;
     left: 50%;
     opacity: 0;
+    width: .8em;
+    height: .8em;
+    place-self: start center;
     
     animation: moveSquare 1s 1;
     animation-delay: 1.1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-  }
+}
   
   
-  .square-4{
+.square-4{
     grid-area: sq4;
   
     animation: widthSquare .5s 1;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
-  }
+}
   
-  .square-5{
+.square-5{
+    position: relative;
+    top: 30%;
+    left: -100%;
+    opacity: .05;
     grid-column: 7 / 9;
     grid-row: 2 / 3;
     width: 55%;
     height: calc(100% - 15px);
     place-self: start center;
   
-    position: relative;
-    top: 30%;
-    left: -100%;
-    opacity: .05;
-    
     animation: moveSquare 1s 1;
     animation-delay: .6s;
     animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-  
-  }
+    animation-fill-mode: forwards;  
+}
   .square-6{
     grid-area: sq6;
     width: 70%;
@@ -213,65 +206,65 @@ a.btn__header-primary{
   
   /* Dibujo */
   @media (min-width: 620px) {
-      .drawing-header__container{
-          grid-template:  repeat(4, 1fr) / repeat(10, 1fr);
-          grid-template-areas:
-            ".      sq1     sq1     sq2     .       .      .     sq3     .       ."
-            ".      sq1     sq1     sq4     sq4     sq4    sq4   sq4     .       ."
-            "sq6    .       .       sq4     sq4     sq4    sq4   sq4     sq7     ."
-            ".      .       .       sq4     sq4     sq4    sq4   sq4     .       ."
-          ;
-        }
-      .drawing-header{
-          grid-column: 1 / 11;
-          justify-self: center;
-          width: calc(100% - 140px);
+    .drawing-header__container{
+        grid-template:  repeat(4, 1fr) / repeat(10, 1fr);
+        grid-template-areas:
+          ".      sq1     sq1     sq2     .       .      .     sq3     .       ."
+          ".      sq1     sq1     sq4     sq4     sq4    sq4   sq4     .       ."
+          "sq6    .       .       sq4     sq4     sq4    sq4   sq4     sq7     ."
+          ".      .       .       sq4     sq4     sq4    sq4   sq4     .       ."
+        ;
       }
-      .square-1{
-          grid-area: sq1;
-          width: 80%;
-          height: 50%;
-      }
-      .square-2{
-          width: 1.5em; 
-          height: 1.5em; 
-          place-self: center end;
-  
-          top: 50%;
-          right: 170%;
-      }
-      .square-3{
-          width: 1.2em; 
-          height: 1.2em; 
-          place-self: start;
-          margin: 5px 0 0 10px;
-      }
-      .square-4{
-          animation-name: widthSquare-desktop;
-          position: relative;
-          left: -2em;
-      }
-      .square-5{
-          grid-column: 8 / 10;
-          margin-left: 10px;
-          place-self: start;
-      }
-      .square-6{
-          width: 3em; 
-          height: 3em; 
-          place-self: end;
-          bottom: -20px;
-          margin-left: 2em;
-      
-          top: -190%;
-          left: 140%;
-      }
-      .square-7{
-          grid-area: sq7;
-          position: relative; 
-          left: -125%;
-        }
-  }
+    .drawing-header{
+        grid-column: 1 / 11;
+        justify-self: center;
+        width: calc(100% - 140px);
+    }
+    .square-1{
+        grid-area: sq1;
+        width: 80%;
+        height: 50%;
+    }
+    .square-2{
+        top: 50%;
+        right: 170%;
+        width: 1.5em; 
+        height: 1.5em; 
+        place-self: center end;
+    }
+    .square-3{
+        width: 1.2em; 
+        height: 1.2em; 
+        place-self: start;
+        margin: 5px 0 0 10px;
+    }
+    .square-4{
+        position: relative;
+        left: -2em;
+        animation-name: widthSquare-desktop;
+    }
+    .square-5{
+        grid-column: 8 / 10;
+        margin-left: 10px;
+        place-self: start;
+    }
+    .square-6{
+        top: -190%;
+        left: 140%;
+
+        width: 3em; 
+        height: 3em; 
+        place-self: end;
+        bottom: -20px;
+        margin-left: 2em;
+    }
+    .square-7{
+        grid-area: sq7;
+
+        position: relative; 
+        left: -125%;
+    }
+}  
   
   
   /* Header */
@@ -314,52 +307,52 @@ a.btn__header-primary{
   
   /* Animaciones --------------------------------------------------------------------------*/
   
-  @keyframes moveSquare {
-      20%{
-          opacity: .5;
-      }
-      to {
-          top: 0%;
-          left: 0%;
-          opacity: 1;
-      }
-  }
-  @keyframes moveSquare-2 {
-      20%{
-          opacity: .5;
-      }
-      to {
-          top: -5px;
-          left: 5px;
-          opacity: 1;
-      }
-  }
-  
-  @keyframes widthSquare {
-      from{
-          place-self: center;
-          width: 30%;
-          height: 30%;
-      }
-      95%{
-          place-self: end center;
-      }
-      to{
-          place-self: end start;
-          width: 90%;
-          height: calc(100% - 1.5em);
-      }
-  }
-  
-  @keyframes widthSquare-desktop {
-      from{
-          place-self: end center;
-          width: 30%;
-          height: 30%;
-      }
-      to{
-          place-self: end start;
-          width: 90%;
-          height: calc(100% - 4em); 
-      }
-  }
+@keyframes moveSquare {
+    20%{
+        opacity: .5;
+    }
+    to {
+        top: 0%;
+        left: 0%;
+        opacity: 1;
+    }
+}
+@keyframes moveSquare-2 {
+    20%{
+        opacity: .5;
+    }
+    to {
+        top: -5px;
+        left: 5px;
+        opacity: 1;
+    }
+}
+
+@keyframes widthSquare {
+    from{
+        place-self: center;
+        width: 30%;
+        height: 30%;
+    }
+    95%{
+        place-self: end center;
+    }
+    to{
+        place-self: end start;
+        width: 90%;
+        height: calc(100% - 1.5em);
+    }
+}
+
+@keyframes widthSquare-desktop {
+    from{
+        place-self: end center;
+        width: 30%;
+        height: 30%;
+    }
+    to{
+        place-self: end start;
+        width: 90%;
+        height: calc(100% - 4em); 
+    }
+}

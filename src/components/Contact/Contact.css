@@ -1,17 +1,17 @@
 .Contact{
-    width: 100%;
-    background-color: var(--primary-color);
-    padding: 20px 0;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    width: 100%;
+    padding: 20px 0;
     color: var(--white);
+    background-color: var(--primary-color);
 }
 .text--contact{
     margin-bottom: 30px;
-    color: var(--white);
     max-width: 600px;
+    color: var(--white);
 }
 
 .contact__button{
@@ -23,10 +23,6 @@
     width: 25%;
     margin-left: 10px;
 }
-/* .Contact__container--text{ */
-    /* margin: 0 auto; */
-/* } */
-
 .Social{
     display: flex;
     align-items: center;

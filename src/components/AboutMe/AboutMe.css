@@ -13,15 +13,15 @@
      max-width: 13em;
 }
 .Photo{
-     width: 100%;
-     height: auto;
-     border-radius: 50%;
-     opacity: 0;
-     position: absolute;
- }
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    opacity: 0;
+}
 .Photo-loaded{
-    opacity: 1;
     position: relative;
+    opacity: 1;
 }
 
  .Name__title{

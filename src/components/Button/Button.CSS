@@ -1,14 +1,14 @@
 .button{
+    position: relative;
     overflow: hidden;
-    font-size: 1rem;
-    text-decoration: none;
     width: 80%;
     max-width: 350px;
     height: auto;
     padding: 20px 5px;
     display: inline-block;
-    position: relative;
     margin: 0 auto 35px;
+    font-size: 1rem;
+    text-decoration: none;
     color: var(--dark);
     box-shadow: 10px 0  var(--dark), -10px 0 var(--dark), 0 10px var(--dark), 0 -10px var(--dark);
 }
@@ -24,11 +24,11 @@
 .button::before{
     content: '';
     display: inline-block;
+    position: absolute;
+    left: 10px;
     height: 10px;
     width: calc(100% - 20px);
     background-color: transparent;
-    position: absolute;
-    left: 10px;
     box-shadow: 10px 0  var(--dark), -10px 0 var(--dark), 0 0px transparent, 0 -0px transparent;
 }
 .button::after{
@@ -54,15 +54,15 @@
     position: absolute;
     bottom: -25px;
     left: 20px;
-    font-size: 1rem;
     width: auto;
     padding: 7px 15px;
+    font-size: 1rem;
     box-shadow: 5px 0  var(--dark), -5px 0 var(--dark), 0 5px var(--dark), 0 -5px var(--dark);
 }
 .button__data-project::after,
 .button__data-project::before{
-    width: calc(100% - 14px);
     left: 7px;
+    width: calc(100% - 14px);
     box-shadow: 7px 0  var(--dark), -7px 0 var(--dark), 0 0px transparent, 0 -0px transparent;
 }
 
@@ -76,8 +76,8 @@
     width: 60%;
     max-width: 350px;
     min-width: 250px;
-    font-size: 1.2rem;
     padding: 0;
+    font-size: 1.2rem;
 }
 .btn__header-primary{
     font-size: .8rem;
