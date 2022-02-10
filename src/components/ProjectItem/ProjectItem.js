@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "../Button/Button";
+import { SkeletonProject } from "../SkeletonProject/SkeletonProject.js";
 import './ProjectItem.css'
 
 function ProjectItem({
@@ -10,10 +11,12 @@ function ProjectItem({
     tech,
     openModal,
     setOpenModal,
-    setDataProject
+    setDataProject,
+    loadingImage,
 }){
 
     const [hover, setHover] = useState(false)
+    
 
     const isHover = ( hoverValue )=>{
         setHover(hoverValue)
@@ -32,7 +35,6 @@ function ProjectItem({
             setOpenModal (true)
         }   
     }
-   
 
     return(
         <figure
@@ -41,8 +43,16 @@ function ProjectItem({
             onMouseLeave={()=> isHover(false)}
             onClick={seeProject}
         >
-            <img className="ImageProject" loading="lazy" src={image} alt={name}/>
 
+            {!loadingImage && ( <SkeletonProject/> )}
+
+            <img 
+                className={`ImageProject `} 
+                className={`ImageProject ${loadingImage && 'loaded'} `} 
+                loading="lazy" 
+                src={image} 
+                alt={name} 
+            />
 
             <figcaption className={`data-project ${hover && 'hover__item'}`}>
                 <h4 className="data-project__name">{cutName}</h4>
@@ -60,7 +70,6 @@ function ProjectItem({
                         }
                         url={url}
                     />
-
                     <a className="data-project__githun" href={repository} target="_blank" rel="noopener noreferrer"
                     onClick={(e)=> e.stopPropagation() }>
                         <i class="fab fa-github"></i>
@@ -78,14 +87,5 @@ function ProjectItem({
 export { ProjectItem }
 
 
-// <a href="#id-del-proyecto">
-// <img src={image} alt="nombre-del-proyecto">
-
-// <figcaption>Descripcion del proyecto</figcaption>
-// <div class="tecnologias">
-//     <i>icon de html(por ejemplo)</i>
-// </div>
-// <a href={url}>Ver proyecto</a>
-// </a>
 
 

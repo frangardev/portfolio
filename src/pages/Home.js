@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { Data } from '../Data/Data'
 
@@ -14,7 +14,6 @@ import { ProjectModal } from '../Components/ProjectModal/ProjectModal'
 
 function Home(){
     const [openModal, setOpenModal] = React.useState(false)
-
     const [dataProject, setDataProject] = React.useState('')
 
     if(openModal){
@@ -23,6 +22,12 @@ function Home(){
         document.body.classList.remove('active-modal')
     }
     
+    const imgs = document.querySelectorAll('.ImageProject')
+    console.log(imgs);
+    const loadingImage = imgs.length >= Data.length
+    console.log(loadingImage);
+    console.log('Total de proyectos: ',Data.length);
+    console.log('Total de Descargadas: ',imgs.length, imgs);
 
     return(
         <React.Fragment>
@@ -48,6 +53,7 @@ function Home(){
                             openModal = {openModal}
                             setOpenModal = {setOpenModal}
                             setDataProject = {setDataProject}
+                            loadingImage = {loadingImage}
                         />)
                     })}
                 </Projects>

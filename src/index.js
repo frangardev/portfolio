@@ -5,7 +5,6 @@ import 'normalize.css'
 
 import App from './App/index'
 
-
 ReactDom.render(
     <App />,
     document.getElementById('root')

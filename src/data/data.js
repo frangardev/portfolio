@@ -103,20 +103,6 @@ const Data = [
         tech: [technologies.HTML, technologies.CSS,technologies.JavaScript],
     },
     {
-        name: "Clon de Google",
-        image: ["https://i.ibb.co/rGFfnBx/clon-de-google-white.png", "https://i.ibb.co/h8dKf0Q/clon-de-google-black.png"],
-        url: "https://frangardev.github.io/Clon-de-Google/",
-        repository: "https://github.com/frangardev/Clon-de-Google",
-        description: {
-            isList: true,
-            text:[
-                'Clon dela página de Google.',
-                'Cuenta con Dark Mode.'
-            ]
-        },
-        tech: [technologies.HTML,technologies.CSS],
-    },
-    {
         name: "Mis redes",
         image: ["https://i.ibb.co/r7MkQP3/mis-redes.png"],
         url: "https://frangardev.github.io/redes/",
@@ -129,6 +115,20 @@ const Data = [
             ]
         },
         tech: [technologies.HTML,technologies.CSS,technologies.JavaScript],
+    },
+    {
+        name: "Clon de Google",
+        image: ["https://i.ibb.co/rGFfnBx/clon-de-google-white.png", "https://i.ibb.co/h8dKf0Q/clon-de-google-black.png"],
+        url: "https://frangardev.github.io/Clon-de-Google/",
+        repository: "https://github.com/frangardev/Clon-de-Google",
+        description: {
+            isList: true,
+            text:[
+                'Clon dela página de Google.',
+                'Cuenta con Dark Mode.'
+            ]
+        },
+        tech: [technologies.HTML,technologies.CSS],
     },
     {
         name: "Tarea de la universidad - Mi primera página web",

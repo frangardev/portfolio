@@ -1,0 +1,19 @@
+.loading-item-project{
+    height: 250px;
+    width: 100%;
+    background-color: #d6d8da;
+}
+
+.loading{
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    from{
+        background-color: #e8ecf0;
+    }
+    to{
+        background-color: #d6d8da;
+    }
+}
+
