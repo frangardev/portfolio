@@ -23,11 +23,8 @@ function Home(){
     }
     
     const imgs = document.querySelectorAll('.ImageProject')
-    console.log(imgs);
     const loadingImage = imgs.length >= Data.length
-    console.log(loadingImage);
-    console.log('Total de proyectos: ',Data.length);
-    console.log('Total de Descargadas: ',imgs.length, imgs);
+
 
     return(
         <React.Fragment>

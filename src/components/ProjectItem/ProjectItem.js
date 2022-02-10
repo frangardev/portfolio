@@ -49,7 +49,7 @@ function ProjectItem({
             <img 
                 className={`ImageProject `} 
                 className={`ImageProject ${loadingImage && 'loaded'} `} 
-                loading="lazy" 
+                // loading="lazy" 
                 src={image} 
                 alt={name} 
             />
