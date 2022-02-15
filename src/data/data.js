@@ -84,10 +84,11 @@ const Data = [
             isList: true,
             text:[
                 'Landing page hecha con HTML y CSS.',
-                'Diseño Mobile First.'
+                'Diseño Mobile First.',
+                'Slider.'
             ]
         },
-        tech: [technologies.HTML,technologies.CSS],
+        tech: [technologies.HTML,technologies.CSS, technologies.JavaScript],
     },
     {
         name: "Cate de mi Corazón",

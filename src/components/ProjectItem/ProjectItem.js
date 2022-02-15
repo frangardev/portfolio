@@ -47,7 +47,7 @@ function ProjectItem({
             {!loadingImage && ( <SkeletonProject type='loading-item-project' /> )}
 
             <img 
-                className={`ImageProject `} 
+                // className={`ImageProject `} 
                 className={`ImageProject ${loadingImage && 'loaded'} `} 
                 // loading="lazy" 
                 src={image} 

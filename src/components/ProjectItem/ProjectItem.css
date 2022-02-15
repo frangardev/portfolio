@@ -7,6 +7,7 @@
 .ImageProject{
     position: absolute;
     width: 100%;
+    transition: all 1.3s;
     opacity: 0;
 }
 .project-name{
@@ -21,8 +22,10 @@
     height: 100%;
     overflow: hidden;
     cursor: zoom-in;
+    transition: all .2s;
     background-color: rgba(15, 44, 78, 0.281);
     z-index: -10;
+    opacity: 0;
 }
 .data-project__name{
     position: absolute;
@@ -68,6 +71,7 @@
 
 .hover__item{
     z-index: 10;
+    opacity: 1;
 }
 
 img.loaded{

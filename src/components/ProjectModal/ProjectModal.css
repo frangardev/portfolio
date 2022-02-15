@@ -30,6 +30,7 @@
 }
 .Title-project{
   grid-area:title;
+  margin: 5px 15px;
 }
 .Description-project{
   grid-area: description;

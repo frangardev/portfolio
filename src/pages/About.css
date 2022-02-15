@@ -24,7 +24,7 @@
     width: 100%;
     height: auto;
     min-height: 420px;
-    /* margin-bottom: 30px; */
+    transition: all 1.3s;
     object-fit: cover;
     object-position: center top;
     opacity: 0;

@@ -33,7 +33,7 @@ function Header({children}){
                 text= {
                     <span>CV</span>
                 }
-                url='https://drive.google.com/file/d/19ZdneEzQhAgJTfXCbHAUy8fcSMDlIuzF/view?usp=sharing'
+                url='https://drive.google.com/file/d/18ZbruNFTW6912EJMTJL4Kf1BiwhEeKck/view?usp=sharing'
             />
 
             <Button
