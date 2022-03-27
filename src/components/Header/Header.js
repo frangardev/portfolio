@@ -16,7 +16,7 @@ function Header({children}){
 
     
             <figure className="drawing-header__container">
-                <img className="drawing-header" src="https://i.ibb.co/7nYp2ZC/frangardev-pixelart.png" alt="Dibjo de Fran"/>
+                <img className="drawing-header" src="https://i.ibb.co/ysV8TxF/frangardev-pixelart.png" alt="Dibjo de Fransisco Alejandro García Munguía"/>
                 
                 <div className="square square-1"></div>
                 <div className="square square-2"></div>
