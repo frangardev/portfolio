@@ -20,16 +20,19 @@ function NavbarHome ({modal}){
             <ul className="Menu">
                 <li>
                     <Link 
-                    onClick={()=> setOpenMenu(!openMenu)}     
+                    activeClass="active"
                     to="home"
                     smooth={true}
-                    duration={600}>
+                    duration={600}
+                    onClick={()=> setOpenMenu(!openMenu)}     
+                    >
                         Inicio
                     </Link>
                 </li>
                 <li>
                     <Link 
-                        onClick={()=> setOpenMenu(!openMenu) }     
+                        onClick={()=> setOpenMenu(!openMenu) }  
+                        activeClass="active"   
                         to="AboutMe"
                         smooth={true}
                         duration={800}
@@ -40,6 +43,7 @@ function NavbarHome ({modal}){
                 <li>
                     <Link
                         onClick={()=> setOpenMenu(!openMenu) }     
+                        activeClass="active"
                         to='projects'
                         smooth={true}
                         duration={1000}
@@ -50,6 +54,7 @@ function NavbarHome ({modal}){
                 <li>
                 <Link
                         onClick={()=> setOpenMenu(!openMenu) } 
+                        activeClass="active"
                         to='contact'
                         smooth={true}
                         duration={1700}

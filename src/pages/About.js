@@ -81,7 +81,7 @@ function About (){
                 Me considero una persona proactiva y como buen programador siempre intento encontrar la manera más eficiente de hacer las cosas.
             </p>
             
-            <section className="skills">
+            {/* <section className="skills">
                 <h3>skills</h3>
                 <div>
                     <figure>
@@ -89,7 +89,7 @@ function About (){
                         <figcaption></figcaption>
                     </figure>
                 </div>
-            </section>
+            </section> */}
 
         </article>
     )

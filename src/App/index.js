@@ -5,14 +5,14 @@ import { Home } from '../pages/Home'
 import { About } from "../pages/About";
 import { Error404 } from "../pages/Error404";
 
-import { Loading } from '../Components/Loading/Loading'
+// import { Loading } from '../Components/Loading/Loading'
  
 function App(){
-    const [isLoading, setIsLoading] = React.useState(true)
+    // const [isLoading, setIsLoading] = React.useState(true)
     
-    window.onload = ()=>{
-        setIsLoading(false)
-    }
+    // window.onload = ()=>{
+    //     setIsLoading(false)
+    // }
 
     return(
         <BrowserRouter>

@@ -23,8 +23,8 @@ function Home(){
     }
     
     const imgs = document.querySelectorAll('.ImageProject')
-    const loadingImage = imgs.length >= Data.length
-
+    // const loadingImage = imgs.length >= Data.length
+    const loadingImage = true
 
     return(
         <React.Fragment>

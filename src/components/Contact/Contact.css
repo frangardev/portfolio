@@ -43,6 +43,9 @@
 .contact__buton__text{
     color: var(--white);
 }
+h2.sub-title--contact{
+    margin-bottom: 2em;
+}
 
 @media (min-width: 850px) {
     .Social{

@@ -12,11 +12,11 @@ function Header({children}){
 
             <p className="username">@frangardev</p>
 
-            <h1 className="title-header">¡Hola! Soy Fran <span className="title-header__span">Frontend Developer</span></h1>
+            <h1 className="title-header">¡Hola! Soy Fran <span className="title-header__span">Programador y diseñador UX</span></h1>
 
     
             <figure className="drawing-header__container">
-                <img className="drawing-header" src="https://i.ibb.co/7nYp2ZC/frangardev-pixelart.png" alt="Dibjo de Fran"/>
+                <img className="drawing-header" src="https://i.ibb.co/HVm6Bpx/image.png" alt="Dibjo de Fran"/>
                 
                 <div className="square square-1"></div>
                 <div className="square square-2"></div>
@@ -28,13 +28,13 @@ function Header({children}){
                 
             </figure>
 
-            <Button
+            {/* <Button
                 type = "secondary btn__header-secondary"
                 text= {
                     <span>CV</span>
                 }
                 url='https://drive.google.com/file/d/18ZbruNFTW6912EJMTJL4Kf1BiwhEeKck/view?usp=sharing'
-            />
+            /> */}
 
             <Button
                 type = "primary btn__header-primary"

@@ -115,3 +115,7 @@
         display: none;
     }
 }
+
+.Menu li > a.active{
+    color: blueviolet;
+}

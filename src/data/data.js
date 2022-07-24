@@ -59,6 +59,22 @@ const Data = [
         tech: [technologies.HTML, technologies.CSS, technologies.JavaScript],
     },
     {
+        name: "Rick and Morty",
+        image: ["https://i.ibb.co/qChpKL5/rick-and-morty-black.png", "https://i.ibb.co/FKJWMGh/rick-and-morty-light.png"],
+        url: "https://frangardev.github.io/rick-and-morty/",
+        repository: "https://github.com/frangardev/rick-and-morty",
+        description:{
+            isList: true,
+            text:[
+                'Aplicación hecha en Riact.',
+                'Conexión a la API de Rick and Morty.',
+                'Dark Mode automático.',
+                'Diseño responsivo.'
+            ]
+        },
+        tech: [technologies.React]
+    },
+    {
         name: 'Proyecto del Curso Profesional de JavaScript',
         image: ["https://i.ibb.co/fSkGV9r/proyecto-del-curso-profesional-de-javascript.png"],
         url: "https://frangardev.github.io/profesional-javascript/",
@@ -204,7 +220,7 @@ const Data = [
         },
         tech: [technologies.HTML,technologies.CSS]
     },
-
+    
 
     {
         name: "SPA Marvel",
