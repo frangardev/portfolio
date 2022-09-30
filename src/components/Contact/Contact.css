@@ -41,15 +41,20 @@
 }
 
 .contact__buton__text{
-    color: var(--white);
+    color: var(--black);
 }
 h2.sub-title--contact{
     margin-bottom: 2em;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
 }
 
 @media (min-width: 850px) {
     .Social{
        flex-direction: column;
        gap: 10px;
+    }
+    h2.sub-title--contact{
+        font-size: 2rem
     }
 }
