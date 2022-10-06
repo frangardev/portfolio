@@ -23,7 +23,7 @@ function AboutMe() {
             {/* <h3 className="work__title">Frontend Developer</h3> */}
             <p className="text about">Soy desarrollador y diseñador UX con muchas ganas de crecer y aportar con todos mis conocimientos en desarrollo web y diseño UX. Me apasiona la tecnología y aprender. Me considero una persona creativa y muy proactiva</p>
             {/* <a className="link" href="#">ver mas ></a> */}
-            <Link className="link" to="/about">ver mas <i class="fas fa-chevron-right"></i> </Link>
+            <Link className="link" to="/about">ver mas <i className="fas fa-chevron-right"></i> </Link>
         </section>
     )
 }
