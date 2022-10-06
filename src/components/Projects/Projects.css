@@ -8,6 +8,9 @@
     max-width: 1250px;
     margin: 0 auto 50px;
 }
+.Sub-title--mis-proyectos{
+    margin-bottom: 30px;
+}
 
 @media (min-width: 500px) {
     .Projects__container{

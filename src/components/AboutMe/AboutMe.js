@@ -4,19 +4,20 @@ import './AboutMe.css'
 
 import { SkeletonProject } from '../SkeletonProject/SkeletonProject'
 
-function AboutMe(){
+function AboutMe() {
 
-    const[loadProfile, setLoadProfile] = React.useState(true)
+    const [loadProfile, setLoadProfile] = React.useState(true)
 
-    return(
+    return (
         <section className="AboutMe" id="AboutMe">
             <figure className="Photo__container">
-                <img 
-                    className={`Photo ${!loadProfile && 'Photo-loaded'}`} 
-                    src="https://i.ibb.co/CB026fH/Francisco-Alejandro-Garc-a-Mungu-a-frangardev-recortada.jpg" alt="fotografía de Francisco Alejandro García Munguía"
-                    onLoad={()=> setLoadProfile(false)}
+                <img
+                    className={`Photo ${!loadProfile && 'Photo-loaded'}`}
+                    src="https://i.ibb.co/fv90Jtf/franciasco-alejandro-garcia-munguia-1.jpg"
+                    alt="Fotografía de Francisco Alejandro García Munguía"
+                    onLoad={() => setLoadProfile(false)}
                 />
-                {loadProfile && (<SkeletonProject type='photo-profile'/>)}
+                {loadProfile && (<SkeletonProject type='photo-profile' />)}
             </figure>
             <h2 className="Name__title">Francisco Alejandro García Munguía</h2>
             {/* <h3 className="work__title">Frontend Developer</h3> */}
@@ -26,5 +27,5 @@ function AboutMe(){
         </section>
     )
 }
- 
+
 export { AboutMe }
