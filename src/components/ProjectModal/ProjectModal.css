@@ -6,8 +6,8 @@
       ".            image     image         .             borde-right-up      .          "
       "borde-left   image     image         title         title               borde-right"
       "borde-left   image     image         description   description         borde-right"
-      "borde-left   image     image         tech          tech                borde-right"
       "borde-left   image     image         button        button              borde-right"
+      "borde-left   image     image         tech          tech                borde-right"
       ".            image     image          .            borde-right-down    .          "
       ".            .         borde-down    borde-down    .                   .          "
   ;
@@ -20,7 +20,7 @@
   min-height: 500px; 
   margin: 50px auto;
   border-radius: 50px;
-  background: var(--primary-color);
+  background: var(--white);
   z-index: 120;
 }
 
@@ -29,31 +29,61 @@
   width: 100%;
 }
 .Title-project{
+  text-align: start;
+  font-size: 40px;
   grid-area:title;
-  margin: 5px 15px;
+  margin: 20% 21px 5vh;
 }
 .Description-project{
   grid-area: description;
-  margin: 0 15px;
+  margin: 0 21px;
   text-align: start;
+}
+.Description-project__text{
+  margin-bottom: 5vh;
+}
+.Description-project__ul{
+  margin-bottom: 5vh;
 }
 .Description-project__li{
   margin-bottom: 10px;
+  font-size: 1rem;
 }
 .Tech-project{
   grid-area: tech;
 }
 .Tech-project i{
-  font-size: 2rem;
-  margin: 5px 10px 20px;
+  font-size: 1.5rem;
+  margin-right: .5em;
+}
+.Tech-project h3{
+  text-align: start;
+  margin: 0 21px 30px;
+}
+.Tech-project ul{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  flex-wrap:wrap;
+  list-style:none;
+}
+.Tech-project ul li{
+  border: 5px solid;
+  padding: 0.5em 1em;
+  font-size: 1rem;
 }
 .buttons__container-project{
   grid-area: button;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+.buttons__container-project .button{
+  width: 35%;
 }
 .contact__project{
   grid-area: contact;
 }
-
 
 /* Bordes----- */
 .borde{
@@ -149,5 +179,8 @@
     }
     .Close-modal__button__container{
       width: calc(100% - 20px);
+    }
+    .Title-project{
+      margin-top: 5%;
     }
 }

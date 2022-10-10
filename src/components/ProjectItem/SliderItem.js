@@ -18,6 +18,8 @@ function SliderItem({
 
     const [translateImageValue, setTranslateImageValue] = React.useState(0)
 
+    let delayAnim = Math.random() * 2
+
     setTimeout((() => {
         if (translateImageValue >= (image?.length - 1) * 100) {
             setTranslateImageValue(0)
@@ -25,6 +27,8 @@ function SliderItem({
             setTranslateImageValue(translateImageValue + 100)
         }
     }), 5000)
+
+
 
     return (
         <figure
@@ -35,7 +39,13 @@ function SliderItem({
         >
 
             {!loadingImage && (<SkeletonProject type='loading-item-project' />)}
-            <div className="container__image--slider" style={{ transform: `translateX(-${translateImageValue}%)` }}>
+            <div
+                className="container__image--slider"
+                style={{
+                    transform: `translateX(-${translateImageValue}%)`,
+                    transitionDelay: `${delayAnim}s`
+                }}
+            >
                 {image.map(item => (
                     <img
                         className={`ImageProject ${loadingImage && 'loaded'}`}

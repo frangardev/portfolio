@@ -1,29 +1,81 @@
 // Datos que necesta el proyecto:
-    // 1. Nombre del proyecto.
-    // 2. Imagen o gif del proyecto | en baja y alta calidad  
-    // 3. url al proyecto
-    // 4. url del repositorio
-    // 5. Descripción 
-    // 6. Las tecnologias que utilice para construir ese proyecto.
+// 1. Nombre del proyecto.
+// 2. Imagen o gif del proyecto | en baja y alta calidad  
+// 3. url al proyecto
+// 4. url del repositorio
+// 5. Descripción 
+// 6. Las tecnologias que utilice para construir ese proyecto.
 
 //     const  technologies ={
 const technologies = {
-    HTML:{
+    HTML: {
         name: "HTML",
         icon: "fab fa-html5"
     },
-    CSS:{
+    CSS: {
         name: "CSS",
         icon: "fab fa-css3-alt"
     },
-    JavaScript:{
+    JavaScript: {
         name: "JavaScript",
         icon: "fab fa-js"
     },
-    React:{
+    React: {
         name: "React",
         icon: "fab fa-react"
-    }
+    },
+    React: {
+        name: "React",
+        icon: "fab fa-react"
+    },
+    Sass: {
+        name: "SASS",
+        icon: "fab fa-react"
+    },
+    TypeScript: {
+        name: "TypeScript",
+        icon: "fab fa-react"
+    },
+    Gatsby: {
+        name: "Gatsby",
+        icon: "fab fa-react"
+    },
+    Next: {
+        name: "Next.js",
+        icon: "fab fa-react"
+    },
+    ReactNative: {
+        name: "React Native",
+        icon: "fab fa-react"
+    },
+    Chakra: {
+        name: "Chakra UI",
+        icon: "fab fa-react"
+    },
+    AnimacionesCSS: {
+        name: "Animaciones CSS",
+        icon: "fab fa-react"
+    },
+    SVG: {
+        name: "SVG",
+        icon: "fab fa-react"
+    },
+    Tailwindcss: {
+        name: "Tailwindcss",
+        icon: "fab fa-react"
+    },
+    Webpack: {
+        name: "Webpack",
+        icon: "fab fa-react"
+    },
+    Babel: {
+        name: "Babel",
+        icon: "fab fa-react"
+    },
+    Diseño: {
+        name: "Diseno ui/ux",
+        icon: "fab fa-react"
+    },
 }
 
 const Data = [
@@ -63,9 +115,9 @@ const Data = [
         image: ["https://i.ibb.co/qChpKL5/rick-and-morty-black.png", "https://i.ibb.co/FKJWMGh/rick-and-morty-light.png"],
         url: "https://frangardev.github.io/rick-and-morty/",
         repository: "https://github.com/frangardev/rick-and-morty",
-        description:{
+        description: {
             isList: true,
-            text:[
+            text: [
                 'Aplicación hecha en Riact.',
                 'Conexión a la API de Rick and Morty.',
                 'Dark Mode automático.',
@@ -89,7 +141,7 @@ const Data = [
                 'Está hecho usando POO.'
             ]
         },
-        tech: [technologies.HTML,technologies.CSS,technologies.JavaScript],
+        tech: [technologies.HTML, technologies.CSS, technologies.JavaScript],
     },
     {
         name: "Batabit",
@@ -98,13 +150,13 @@ const Data = [
         repository: "https://github.com/frangardev/bata-bit",
         description: {
             isList: true,
-            text:[
+            text: [
                 'Landing page hecha con HTML y CSS.',
                 'Diseño Mobile First.',
                 'Slider.'
             ]
         },
-        tech: [technologies.HTML,technologies.CSS, technologies.JavaScript],
+        tech: [technologies.HTML, technologies.CSS, technologies.JavaScript],
     },
     {
         name: "Cate de mi Corazón",
@@ -113,11 +165,11 @@ const Data = [
         repository: "https://github.com/frangardev/cate-de-mi-corazon",
         description: {
             isList: false,
-            text:[
+            text: [
                 'Página que muestra imágenes de aguacates traidas desde una API.'
             ]
         },
-        tech: [technologies.HTML, technologies.CSS,technologies.JavaScript],
+        tech: [technologies.HTML, technologies.CSS, technologies.JavaScript],
     },
     {
         name: "Mis redes",
@@ -126,12 +178,12 @@ const Data = [
         repository: "https://github.com/frangardev/redes",
         description: {
             isList: true,
-            text:[
+            text: [
                 'Página con los enlaces de mis redes sociales.',
                 'Animación del username con efecto Glish.',
             ]
         },
-        tech: [technologies.HTML,technologies.CSS,technologies.JavaScript],
+        tech: [technologies.HTML, technologies.CSS, technologies.JavaScript],
     },
     {
         name: "Tarea de la universidad - Mi primera página web",
@@ -140,11 +192,11 @@ const Data = [
         repository: "https://github.com/frangardev/Tarea-Universidad",
         description: {
             isList: false,
-            text:[
+            text: [
                 'Tarea de la universidad. Mi primera página web. En ella subí mis tareas.'
             ]
         },
-        tech: [technologies.HTML,technologies.CSS],
+        tech: [technologies.HTML, technologies.CSS],
     },
     {
         name: "Dibujo de Pokeball con CSS",
@@ -153,7 +205,7 @@ const Data = [
         repository: "https://github.com/frangardev/CSS-PokeBall",
         description: {
             isList: false,
-            text:[
+            text: [
                 'Mi primer dibujo utlizando CSS.'
             ]
         },
@@ -166,12 +218,12 @@ const Data = [
         repository: "https://github.com/frangardev/Clon-de-Google",
         description: {
             isList: true,
-            text:[
+            text: [
                 'Clon dela página de Google.',
                 'Cuenta con Dark Mode.'
             ]
         },
-        tech: [technologies.HTML,technologies.CSS],
+        tech: [technologies.HTML, technologies.CSS],
     },
     {
         name: "Calculadora de Figuras Geométricas",
@@ -180,13 +232,13 @@ const Data = [
         repository: "https://github.com/frangardev/ejercicios-javascript/tree/main/figuras",
         description: {
             isList: true,
-            text:[
+            text: [
                 'Calculadora de figuras geométricas, cuadrado, triángulo y círculo.',
                 'Navbar que indica donde estás en la página.',
                 'No tiene imágenes, todo está hecho con código.'
             ]
         },
-        tech: [technologies.HTML,technologies.CSS,technologies.JavaScript],
+        tech: [technologies.HTML, technologies.CSS, technologies.JavaScript],
     },
 
 
@@ -197,11 +249,11 @@ const Data = [
     //     url: "https//frangardev.github.io/",
     //     repository: "fa",
     //     description: {
-        //     isList: false,
-        //     text:[
-        //         ''
-        //     ]
-        // },
+    //     isList: false,
+    //     text:[
+    //         ''
+    //     ]
+    // },
     //     tech: [technologies.HTML,technologies.CSS],
     // },
 
@@ -213,33 +265,32 @@ const Data = [
         repository: "https://github.com/frangardev/Grid-Gallery",
         description: {
             isList: true,
-            text:[
+            text: [
                 'Galería inspirada en una pared con cuadros.',
                 'Página responsiva usando CSS Grid.'
             ]
         },
-        tech: [technologies.HTML,technologies.CSS]
+        tech: [technologies.HTML, technologies.CSS]
     },
-    
+
 
     {
         name: "SPA Marvel",
         image: ["https://i.ibb.co/qrQb0y6/spa-marvel-frond.png", "https://i.ibb.co/wRdgNZN/spa-marvel-2.png"],
         url: "https://frangardev.github.io/SPA-Marvel/",
         repository: "https://github.com/frangardev/SPA-Marvel",
-        description:{
+        description: {
             isList: true,
-            text:[
+            text: [
                 'Aplicación hecha en JavaScript vainilla.',
                 'Conexión a la API de Marvel.',
                 'Manejo de rutas sin librerías.',
                 'Diseño responsivo.'
             ]
         },
-        tech: [technologies.HTML, technologies.CSS,technologies.JavaScript]
+        tech: [technologies.HTML, technologies.CSS, technologies.JavaScript]
     },
 ]
-    
-    export { Data }
-    
-    
+
+export { Data }
+
