@@ -21,7 +21,7 @@
   margin: 50px auto;
   border-radius: 50px;
   background: var(--white);
-  z-index: 120;
+  z-index: 120; 
 }
 
 .image-project{

@@ -3,7 +3,8 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
     padding: 20px 0;
     color: var(--white);
     background-color: var(--primary-color);
