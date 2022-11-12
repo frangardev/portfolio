@@ -21,6 +21,8 @@ body{
     text-align: center;
     font-family: 'Press Start 2P', cursive;
     color: var(--dark);
+    width: 100%;
+    max-width: 100vw;
 }
 
 

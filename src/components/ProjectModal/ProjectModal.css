@@ -30,7 +30,7 @@
 }
 .Title-project{
   text-align: start;
-  font-size: 40px;
+  font-size: 36px;
   grid-area:title;
   margin: 20% 21px 5vh;
 }
@@ -182,5 +182,6 @@
     }
     .Title-project{
       margin-top: 5%;
+      font-size: 20px;
     }
 }
