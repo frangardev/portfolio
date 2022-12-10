@@ -23,7 +23,10 @@ function ProjectModal({
                     className='Close-modal__button'
                     onClick={() => setOpenModal(false)}
                 >
-                    <i className="fas fa-chevron-left"></i>
+                    {/* <i className="fas fa-chevron-left"></i> */}
+                    <span className='icon-close'>
+                        X
+                    </span>
                 </button>
             </div>
 
@@ -44,7 +47,7 @@ function ProjectModal({
                         </ul>
                         :
                         <p className="Description-project__text text">
-                            {project.description.text[0]} 
+                            {project.description.text[0]}
                         </p>
                 }
             </div>
