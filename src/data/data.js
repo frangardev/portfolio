@@ -76,6 +76,10 @@ const technologies = {
         name: "Diseno ui/ux",
         icon: "fab fa-react"
     },
+    WordPress: {
+        name: "WordPress",
+        icon: "fab fa-react"
+    },
 }
 
 const Data = [
@@ -109,6 +113,22 @@ const Data = [
             ]
         },
         tech: [technologies.HTML, technologies.CSS, technologies.JavaScript],
+    },
+    {
+        name: "PAP Monterrey",
+        image: ["https://i.ibb.co/x1cCNhD/pap-monterrey.png"],
+        url: "https://pap-monterrey.com/",
+        // repository: "https://github.com/frangardev/lazy-foxy",
+        description: {
+            isList: true,
+            text: [
+                'Página que muestra imágenes de zorros traídas de una API de manera aleatoria.',
+                'Las imágenes se descargan usando lazy loading.',
+                'Diseño tipo Pinterest.',
+                'El código está hecho usando programación orientada a objetos, POO.'
+            ]
+        },
+        tech: [technologies.WordPress],
     },
     {
         name: "Rick and Morty",

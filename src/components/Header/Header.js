@@ -36,17 +36,18 @@ function Header({ children }) {
                 }
                 url='https://drive.google.com/file/d/18ZbruNFTW6912EJMTJL4Kf1BiwhEeKck/view?usp=sharing'
             /> */}
-
-            <Button
-                type="primary btn__header-primary"
-                text={
-                    <span className="contact__button">
-                        <img className="icon-button-contact__header" src="https://i.ibb.co/qyww5Fz/icon-mail.png" alt="icon-mail" border="0" />
-                        <span className="contact__buton__text">Contactar</span>
-                    </span>
-                }
-                url='mailto:frangardev@outlook.com'
-            />
+            <div className="buttons-container">
+                <Button
+                    type="primary btn__header-primary"
+                    text={
+                        <span className="contact__button">
+                            <img className="icon-button-contact__header" src="https://i.ibb.co/qyww5Fz/icon-mail.png" alt="icon-mail" border="0" />
+                            <span className="contact__buton__text">Contactar</span>
+                        </span>
+                    }
+                    url='mailto:frangardev@outlook.com'
+                />
+            </div>
 
         </header>
     )

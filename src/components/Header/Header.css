@@ -40,11 +40,17 @@ background-image: linear-gradient(180deg, #887ec8 28%, #c392d4 100%);
     letter-spacing: 5px;
     color: #eee;
 }
-.btn__header-secondary{
-    grid-area: btn-2;    
-}
-.btn__header-primary{
+.buttons-container{
     grid-area: btn-1;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+/* .btn__header-secondary{
+    grid-area: btn-2;    
+} */
+.btn__header-primary{
+    /* grid-area: btn-1; */
     width: 60%;
 }
 .btn__header-primary,
@@ -274,6 +280,9 @@ a.btn__header-primary{
         position: relative; 
         left: -125%;
     }
+    /* .buttons-container{
+        padding-left: 10%;
+    } */
 }  
     
   /* Header */
@@ -310,6 +319,10 @@ a.btn__header-primary{
     .btn__header-secondary{
         place-self: start;
         /* place-self: start center; */
+    }
+    .buttons-container{
+        padding-left: 10%;
+        justify-content: flex-start;
     }
 
 }
