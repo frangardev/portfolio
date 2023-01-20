@@ -46,11 +46,14 @@ body{
 }
 
 .text{
-    font-family: 'DM Sans', sans-serif;
+    /* font-family: 'DM Sans', sans-serif; */
+    font-family: 'Hind', Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: .9rem;
     line-height: 150%;
     margin: 12px 0 5px;
-    color: rgba(49, 45, 71, 0.8);
+    /* color: rgba(49, 45, 71, 0.8); */
+    color: #312D47;
     
 }
 
