@@ -79,10 +79,12 @@ function ProjectItem({
                         }
                         url={url}
                     />
-                    <a className="data-project__githun" href={repository} target="_blank" rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}>
-                        <i className="fab fa-github"></i>
-                    </a>
+                    {repository && (
+                        <a className="data-project__githun" href={repository} target="_blank" rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}>
+                            <i className="fab fa-github"></i>
+                        </a>
+                    )}
                     <div className="data-technologies">
                         {tech.map(item => {
                             return (<i key={item.name} className={item.icon}></i>)

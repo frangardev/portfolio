@@ -30,55 +30,11 @@ const technologies = {
     },
     Sass: {
         name: "SASS",
-        icon: "fab fa-react"
-    },
-    TypeScript: {
-        name: "TypeScript",
-        icon: "fab fa-react"
-    },
-    Gatsby: {
-        name: "Gatsby",
-        icon: "fab fa-react"
-    },
-    Next: {
-        name: "Next.js",
-        icon: "fab fa-react"
-    },
-    ReactNative: {
-        name: "React Native",
-        icon: "fab fa-react"
-    },
-    Chakra: {
-        name: "Chakra UI",
-        icon: "fab fa-react"
-    },
-    AnimacionesCSS: {
-        name: "Animaciones CSS",
-        icon: "fab fa-react"
-    },
-    SVG: {
-        name: "SVG",
-        icon: "fab fa-react"
-    },
-    Tailwindcss: {
-        name: "Tailwindcss",
-        icon: "fab fa-react"
-    },
-    Webpack: {
-        name: "Webpack",
-        icon: "fab fa-react"
-    },
-    Babel: {
-        name: "Babel",
-        icon: "fab fa-react"
-    },
-    Diseño: {
-        name: "Diseno ui/ux",
-        icon: "fab fa-react"
+        icon: "fa-brands fa-sass"
     },
     WordPress: {
         name: "WordPress",
-        icon: "fab fa-react"
+        icon: "fa-brands fa-wordpress"
     },
 }
 
@@ -120,12 +76,9 @@ const Data = [
         url: "https://pap-monterrey.com/",
         // repository: "https://github.com/frangardev/lazy-foxy",
         description: {
-            isList: true,
+            isList: false,
             text: [
-                'Página que muestra imágenes de zorros traídas de una API de manera aleatoria.',
-                'Las imágenes se descargan usando lazy loading.',
-                'Diseño tipo Pinterest.',
-                'El código está hecho usando programación orientada a objetos, POO.'
+                'Sitio hecho en WordPress para P.AP. Monterrey.'
             ]
         },
         tech: [technologies.WordPress],

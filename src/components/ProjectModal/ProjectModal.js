@@ -58,11 +58,13 @@ function ProjectModal({
                     text={<span>ver</span>}
                     url={project.url}
                 />
-                <Button
-                    type="primary button-project"
-                    text={<span>GitHub</span>}
-                    url={project.repository}
-                />
+                {project.repository && (
+                    <Button
+                        type="primary button-project"
+                        text={<span>GitHub</span>}
+                        url={project.repository}
+                    />
+                )}
 
             </div>
 
