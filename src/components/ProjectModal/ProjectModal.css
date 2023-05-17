@@ -4,10 +4,10 @@
   grid-template-areas: 
       ".            .         borde-up      borde-up      .                   .          "
       ".            image     image         .             borde-right-up      .          "
-      "borde-left   image     image         title         title               borde-right"
-      "borde-left   image     image         description   description         borde-right"
-      "borde-left   image     image         button        button              borde-right"
-      "borde-left   image     image         tech          tech                borde-right"
+      "borde-left   image     image         info          info               borde-right"
+      "borde-left   image     image         info          info         borde-right"
+      "borde-left   image     image         info          info              borde-right"
+      "borde-left   image     image         info          info                borde-right"
       ".            image     image          .            borde-right-down    .          "
       ".            .         borde-down    borde-down    .                   .          "
   ;
@@ -29,14 +29,24 @@
   grid-area: image;
   width: 100%;
 }
+.container__info{
+  grid-area: info;
+  margin: 20% 21px 5vh;
+}
+
+.flex-container__btn-tech{
+  display: flex;
+  flex-direction: column;
+}
+
 .Title-project{
   text-align: start;
   font-size: 36px;
-  grid-area:title;
-  margin: 20% 21px 5vh;
+  /* grid-area:title; */
+  margin-bottom: 5vh;
 }
 .Description-project{
-  grid-area: description;
+  /* grid-area: description; */
   margin: 0 21px;
   text-align: start;
 }
@@ -51,7 +61,7 @@
   font-size: 1rem;
 }
 .Tech-project{
-  grid-area: tech;
+  /* grid-area: tech; */
   margin-bottom: 2em;
 }
 .Tech-project i{
@@ -88,7 +98,7 @@ color: #101010;
 
 }
 .buttons__container-project{
-  grid-area: button;
+  /* grid-area: button; */
   display: flex;
   align-items:center;
   justify-content: space-between;
@@ -96,9 +106,9 @@ color: #101010;
 .buttons__container-project .button{
   width: 35%;
 }
-.contact__project{
+/* .contact__project{
   grid-area: contact;
-}
+} */
 .icon-close{
   color: var(--dark);
   font-size: 1.6rem;
@@ -168,15 +178,15 @@ color: #101010;
 @media (max-width: 1000px) {
     .Project__container{
       grid-template-areas: 
-          ".            .                   borde-up          .                   ."
-          ".           image     image    image         ."
-          "borde-left           image     image    image         borde-right"
-          "borde-left         title          title       title       borde-right"
-          "borde-left            description                 description     description         borde-right"
-          "borde-left             tech                tech            tech                borde-right"
-          "borde-left               button              button        button            borde-right"
-          ".           .      .                  borde-right-down    ."
-          ".            .                   borde-down           .                   ."
+          ".            .         borde-up    .                 ."
+          ".            image     image       image             ."
+          "borde-left   image     image       image             borde-right"
+          "borde-left   info      info        info              borde-right"
+          "borde-left   info      info        info              borde-right"
+          "borde-left   info      info        info              borde-right"
+          "borde-left   info      info        info              borde-right"
+          ".            .         .           borde-right-down  ."
+          ".            .         borde-down  .                 ."
       ;
       grid-template-columns: 10px 10px auto 10px 10px;
       grid-template-rows: 10px 10px repeat(5, auto) 10px 10px;
@@ -191,6 +201,9 @@ color: #101010;
     .borde-left-down{
       grid-column-start: 2;
       grid-row-start: 8;
+    }
+    .flex-container__btn-tech{
+      flex-direction: column-reverse;
     }
     .Close-modal__button__container{
       width: calc(100% - 20px);

@@ -30,60 +30,64 @@ function ProjectModal({
                 </button>
             </div>
 
-            <h2 className="Title-project">{project.name}</h2>
+            <div className='container__info'>
+                <h2 className="Title-project">{project.name}</h2>
 
-            <div className="Description-project" >
-                {
-                    (project.description.isList)
-                        ?
-                        <ul className="Description-project__ul">
-                            {project.description.text.map(element => {
-                                return (
-                                    <li key={element} className="Description-project__li text">
-                                        {element}
-                                    </li>
-                                )
-                            })}
-                        </ul>
-                        :
-                        <p className="Description-project__text text">
-                            {project.description.text[0]}
-                        </p>
-                }
-            </div>
-
-            <div className="buttons__container-project">
-                <Button
-                    type="secondary button-project"
-                    text={<span>ver</span>}
-                    url={project.url}
-                />
-                {project.repository && (
-                    <Button
-                        type="primary button-project"
-                        text={<span>GitHub</span>}
-                        url={project.repository}
-                    />
-                )}
-
-            </div>
-
-            <div className="Tech-project">
-                <h3>Tecnologias</h3>
-                <ul>
-
+                <div className="Description-project" >
                     {
-                        project.tech.map(item => {
-                            return (
-                                <li>
-                                    <i key={item.name} className={item.icon}></i>
-                                    {item.name}
-                                </li>
-                            )
-                        })
+                        (project.description.isList)
+                            ?
+                            <ul className="Description-project__ul">
+                                {project.description.text.map(element => {
+                                    return (
+                                        <li key={element} className="Description-project__li text">
+                                            {element}
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                            :
+                            <p className="Description-project__text text">
+                                {project.description.text[0]}
+                            </p>
                     }
-                </ul>
+                </div>
+                <div className='flex-container__btn-tech'>
+                    <div className="buttons__container-project">
+                        <Button
+                            type="secondary button-project"
+                            text={<span>ver</span>}
+                            url={project.url}
+                        />
+                        {project.repository && (
+                            <Button
+                                type="primary button-project"
+                                text={<span>GitHub</span>}
+                                url={project.repository}
+                            />
+                        )}
+
+                    </div>
+
+                    <div className="Tech-project">
+                        <h3>Tecnologias</h3>
+                        <ul>
+
+                            {
+                                project.tech.map(item => {
+                                    return (
+                                        <li>
+                                            <i key={item.name} className={item.icon}></i>
+                                            {item.name}
+                                        </li>
+                                    )
+                                })
+                            }
+                        </ul>
+                    </div>
+                </div>
             </div>
+
 
             <div className="borde borde-up"></div>
             <div className="borde borde-left-up"></div>
