@@ -48,6 +48,7 @@ function SliderItem({
             >
                 {image.map(item => (
                     <img
+                        key={item}
                         className={`ImageProject ${loadingImage && 'loaded'}`}
                         // loading="lazy" 
                         src={item}

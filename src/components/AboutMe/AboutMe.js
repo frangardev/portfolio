@@ -14,6 +14,7 @@ function AboutMe() {
                 <img
                     className={`Photo ${!loadProfile && 'Photo-loaded'}`}
                     src="https://i.ibb.co/fv90Jtf/franciasco-alejandro-garcia-munguia-1.jpg"
+                    // src="https://i.ibb.co/jG5SnD1/photo-2022-10-05-19-58-41.png"
                     alt="Fotografía de Francisco Alejandro García Munguía"
                     onLoad={() => setLoadProfile(false)}
                 />

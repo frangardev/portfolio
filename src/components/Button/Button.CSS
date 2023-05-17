@@ -37,17 +37,28 @@
 .button::before{
     bottom: -2px;
 }
+
 .button:active{
-    font-size: 1.9rem;
-    color: var(--text-color);
-    background-color: var(--button-color-press);
-    box-shadow: 8px 0  var(--text-color), -8px 0 var(--text-color), 0 8px var(--text-color), 0 -8px var(--text-color);
+    font-size: 1.2rem;
+    color: var(--dark);
+    /* background-color: red; */
+    box-shadow: 8px 0  var(--dark), -8px 0 var(--dark), 0 8px var(--dark), 0 -8px var(--dark);
 }
 .button:active::after,
 .button:active::before{
     left: 7px;
     width: calc(100% - 15px);
+    /* background-color: palegoldenrod; */
+}
+.primary:active,
+.primary:active::after,
+.primary:active::before{
     background-color: var(--button-color-press);
+}
+.secondary:active,
+.secondary:active::after,
+.secondary:active::before{
+    background-color: var(--dark-primary-color);
 }
 
 .button__data-project{

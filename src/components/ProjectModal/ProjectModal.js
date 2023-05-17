@@ -25,7 +25,7 @@ function ProjectModal({
                 >
                     {/* <i className="fas fa-chevron-left"></i> */}
                     <span className='icon-close'>
-                        X
+                        x
                     </span>
                 </button>
             </div>

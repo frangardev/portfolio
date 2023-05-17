@@ -20,7 +20,8 @@
   min-height: 500px; 
   margin: 50px auto;
   border-radius: 50px;
-  background: var(--white);
+  /* background: var(--white); */
+  background: #F1F9FD;
   z-index: 120; 
 }
 
@@ -60,6 +61,14 @@
 .Tech-project h3{
   text-align: start;
   margin: 0 21px 30px;
+
+  font-family: 'Arvo';
+font-style: normal;
+font-weight: 700;
+/* font-size: 12px; */
+line-height: 15px;
+
+color: #101010;
 }
 .Tech-project ul{
   display: flex;
@@ -69,9 +78,14 @@
   list-style:none;
 }
 .Tech-project ul li{
-  border: 5px solid;
+  /* border: 5px solid; */
   padding: 0.5em 1em;
   font-size: 1rem;
+
+  text-transform: uppercase;
+  background-color: #73C4EB;
+  border-radius: 9px;
+
 }
 .buttons__container-project{
   grid-area: button;

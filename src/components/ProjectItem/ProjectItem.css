@@ -3,6 +3,7 @@
     width: 100%;
     margin: 0 auto 1em;
     overflow: hidden;
+    border-radius: 9px;
 }
 .ImageProject{
     position: absolute;

@@ -30,7 +30,6 @@ function ProjectItem({
             setOpenModal(true)
         }
     }
-    console.log(image)
 
     if (image.length >= 2) {
         return (
