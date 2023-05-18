@@ -1,6 +1,9 @@
 .skills__container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 90%;
     margin: 64px auto 84px;
 }
@@ -13,10 +16,15 @@
     margin-bottom: 41px;
 }
 .flex-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .div__skill{
     text-align: start;
@@ -45,18 +53,30 @@
 
 /* Nivel de las skills */
 .level-skills__container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 38px;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     margin: 30px 0 20px;
 }
 .level-skill{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 8px;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .square__level{
     width: 14px;

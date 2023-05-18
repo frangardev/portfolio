@@ -1,21 +1,18 @@
 .header{
     width: 100vw;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 50% 25% 25%;
     grid-template-columns: 50% 25% 25%;
+    -ms-grid-rows: 90px auto auto 90px;
     grid-template-rows: 90px auto auto 90px;
-    grid-template-areas: 
+        grid-template-areas: 
         "usr    usr     nav"
         "title  title   title"
         "draw   draw    draw"
         "btn-1  btn-1   btn-1"
     ;
-    /* background-color: var(--primary-color); */
-    /* background-image: linear-gradient(to top, #887ec8, #9883cb, #a788cf, #b58dd1, #c392d4); */
     background-color: #887ec8;
-/* background-image: linear-gradient(180deg, #887ec8 28%, #c392d4 100%); */
-/* background: linear-gradient(336.09deg, #73C4EB -17.63%, #73C4EB -17.62%, #C392D4 18.64%, #887EC8 80.13%); */
-/* background: linear-gradient(0.48deg, #73C4EB -26.77%, rgba(115, 196, 235, 0.26) -26.76%, #C392D4 11.41%, #887EC8 84%); */
-
     max-width: 100%;
     margin-bottom: 35px;
     color: var(--white);
@@ -23,15 +20,27 @@
 }
 
 .nav{
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
     grid-area: nav;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
     place-self: center;
 }
 .username{
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: usr;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: start;
     place-self: center start;
     margin-left: 10px;
 }
 .title-header{
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: title;
     z-index: 10;
 }
@@ -43,21 +52,26 @@
     color: #eee;
 }
 .buttons-container{
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: btn-1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-left: 0;
 }
-/* .btn__header-secondary{
-    grid-area: btn-2;    
-} */
 .btn__header-primary{
-    /* grid-area: btn-1; */
     width: 60%;
 }
 .btn__header-primary,
 .btn__header-secondary,
 .title-header{
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
     place-self: center;
 }
 
@@ -68,26 +82,39 @@ a.btn__header-primary{
     margin: 0;
     padding: 5px 7px;
     z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 /* Drawing ----------------------------------------------------------------------------------------------------- */
 
 
 .drawing-header__container{
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   position: relative;
   grid-area: draw;
+  -ms-grid-row-align: end;
+  -ms-grid-column-align: center;
   place-self: end center;
   min-width:320px;
   width:100%;
   max-width: 850px;
   height: auto;
+  display: -ms-grid;
   display: grid;
   gap: 10px;
-  grid-template:  repeat(4, 1fr) / repeat(9, 1fr);
-  grid-template-areas:
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+      grid-template:  repeat(4, 1fr) / repeat(9, 1fr);
+      grid-template-areas:
     "sq1     sq1     sq2     .       .      .     sq3     .       ."
     "sq1     sq1     sq4     sq4     sq4    sq4   sq4     sq4     ."
     "sq6     .       sq4     sq4     sq4    sq4   sq4     sq4     ."
@@ -96,9 +123,14 @@ a.btn__header-primary{
 }
 
 .drawing-header{
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
     grid-column: 1 / 10;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
     grid-row: 1 / 5;
-    align-self: end;
+    -ms-grid-row-align: end;
+        align-self: end;
     width: 100%;
     z-index: 10;
 }
@@ -111,21 +143,34 @@ a.btn__header-primary{
     position: relative;
     top: 100%;
     left: 100%;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-column: 2 / 4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
     grid-row: 2 / 3;
     width: 80%;
     height: 100%;
     margin: 0 10px;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: start;
     place-self: center start;
     
-    animation: moveSquare 1s 1;
-    animation-delay: .6s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+    -webkit-animation: moveSquare 1s 1;
+    
+            animation: moveSquare 1s 1;
+    -webkit-animation-delay: .6s;
+            animation-delay: .6s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     
     opacity: .1;
 }
 .square-2{
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
     grid-area: sq2;
 
     position: relative;
@@ -134,15 +179,24 @@ a.btn__header-primary{
     opacity: 0;
     width: 1em;
     height: 1em;
+    -ms-grid-row-align: start;
+    -ms-grid-column-align: end;
     place-self: start end;
     margin-bottom: 30px;
   
-    animation: moveSquare .5s 1;
-    animation-delay: 1.7s;
-    animation-timing-function: cubic-bezier(.59,-0.08,1,.54);
-    animation-fill-mode: forwards;
+    -webkit-animation: moveSquare .5s 1;
+  
+            animation: moveSquare .5s 1;
+    -webkit-animation-delay: 1.7s;
+            animation-delay: 1.7s;
+    -webkit-animation-timing-function: cubic-bezier(.59,-0.08,1,.54);
+            animation-timing-function: cubic-bezier(.59,-0.08,1,.54);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 .square-3{
+    -ms-grid-row: 1;
+    -ms-grid-column: 13;
     grid-area: sq3;
 
     position: relative;
@@ -151,21 +205,36 @@ a.btn__header-primary{
     opacity: 0;
     width: .8em;
     height: .8em;
+    -ms-grid-row-align: start;
+    -ms-grid-column-align: center;
     place-self: start center;
     
-    animation: moveSquare 1s 1;
-    animation-delay: 1.1s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+    -webkit-animation: moveSquare 1s 1;
+    
+            animation: moveSquare 1s 1;
+    -webkit-animation-delay: 1.1s;
+            animation-delay: 1.1s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
   
   
 .square-4{
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 11;
     grid-area: sq4;
   
-    animation: widthSquare .5s 1;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
+    -webkit-animation: widthSquare .5s 1;
+  
+            animation: widthSquare .5s 1;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
   
 .square-5{
@@ -173,21 +242,36 @@ a.btn__header-primary{
     top: 30%;
     left: -100%;
     opacity: .05;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2;
     grid-column: 7 / 9;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
     grid-row: 2 / 3;
     width: 55%;
     height: calc(100% - 15px);
+    -ms-grid-row-align: start;
+    -ms-grid-column-align: center;
     place-self: start center;
   
-    animation: moveSquare 1s 1;
-    animation-delay: .6s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;  
+    -webkit-animation: moveSquare 1s 1;
+  
+            animation: moveSquare 1s 1;
+    -webkit-animation-delay: .6s;
+            animation-delay: .6s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;  
 }
   .square-6{
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
     grid-area: sq6;
     width: 70%;
     height: 40%;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: start;
     place-self: center start;
   
     position: relative;
@@ -195,17 +279,28 @@ a.btn__header-primary{
     left: 190%;
     opacity: 0;
   
-    animation: moveSquare .5s 1;
-    animation-delay: 1.7s;
-    animation-timing-function: cubic-bezier(.59,-0.08,1,.54);
-    animation-fill-mode: forwards;
+    -webkit-animation: moveSquare .5s 1;
+  
+            animation: moveSquare .5s 1;
+    -webkit-animation-delay: 1.7s;
+            animation-delay: 1.7s;
+    -webkit-animation-timing-function: cubic-bezier(.59,-0.08,1,.54);
+            animation-timing-function: cubic-bezier(.59,-0.08,1,.54);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   
   }
   .square-7{
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 1;
     grid-column: 8 / 9;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
     grid-row: 3 / 4;
     width: 50%;
     height: 35%;
+    -ms-grid-row-align: start;
+    -ms-grid-column-align: end;
     place-self: start end;
     position: relative;
   
@@ -214,10 +309,15 @@ a.btn__header-primary{
     left: -80%;
     opacity: 0;
     
-    animation: moveSquare-2 .6s 1;
-    animation-delay: 1.7s;
-    animation-timing-function: cubic-bezier(.59,-0.08,1,.54);
-    animation-fill-mode: forwards;
+    -webkit-animation: moveSquare-2 .6s 1;
+    
+            animation: moveSquare-2 .6s 1;
+    -webkit-animation-delay: 1.7s;
+            animation-delay: 1.7s;
+    -webkit-animation-timing-function: cubic-bezier(.59,-0.08,1,.54);
+            animation-timing-function: cubic-bezier(.59,-0.08,1,.54);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   } 
   
   /* Media Querys  ------------------------------------------------------------------------------------------- */
@@ -225,8 +325,9 @@ a.btn__header-primary{
   /* Dibujo */
   @media (min-width: 620px) {
     .drawing-header__container{
-        grid-template:  repeat(4, 1fr) / repeat(10, 1fr);
-        grid-template-areas:
+        -ms-grid-columns: (1fr)[10];
+            grid-template:  repeat(4, 1fr) / repeat(10, 1fr);
+            grid-template-areas:
           ".      sq1     sq1     sq2     .       .      .     sq3     .       ."
           ".      sq1     sq1     sq4     sq4     sq4    sq4   sq4     .       ."
           "sq6    .       .       sq4     sq4     sq4    sq4   sq4     sq7     ."
@@ -234,11 +335,18 @@ a.btn__header-primary{
         ;
       }
     .drawing-header{
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 10;
         grid-column: 1 / 11;
-        justify-self: center;
+        -ms-grid-column-align: center;
+            justify-self: center;
         width: calc(100% - 140px);
     }
     .square-1{
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
         grid-area: sq1;
         width: 80%;
         height: 50%;
@@ -248,22 +356,31 @@ a.btn__header-primary{
         right: 170%;
         width: 1.5em; 
         height: 1.5em; 
+        -ms-grid-row-align: center; 
+        -ms-grid-column-align: end; 
         place-self: center end;
     }
     .square-3{
         width: 1.2em; 
         height: 1.2em; 
+        -ms-grid-row-align: start; 
+        -ms-grid-column-align: start; 
         place-self: start;
         margin: 5px 0 0 10px;
     }
     .square-4{
         position: relative;
         left: -2em;
-        animation-name: widthSquare-desktop;
+        -webkit-animation-name: widthSquare-desktop;
+                animation-name: widthSquare-desktop;
     }
     .square-5{
+        -ms-grid-column: 8;
+        -ms-grid-column-span: 2;
         grid-column: 8 / 10;
         margin-left: 10px;
+        -ms-grid-row-align: start;
+        -ms-grid-column-align: start;
         place-self: start;
     }
     .square-6{
@@ -272,6 +389,8 @@ a.btn__header-primary{
 
         width: 3em; 
         height: 3em; 
+        -ms-grid-row-align: end; 
+        -ms-grid-column-align: end; 
         place-self: end;
         bottom: -20px;
         margin-left: 2em;
@@ -285,6 +404,36 @@ a.btn__header-primary{
     /* .buttons-container{
         padding-left: 10%;
     } */
+    .square-2{
+        -ms-grid-row: 1;
+        -ms-grid-column: 4;
+      }
+    .square-3{
+        -ms-grid-row: 1;
+        -ms-grid-column: 8;
+      }
+    .square-4{
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 4;
+        -ms-grid-column-span: 5;
+      }
+    .square-6{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+      }
+}
+  @media (min-width: 620px){
+    .square-1{
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 2;
+      }
+    .square-7{
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+      }
 }  
     
   /* Header */
@@ -292,9 +441,11 @@ a.btn__header-primary{
     .header{
         padding-left: 90px;
         width: calc(100% - 90px);
+        -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
+        -ms-grid-rows: 90px 120px auto auto;
         grid-template-rows: 90px 120px auto auto;
-        grid-template-areas: 
+            grid-template-areas: 
             ".    nav     nav     nav       ."
             ".      .       .       .       ."
             "title  title   title   .       usr"
@@ -302,35 +453,82 @@ a.btn__header-primary{
         ;
     }
     .drawing-header__container{
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 4;
         grid-column: 2 / 6;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 2;
         grid-row: 3 / 5;
+        -ms-grid-row-align: end;
+        -ms-grid-column-align: end;
         place-self: end;
         margin: 0;
     }
     .username{
-        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+        -ms-grid-row-align: center;
+        -ms-grid-column-align: end;
         place-self: center end;
         position: relative;
         left: 50px;
     }
     .title-header{
+        -ms-grid-row-align: center;
+        -ms-grid-column-align: start;
         place-self: center start;
         z-index: 20;
     }
     .btn__header-primary,
     .btn__header-secondary{
+        -ms-grid-row-align: start;
+        -ms-grid-column-align: start;
         place-self: start;
         /* place-self: start center; */
     }
     .buttons-container{
         padding-left: 10%;
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    .nav{
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 3;
+    }
+    .username{
+        -ms-grid-row: 3;
+        -ms-grid-column: 5;
+        -ms-grid-column-span: 1;
+    }
+    .title-header{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+    .buttons-container{
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
     }
 
 }
   
   
   /* Animaciones --------------------------------------------------------------------------*/
+  
+@-webkit-keyframes moveSquare {
+    20%{
+        opacity: .5;
+    }
+    to {
+        top: 0%;
+        left: 0%;
+        opacity: 1;
+    }
+}
   
 @keyframes moveSquare {
     20%{
@@ -339,6 +537,16 @@ a.btn__header-primary{
     to {
         top: 0%;
         left: 0%;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes moveSquare-2 {
+    20%{
+        opacity: .5;
+    }
+    to {
+        top: -5px;
+        left: 5px;
         opacity: 1;
     }
 }
@@ -353,7 +561,7 @@ a.btn__header-primary{
     }
 }
 
-@keyframes widthSquare {
+@-webkit-keyframes widthSquare {
     from{
         place-self: center;
         width: 30%;
@@ -369,13 +577,52 @@ a.btn__header-primary{
     }
 }
 
-@keyframes widthSquare-desktop {
+@keyframes widthSquare {
+    from{
+        -ms-grid-row-align: center;
+        -ms-grid-column-align: center;
+        place-self: center;
+        width: 30%;
+        height: 30%;
+    }
+    95%{
+        -ms-grid-row-align: end;
+        -ms-grid-column-align: center;
+        place-self: end center;
+    }
+    to{
+        -ms-grid-row-align: end;
+        -ms-grid-column-align: start;
+        place-self: end start;
+        width: 90%;
+        height: calc(100% - 1.5em);
+    }
+}
+
+@-webkit-keyframes widthSquare-desktop {
     from{
         place-self: end center;
         width: 30%;
         height: 30%;
     }
     to{
+        place-self: end start;
+        width: 90%;
+        height: calc(100% - 4em); 
+    }
+}
+
+@keyframes widthSquare-desktop {
+    from{
+        -ms-grid-row-align: end;
+        -ms-grid-column-align: center;
+        place-self: end center;
+        width: 30%;
+        height: 30%;
+    }
+    to{
+        -ms-grid-row-align: end;
+        -ms-grid-column-align: start;
         place-self: end start;
         width: 90%;
         height: calc(100% - 4em); 

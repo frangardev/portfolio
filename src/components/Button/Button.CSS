@@ -10,7 +10,8 @@
     font-size: 1rem;
     text-decoration: none;
     color: var(--dark);
-    box-shadow: 10px 0  var(--dark), -10px 0 var(--dark), 0 10px var(--dark), 0 -10px var(--dark);
+    -webkit-box-shadow: 10px 0  var(--dark), -10px 0 var(--dark), 0 10px var(--dark), 0 -10px var(--dark);
+            box-shadow: 10px 0  var(--dark), -10px 0 var(--dark), 0 10px var(--dark), 0 -10px var(--dark);
 }
 
 .primary{
@@ -29,7 +30,8 @@
     height: 10px;
     width: calc(100% - 20px);
     background-color: transparent;
-    box-shadow: 10px 0  var(--dark), -10px 0 var(--dark), 0 0px transparent, 0 -0px transparent;
+    -webkit-box-shadow: 10px 0  var(--dark), -10px 0 var(--dark), 0 0px transparent, 0 -0px transparent;
+            box-shadow: 10px 0  var(--dark), -10px 0 var(--dark), 0 0px transparent, 0 -0px transparent;
 }
 .button::after{
     top: -2px;
@@ -42,7 +44,8 @@
     font-size: 1.2rem;
     color: var(--dark);
     /* background-color: red; */
-    box-shadow: 8px 0  var(--dark), -8px 0 var(--dark), 0 8px var(--dark), 0 -8px var(--dark);
+    -webkit-box-shadow: 8px 0  var(--dark), -8px 0 var(--dark), 0 8px var(--dark), 0 -8px var(--dark);
+            box-shadow: 8px 0  var(--dark), -8px 0 var(--dark), 0 8px var(--dark), 0 -8px var(--dark);
 }
 .button:active::after,
 .button:active::before{
@@ -68,13 +71,15 @@
     width: auto;
     padding: 7px 15px;
     font-size: 1rem;
-    box-shadow: 5px 0  var(--dark), -5px 0 var(--dark), 0 5px var(--dark), 0 -5px var(--dark);
+    -webkit-box-shadow: 5px 0  var(--dark), -5px 0 var(--dark), 0 5px var(--dark), 0 -5px var(--dark);
+            box-shadow: 5px 0  var(--dark), -5px 0 var(--dark), 0 5px var(--dark), 0 -5px var(--dark);
 }
 .button__data-project::after,
 .button__data-project::before{
     left: 7px;
     width: calc(100% - 14px);
-    box-shadow: 7px 0  var(--dark), -7px 0 var(--dark), 0 0px transparent, 0 -0px transparent;
+    -webkit-box-shadow: 7px 0  var(--dark), -7px 0 var(--dark), 0 0px transparent, 0 -0px transparent;
+            box-shadow: 7px 0  var(--dark), -7px 0 var(--dark), 0 0px transparent, 0 -0px transparent;
 }
 
 .button__data-project .text__container-card,

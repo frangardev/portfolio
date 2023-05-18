@@ -16,6 +16,8 @@
     position: absolute;
     width: 100%;
     height: auto;
+    -webkit-transition: all 1.3s;
+    -o-transition: all 1.3s;
     transition: all 1.3s;
     border-radius: 50%;
     opacity: 0;
