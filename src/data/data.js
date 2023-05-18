@@ -91,7 +91,7 @@ const Data = [
         description: {
             isList: true,
             text: [
-                'Aplicación hecha en Riact.',
+                'Aplicación hecha en React.',
                 'Conexión a la API de Rick and Morty.',
                 'Dark Mode automático.',
                 'Diseño responsivo.'
@@ -99,23 +99,23 @@ const Data = [
         },
         tech: [technologies.React]
     },
-    {
-        name: 'Proyecto del Curso Profesional de JavaScript',
-        image: ["https://i.ibb.co/fSkGV9r/proyecto-del-curso-profesional-de-javascript.png"],
-        url: "https://frangardev.github.io/profesional-javascript/",
-        repository: "https://github.com/frangardev/profesional-javascript",
-        description: {
-            isList: true,
-            text: [
-                'Proyecto del curso profesional de JavaScript.',
-                'Manipulación del DOM.',
-                'El video se pausa cuando no está en la pestaña o el video no está en visión.',
-                'Cuenta con servis worker.',
-                'Está hecho usando POO.'
-            ]
-        },
-        tech: [technologies.HTML, technologies.CSS, technologies.JavaScript],
-    },
+    // {
+    //     name: 'Proyecto del Curso Profesional de JavaScript',
+    //     image: ["https://i.ibb.co/fSkGV9r/proyecto-del-curso-profesional-de-javascript.png"],
+    //     url: "https://frangardev.github.io/profesional-javascript/",
+    //     repository: "https://github.com/frangardev/profesional-javascript",
+    //     description: {
+    //         isList: true,
+    //         text: [
+    //             'Proyecto del curso profesional de JavaScript.',
+    //             'Manipulación del DOM.',
+    //             'El video se pausa cuando no está en la pestaña o el video no está en visión.',
+    //             'Cuenta con servis worker.',
+    //             'Está hecho usando POO.'
+    //         ]
+    //     },
+    //     tech: [technologies.HTML, technologies.CSS, technologies.JavaScript],
+    // },
     {
         name: "Batabit",
         image: ["https://i.ibb.co/1f0wvph/batabit.png"],
@@ -131,19 +131,19 @@ const Data = [
         },
         tech: [technologies.HTML, technologies.CSS, technologies.JavaScript],
     },
-    {
-        name: "Cate de mi Corazón",
-        image: ["https://i.ibb.co/hsk08TZ/cate-de-mi-corazon.png"],
-        url: "https://frangardev.github.io/cate-de-mi-corazon/",
-        repository: "https://github.com/frangardev/cate-de-mi-corazon",
-        description: {
-            isList: false,
-            text: [
-                'Página que muestra imágenes de aguacates traidas desde una API.'
-            ]
-        },
-        tech: [technologies.HTML, technologies.CSS, technologies.JavaScript],
-    },
+    // {
+    //     name: "Cate de mi Corazón",
+    //     image: ["https://i.ibb.co/hsk08TZ/cate-de-mi-corazon.png"],
+    //     url: "https://frangardev.github.io/cate-de-mi-corazon/",
+    //     repository: "https://github.com/frangardev/cate-de-mi-corazon",
+    //     description: {
+    //         isList: false,
+    //         text: [
+    //             'Página que muestra imágenes de aguacates traidas desde una API.'
+    //         ]
+    //     },
+    //     tech: [technologies.HTML, technologies.CSS, technologies.JavaScript],
+    // },
     {
         name: "Mis redes",
         image: ["https://i.ibb.co/r7MkQP3/mis-redes.png"],
@@ -158,32 +158,32 @@ const Data = [
         },
         tech: [technologies.HTML, technologies.CSS, technologies.JavaScript],
     },
-    {
-        name: "Tarea de la universidad - Mi primera página web",
-        image: ["https://i.ibb.co/br6mJr6/tarea-de-la-universidad.png"],
-        url: "https://frangardev.github.io/Tarea-Universidad/",
-        repository: "https://github.com/frangardev/Tarea-Universidad",
-        description: {
-            isList: false,
-            text: [
-                'Tarea de la universidad. Mi primera página web. En ella subí mis tareas.'
-            ]
-        },
-        tech: [technologies.HTML, technologies.CSS],
-    },
-    {
-        name: "Dibujo de Pokeball con CSS",
-        image: ["https://i.ibb.co/xXdR7CM/css-pokeball.png"],
-        url: "https://frangardev.github.io/CSS-PokeBall/",
-        repository: "https://github.com/frangardev/CSS-PokeBall",
-        description: {
-            isList: false,
-            text: [
-                'Mi primer dibujo utlizando CSS.'
-            ]
-        },
-        tech: [technologies.HTML, technologies.CSS],
-    },
+    // {
+    //     name: "Tarea de la universidad - Mi primera página web",
+    //     image: ["https://i.ibb.co/br6mJr6/tarea-de-la-universidad.png"],
+    //     url: "https://frangardev.github.io/Tarea-Universidad/",
+    //     repository: "https://github.com/frangardev/Tarea-Universidad",
+    //     description: {
+    //         isList: false,
+    //         text: [
+    //             'Tarea de la universidad. Mi primera página web. En ella subí mis tareas.'
+    //         ]
+    //     },
+    //     tech: [technologies.HTML, technologies.CSS],
+    // },
+    // {
+    //     name: "Dibujo de Pokeball con CSS",
+    //     image: ["https://i.ibb.co/xXdR7CM/css-pokeball.png"],
+    //     url: "https://frangardev.github.io/CSS-PokeBall/",
+    //     repository: "https://github.com/frangardev/CSS-PokeBall",
+    //     description: {
+    //         isList: false,
+    //         text: [
+    //             'Mi primer dibujo utlizando CSS.'
+    //         ]
+    //     },
+    //     tech: [technologies.HTML, technologies.CSS],
+    // },
     {
         name: "Clon de Google",
         image: ["https://i.ibb.co/rGFfnBx/clon-de-google-white.png", "https://i.ibb.co/h8dKf0Q/clon-de-google-black.png"],

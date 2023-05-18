@@ -5,6 +5,7 @@ import { Button } from '../Button/Button'
 
 
 function Header({ children }) {
+    const [loadImage, setLoadImage] = React.useState(false)
     return (
         <header className="header" id="home">
 
@@ -16,22 +17,25 @@ function Header({ children }) {
 
 
             <figure className="drawing-header__container">
-                {/* <img className="drawing-header" src="https://i.ibb.co/HVm6Bpx/image.png" alt="Dibjo de Fran"/> */}
-                <img className="drawing-header" src="https://i.ibb.co/WH8DLrF/image-header.gif" alt="Dibjo de Fran" />
+                <img className="drawing-header" src="https://i.ibb.co/WH8DLrF/image-header.gif" alt="Dibjo de Fran" onLoad={() => setLoadImage(true)} />
+                {loadImage && (
+                    <React.Fragment>
 
-                <div className="square square-1"></div>
-                <div className="square square-2"></div>
-                <div className="square square-3"></div>
-                <div className="square square-4"></div>
-                <div className="square square-5"></div>
-                <div className="square square-6"></div>
-                <div className="square square-7"></div>
+                        <div className="square square-1"></div>
+                        <div className="square square-2"></div>
+                        <div className="square square-3"></div>
+                        <div className="square square-4"></div>
+                        <div className="square square-5"></div>
+                        <div className="square square-6"></div>
+                        <div className="square square-7"></div>
+                    </React.Fragment>
+                )}
 
             </figure>
 
             {/* <Button
-                type = "secondary btn__header-secondary"
-                text= {
+                type="secondary btn__header-secondary"
+                text={
                     <span>CV</span>
                 }
                 url='https://drive.google.com/file/d/18ZbruNFTW6912EJMTJL4Kf1BiwhEeKck/view?usp=sharing'

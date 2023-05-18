@@ -1,32 +1,32 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { animateScroll as scroll } from "react-scroll"; 
+import { animateScroll as scroll } from "react-scroll";
 
 import './Navbar.css'
 
-function Navbar (){
+function Navbar() {
 
     const [openMenu, setOpenMenu] = React.useState(false)
 
-    return(
+    return (
         <nav className={`Menu__container ${openMenu && 'translate'}`}>
-            <div 
+            <div
                 className="Menu-icon"
-                onClick={()=>{
+                onClick={() => {
                     setOpenMenu(!openMenu)
                 }}
             ></div>
 
-            <ul className='Menu'>
+            <ul className='Menu menu--about'>
                 <li>
-                <NavLink to='/'
-                    onClick={()=> setOpenMenu(!openMenu) }>
+                    <NavLink to='/'
+                        onClick={() => setOpenMenu(!openMenu)}>
                         Inicio
                     </NavLink>
                 </li>
                 <li>
-                <NavLink to='/'
-                        onClick={() =>{
+                    <NavLink to='/'
+                        onClick={() => {
                             scroll.scrollMore(600)
                             setOpenMenu(!openMenu)
                         }}
@@ -35,8 +35,8 @@ function Navbar (){
                     </NavLink>
                 </li>
                 <li>
-                <NavLink to='/'
-                        onClick={() =>{
+                    <NavLink to='/'
+                        onClick={() => {
                             scroll.scrollMore(1150)
                             setOpenMenu(!openMenu)
                         }}
@@ -46,7 +46,7 @@ function Navbar (){
                 </li>
                 <li>
                     <NavLink to='/'
-                        onClick={() =>{
+                        onClick={() => {
                             scroll.scrollMore(2800)
                             setOpenMenu(!openMenu)
                         }}

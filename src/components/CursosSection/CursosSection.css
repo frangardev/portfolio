@@ -1,0 +1,32 @@
+.cursos-section__container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+.container-cursos{
+    padding: 51px 10px 36px;
+    width: 100%;
+    background-color: #D9EAF4;
+    text-align: start;
+}
+.cursos-section__description{
+    font-family: 'Hind', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+}
+.cursos__ul{
+    padding: 0 0 0 2.2em;
+    font-family: 'Hind', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+@media (min-width: 1000px) {
+    .container-cursos{
+        padding: 51px 0 39px 92px;
+        width: 80%;
+    }
+}

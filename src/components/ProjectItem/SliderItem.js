@@ -29,7 +29,6 @@ function SliderItem({
     }), 5000)
 
 
-
     return (
         <figure
             className="ProjectItem project__slider"

@@ -27,6 +27,9 @@
     color: var(--dark);
     background-color: var(--white);
 }
+.menu--about li a{
+    color: var(--dark);
+}
 .Menu li a{
     text-decoration: none;
 }

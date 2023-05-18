@@ -52,40 +52,40 @@ function ProjectModal({
                             </p>
                     }
                 </div>
-                <div className='flex-container__btn-tech'>
-                    <div className="buttons__container-project">
-                        <Button
-                            type="secondary button-project"
-                            text={<span>ver</span>}
-                            url={project.url}
-                        />
-                        {project.repository && (
-                            <Button
-                                type="primary button-project"
-                                text={<span>GitHub</span>}
-                                url={project.repository}
-                            />
-                        )}
+                {/* <div className='flex-container__btn-tech'> */}
+                <div className="Tech-project">
+                    <h3>Tecnologias</h3>
+                    <ul>
 
-                    </div>
-
-                    <div className="Tech-project">
-                        <h3>Tecnologias</h3>
-                        <ul>
-
-                            {
-                                project.tech.map(item => {
-                                    return (
-                                        <li>
-                                            <i key={item.name} className={item.icon}></i>
-                                            {item.name}
-                                        </li>
-                                    )
-                                })
-                            }
-                        </ul>
-                    </div>
+                        {
+                            project.tech.map(item => {
+                                return (
+                                    <li>
+                                        <i key={item.name} className={item.icon}></i>
+                                        {item.name}
+                                    </li>
+                                )
+                            })
+                        }
+                    </ul>
                 </div>
+                <div className="buttons__container-project">
+                    <Button
+                        type="secondary button-project"
+                        text={<span>ver</span>}
+                        url={project.url}
+                    />
+                    {project.repository && (
+                        <Button
+                            type="primary button-project"
+                            text={<span>GitHub</span>}
+                            url={project.repository}
+                        />
+                    )}
+
+                </div>
+
+                {/* </div> */}
             </div>
 
 
