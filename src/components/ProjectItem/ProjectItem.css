@@ -59,7 +59,7 @@
     color: var( --primary-color);
     background-color: var(--dark);
 }
-.data-technologies i{
+.data-technologies svg{
     margin-bottom: 3px;
     font-size:2rem;
 }

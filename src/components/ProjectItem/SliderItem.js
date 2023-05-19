@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from "../Button/Button";
 import { SkeletonProject } from "../SkeletonProject/SkeletonProject.js";
+import { Icon } from '@iconify/react';
 import './ProjectItem.css'
 
 function SliderItem({
@@ -79,7 +80,8 @@ function SliderItem({
                 )}
                 <div className="data-technologies">
                     {tech.map(item => {
-                        return (<i key={item.name} className={item.icon}></i>)
+                        return (<Icon icon={item.icon} key={item.name} />)
+                        // return (<p key={item.name}>{item.name}</p>)
                     })}
                 </div>
             </figcaption>

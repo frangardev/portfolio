@@ -12,25 +12,25 @@ import { NavbarHome } from '../Components/Navbar/NavbarHome'
 import { Modal } from '../Components/Modal/Modal'
 import { ProjectModal } from '../Components/ProjectModal/ProjectModal'
 
-function Home(){
+function Home() {
     const [openModal, setOpenModal] = React.useState(false)
     const [dataProject, setDataProject] = React.useState('')
 
-    if(openModal){
+    if (openModal) {
         document.body.classList.add('active-modal')
-    }else{
+    } else {
         document.body.classList.remove('active-modal')
     }
-    
+
     const imgs = document.querySelectorAll('.ImageProject')
     // const loadingImage = imgs.length >= Data.length
     const loadingImage = true
 
-    return(
+    return (
         <React.Fragment>
             <Header>
-                <NavbarHome 
-                    modal = {openModal}
+                <NavbarHome
+                    modal={openModal}
                 />
             </Header>
 
@@ -38,36 +38,36 @@ function Home(){
                 <AboutMe />
 
                 <Projects>
-                    {Data.map(item =>{
+                    {Data.map(item => {
                         return (<ProjectItem
                             key={item.name}
-                            name = {item.name}
-                            image = {item.image}
-                            url = {item.url}
-                            repository = {item.repository}
-                            tech = {item.tech}
-                            description = {item.description}
-                            openModal = {openModal}
-                            setOpenModal = {setOpenModal}
-                            setDataProject = {setDataProject}
-                            loadingImage = {loadingImage}
+                            name={item.name}
+                            image={item.image}
+                            url={item.url}
+                            repository={item.repository}
+                            tech={item.tech}
+                            description={item.description}
+                            openModal={openModal}
+                            setOpenModal={setOpenModal}
+                            setDataProject={setDataProject}
+                            loadingImage={loadingImage}
                         />)
                     })}
                 </Projects>
 
                 {openModal && (
                     <Modal
-                        setOpenModal = {setOpenModal}
+                        setOpenModal={setOpenModal}
                     >
-                        <ProjectModal 
-                                nameProject = {dataProject}
-                                data = {Data}
-                                setOpenModal = {setOpenModal}
+                        <ProjectModal
+                            nameProject={dataProject}
+                            data={Data}
+                            setOpenModal={setOpenModal}
                         />
                     </Modal>
                 )}
 
-                <Contact/>
+                <Contact />
             </main>
 
         </React.Fragment>

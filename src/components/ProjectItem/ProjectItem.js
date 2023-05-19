@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "../Button/Button";
 import { SkeletonProject } from "../SkeletonProject/SkeletonProject.js";
+import { Icon } from '@iconify/react';
 import './ProjectItem.css'
 import SliderItem from "./SliderItem";
 
@@ -82,11 +83,14 @@ function ProjectItem({
                         <a className="data-project__githun" href={repository} target="_blank" rel="noopener noreferrer"
                             onClick={(e) => e.stopPropagation()}>
                             <i className="fab fa-github"></i>
+                            {/* <Icon icon="mdi:github" /> */}
                         </a>
                     )}
                     <div className="data-technologies">
                         {tech.map(item => {
-                            return (<i key={item.name} className={item.icon}></i>)
+                            // return (<Icon icon={item.icon} key={item.name} className={item.icon}/>)
+                            return (<Icon icon={item.icon} key={item.name} />)
+                            // return (<p key={item.name}>{item.name}</p>)
                         })}
                     </div>
                 </figcaption>

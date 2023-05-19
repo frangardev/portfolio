@@ -1,4 +1,5 @@
 import React from 'react'
+import { Icon } from '@iconify/react';
 import { Button } from '../Button/Button';
 import './ProjectModal.css'
 
@@ -23,10 +24,10 @@ function ProjectModal({
                     className='Close-modal__button'
                     onClick={() => setOpenModal(false)}
                 >
-                    {/* <i className="fas fa-chevron-left"></i> */}
-                    <span className='icon-close'>
+                    {/* <span className='icon-close'>
                         x
-                    </span>
+                    </span> */}
+                    <Icon icon="pixelarticons:close" className='icon-close' />
                 </button>
             </div>
 
@@ -60,8 +61,9 @@ function ProjectModal({
                         {
                             project.tech.map(item => {
                                 return (
-                                    <li>
-                                        <i key={item.name} className={item.icon}></i>
+                                    <li key={item.name}>
+                                        {/* <i key={item.name} className={item.icon}></i> */}
+                                        <Icon icon={item.icon} />
                                         {item.name}
                                     </li>
                                 )

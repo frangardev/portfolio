@@ -10,31 +10,51 @@
 const technologies = {
     HTML: {
         name: "HTML",
-        icon: "fab fa-html5"
+        icon: "ri:html5-fill"
     },
     CSS: {
         name: "CSS",
-        icon: "fab fa-css3-alt"
+        icon: "uil:html3"
     },
     JavaScript: {
         name: "JavaScript",
-        icon: "fab fa-js"
+        icon: "ri:javascript-fill"
+    },
+    TypeScript: {
+        name: "TypeScript",
+        icon: "bxl:typescript"
+    },
+    Redux: {
+        name: "Redux",
+        icon: "akar-icons:redux-fill"
     },
     React: {
         name: "React",
-        icon: "fab fa-react"
+        icon: "nonicons:react-16"
     },
-    React: {
-        name: "React",
-        icon: "fab fa-react"
+    ReactNative: {
+        name: "React Native",
+        icon: "nonicons:react-16"
+    },
+    Next: {
+        name: "Next.js",
+        icon: "simple-icons:nextdotjs"
+    },
+    Gatsby: {
+        name: "Gatsby",
+        icon: "devicon-plain:gatsby"
     },
     Sass: {
         name: "SASS",
-        icon: "fa-brands fa-sass"
+        icon: "fa6-brands:sass"
+    },
+    ChakraUI: {
+        name: "Chakra UI",
+        icon: "simple-icons:chakraui"
     },
     WordPress: {
         name: "WordPress",
-        icon: "fa-brands fa-wordpress"
+        icon: "ic:baseline-wordpress"
     },
 }
 
@@ -84,38 +104,33 @@ const Data = [
         tech: [technologies.WordPress],
     },
     {
-        name: "Rick and Morty",
-        image: ["https://i.ibb.co/qChpKL5/rick-and-morty-black.png", "https://i.ibb.co/FKJWMGh/rick-and-morty-light.png"],
-        url: "https://frangardev.github.io/rick-and-morty/",
-        repository: "https://github.com/frangardev/rick-and-morty",
+        name: "Clon de Google",
+        image: ["https://i.ibb.co/rGFfnBx/clon-de-google-white.png", "https://i.ibb.co/h8dKf0Q/clon-de-google-black.png"],
+        url: "https://frangardev.github.io/Clon-de-Google/",
+        repository: "https://github.com/frangardev/Clon-de-Google",
         description: {
             isList: true,
             text: [
-                'Aplicación hecha en React.',
-                'Conexión a la API de Rick and Morty.',
-                'Dark Mode automático.',
-                'Diseño responsivo.'
+                'Clon dela página de Google.',
+                'Cuenta con Dark Mode.'
             ]
         },
-        tech: [technologies.React]
+        tech: [technologies.HTML, technologies.CSS],
     },
-    // {
-    //     name: 'Proyecto del Curso Profesional de JavaScript',
-    //     image: ["https://i.ibb.co/fSkGV9r/proyecto-del-curso-profesional-de-javascript.png"],
-    //     url: "https://frangardev.github.io/profesional-javascript/",
-    //     repository: "https://github.com/frangardev/profesional-javascript",
-    //     description: {
-    //         isList: true,
-    //         text: [
-    //             'Proyecto del curso profesional de JavaScript.',
-    //             'Manipulación del DOM.',
-    //             'El video se pausa cuando no está en la pestaña o el video no está en visión.',
-    //             'Cuenta con servis worker.',
-    //             'Está hecho usando POO.'
-    //         ]
-    //     },
-    //     tech: [technologies.HTML, technologies.CSS, technologies.JavaScript],
-    // },
+    {
+        name: "PokeTeam",
+        image: ["https://i.ibb.co/xDsvkwt/poketeam-img1.png",
+            "https://i.ibb.co/Hd0Zhyh/poketeam-img2.png"],
+        url: "https://poketeam-rust.vercel.app/",
+        repository: "https://github.com/frangardev/poketeam",
+        description: {
+            isList: false,
+            text: [
+                'Aplicación web que te permite crear un equipo pokemon. Te muestra sus estadísticas, fortalezas y debilidades. También te puede crear a completar el equipo de manera aleatoria buscando pokemons que complementen tu equipo'
+            ]
+        },
+        tech: [technologies.Next, technologies.Redux, technologies.TypeScript, technologies.ChakraUI],
+    },
     {
         name: "Batabit",
         image: ["https://i.ibb.co/1f0wvph/batabit.png"],
@@ -185,20 +200,6 @@ const Data = [
     //     tech: [technologies.HTML, technologies.CSS],
     // },
     {
-        name: "Clon de Google",
-        image: ["https://i.ibb.co/rGFfnBx/clon-de-google-white.png", "https://i.ibb.co/h8dKf0Q/clon-de-google-black.png"],
-        url: "https://frangardev.github.io/Clon-de-Google/",
-        repository: "https://github.com/frangardev/Clon-de-Google",
-        description: {
-            isList: true,
-            text: [
-                'Clon dela página de Google.',
-                'Cuenta con Dark Mode.'
-            ]
-        },
-        tech: [technologies.HTML, technologies.CSS],
-    },
-    {
         name: "Calculadora de Figuras Geométricas",
         image: ["https://i.ibb.co/jLXkgCN/calculadora-de-figuras-geometricas.png"],
         url: "https://frangardev.github.io/ejercicios-javascript/figuras/index.html",
@@ -212,6 +213,22 @@ const Data = [
             ]
         },
         tech: [technologies.HTML, technologies.CSS, technologies.JavaScript],
+    },
+    {
+        name: "Rick and Morty",
+        image: ["https://i.ibb.co/qChpKL5/rick-and-morty-black.png", "https://i.ibb.co/FKJWMGh/rick-and-morty-light.png"],
+        url: "https://frangardev.github.io/rick-and-morty/",
+        repository: "https://github.com/frangardev/rick-and-morty",
+        description: {
+            isList: true,
+            text: [
+                'Aplicación hecha en React.',
+                'Conexión a la API de Rick and Morty.',
+                'Dark Mode automático.',
+                'Diseño responsivo.'
+            ]
+        },
+        tech: [technologies.React]
     },
 
 
@@ -245,8 +262,6 @@ const Data = [
         },
         tech: [technologies.HTML, technologies.CSS]
     },
-
-
     {
         name: "SPA Marvel",
         image: ["https://i.ibb.co/qrQb0y6/spa-marvel-frond.png", "https://i.ibb.co/wRdgNZN/spa-marvel-2.png"],
@@ -263,6 +278,23 @@ const Data = [
         },
         tech: [technologies.HTML, technologies.CSS, technologies.JavaScript]
     },
+    // {
+    //     name: 'Proyecto del Curso Profesional de JavaScript',
+    //     image: ["https://i.ibb.co/fSkGV9r/proyecto-del-curso-profesional-de-javascript.png"],
+    //     url: "https://frangardev.github.io/profesional-javascript/",
+    //     repository: "https://github.com/frangardev/profesional-javascript",
+    //     description: {
+    //         isList: true,
+    //         text: [
+    //             'Proyecto del curso profesional de JavaScript.',
+    //             'Manipulación del DOM.',
+    //             'El video se pausa cuando no está en la pestaña o el video no está en visión.',
+    //             'Cuenta con servis worker.',
+    //             'Está hecho usando POO.'
+    //         ]
+    //     },
+    //     tech: [technologies.HTML, technologies.CSS, technologies.JavaScript],
+    // },
 ]
 
 export { Data }
