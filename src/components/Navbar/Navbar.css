@@ -54,7 +54,8 @@
 }
 .Menu li a{
     text-decoration: none;
-    color: var(--white);;
+    color: var(--dark);
+    /* color: var(--white); */
 }
 .Menu li a:hover{
     text-decoration: line-through;
@@ -149,6 +150,9 @@
     .Menu li{
         padding: 0;
         margin: 0;
+        
+    }
+    .Menu li a{
         color: var(--white);
     }
     .nav .Menu li{
@@ -159,6 +163,6 @@
     }
 }
 
-.Menu li > a.active{
+/* .Menu li > a.active{
     color: blueviolet;
-}
+} */

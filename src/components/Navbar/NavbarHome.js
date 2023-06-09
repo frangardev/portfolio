@@ -63,7 +63,7 @@ function NavbarHome({ modal }) {
                     </Link>
                 </li>
                 <li>
-                    <a href="https://drive.google.com/file/d/1Pcw5LvJk_FTaBG_v7qv-wAp_1YHN5FQM/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a>
+                    <a activeClass="active" href="https://drive.google.com/file/d/1Pcw5LvJk_FTaBG_v7qv-wAp_1YHN5FQM/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a>
                 </li>
             </ul>
         </nav>
