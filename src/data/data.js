@@ -6,7 +6,7 @@
 // 5. Descripción 
 // 6. Las tecnologias que utilice para construir ese proyecto.
 
-//     const  technologies ={
+//   icons ->  https://icon-sets.iconify.design/
 const technologies = {
     HTML: {
         name: "HTML",
@@ -23,6 +23,10 @@ const technologies = {
     TypeScript: {
         name: "TypeScript",
         icon: "bxl:typescript"
+    },
+    XState: {
+        name: "XState",
+        icon: "logos:xstate"
     },
     Redux: {
         name: "Redux",

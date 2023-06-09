@@ -54,6 +54,7 @@
 }
 .Menu li a{
     text-decoration: none;
+    color: var(--white);;
 }
 .Menu li a:hover{
     text-decoration: line-through;

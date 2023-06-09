@@ -59,7 +59,7 @@
   text-align: start;
   font-size: 36px;
   /* grid-area:title; */
-  margin-bottom: 5vh;
+  margin:0 0 5vh .5em;
 }
 .Description-project{
   /* grid-area: description; */

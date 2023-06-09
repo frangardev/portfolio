@@ -32,7 +32,7 @@ function ProjectModal({
             </div>
 
             <div className='container__info'>
-                <h2 className="Title-project">{project.name}</h2>
+                <h2 className="Title-project" style={{ fontSize: `${project.name.length > 20 ? '1.5rem' : '2rem'}` }}>{project.name}</h2>
 
                 <div className="Description-project" >
                     {
