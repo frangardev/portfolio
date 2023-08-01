@@ -21,8 +21,8 @@ function ProjectItem({
         setHover(hoverValue)
     }
     let cutName = name
-    if (name.length > 9) {
-        cutName = cutName.substring(0, 9) + '...'
+    if (name.length > 15) {
+        cutName = cutName.substring(0, 15) + '...'
     }
     const seeProject = () => {
         if (!openModal) {
@@ -49,7 +49,7 @@ function ProjectItem({
     } else {
         return (
             <figure
-                className="ProjectItem"
+                className={`ProjectItem ${hover && 'ProjectItem--hover'}`}
                 onMouseEnter={() => isHover(true)}
                 onMouseLeave={() => isHover(false)}
                 onClick={seeProject}
@@ -65,27 +65,7 @@ function ProjectItem({
 
                 <figcaption className={`data-project ${hover && 'hover__item'}`}>
                     <h4 className="data-project__name">{cutName}</h4>
-                    <Button
-                        type='secondary button__data-project'
-                        text={
-                            <React.Fragment>
-                                <samp className="icon__container-card">
-                                    <i className="fas fa-arrow-right"></i>
-                                </samp>
-                                <span className="text__container-card">
-                                    ver
-                                </span>
-                            </React.Fragment>
-                        }
-                        url={url}
-                    />
-                    {repository && (
-                        <a className="data-project__githun" href={repository} target="_blank" rel="noopener noreferrer"
-                            onClick={(e) => e.stopPropagation()}>
-                            <i className="fab fa-github"></i>
-                            {/* <Icon icon="mdi:github" /> */}
-                        </a>
-                    )}
+                   
                     <div className="data-technologies">
                         {tech.map(item => {
                             // return (<Icon icon={item.icon} key={item.name} className={item.icon}/>)
