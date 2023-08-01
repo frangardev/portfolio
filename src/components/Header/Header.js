@@ -13,7 +13,7 @@ function Header({ children }) {
 
             <p className="username">@frangardev</p>
 
-            <h1 className="title-header">¡Hola! Soy Fran <span className="title-header__span">Programador y diseñador UX</span></h1>
+            <h1 className="title-header">¡Hola, Soy Fran! <span className="title-header__span">Programador frontend y diseñador UX</span></h1>
 
 
             <figure className="drawing-header__container">

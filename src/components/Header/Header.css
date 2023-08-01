@@ -12,11 +12,10 @@
         "draw   draw    draw"
         "btn-1  btn-1   btn-1"
     ;
-    background-color: #887ec8;
+    background-color: var(--primary-color);
     max-width: 100%;
     margin-bottom: 35px;
-    color: var(--white);
-    padding-bottom: 1em;
+    color: var(--black);
 }
 
 .nav{
@@ -46,10 +45,10 @@
 }
 .title-header__span{
     display: block;
+    font-family: "Arvo", Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     margin-top: 10px;
     letter-spacing: 5px;
-    color: #eee;
 }
 .buttons-container{
     -ms-grid-row: 4;
@@ -437,19 +436,19 @@ a.btn__header-primary{
 }  
     
   /* Header */
-@media (min-width: 900px) {
+@media (min-width: 1250px) {
     .header{
         padding-left: 90px;
         width: calc(100% - 90px);
         -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         -ms-grid-rows: 90px 120px auto auto;
         grid-template-rows: 90px 120px auto auto;
             grid-template-areas: 
-            ".    nav     nav     nav       ."
-            ".      .       .       .       ."
-            "title  title   title   .       usr"
-            "btn-1  btn-1   btn-1       .       ."
+            ".      nav       nav     ."
+            ".      .         .       ."
+            "title  title     .       usr"
+            "btn-1  btn-1     .       ."
         ;
     }
     .drawing-header__container{
@@ -477,22 +476,18 @@ a.btn__header-primary{
     .title-header{
         -ms-grid-row-align: center;
         -ms-grid-column-align: start;
-        place-self: center start;
+        place-self: center center;
         z-index: 20;
     }
     .btn__header-primary,
     .btn__header-secondary{
-        -ms-grid-row-align: start;
-        -ms-grid-column-align: start;
-        place-self: start;
-        /* place-self: start center; */
+        /* -ms-grid-row-align: start;
+        -ms-grid-column-align: start; */
+        /* place-self: center; */
+        place-self: start center;
+        transform: translateY(-45px);
     }
-    .buttons-container{
-        padding-left: 10%;
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
-    }
+    
     .nav{
         -ms-grid-row: 1;
         -ms-grid-column: 2;

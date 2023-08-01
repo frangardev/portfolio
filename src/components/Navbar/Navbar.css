@@ -123,7 +123,7 @@
             transform: rotate(45deg);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1250px) {
     .Menu__container{
         position: static;
         width: auto;
@@ -152,9 +152,9 @@
         margin: 0;
         
     }
-    .Menu li a{
+    /* .Menu li a{
         color: var(--white);
-    }
+    } */
     .nav .Menu li{
         margin: 0 35px 0 0;
     }

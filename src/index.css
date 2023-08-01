@@ -1,10 +1,10 @@
 
 :root{
     --white: #F2F4F6;
-    --black: #02132C;
+    --black: #1E1E1E;
     --dark: #312D47;
-    --primary-color: #887EC8;
-    --secondary-color: #73C4EB;
+    --primary-color: #B1ADE8;
+    --secondary-color: #6ADBFF;
     --square-bg: rgba(49, 45, 71, .5);
 
 /* Dark colors */
