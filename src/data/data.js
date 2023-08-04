@@ -301,5 +301,5 @@ const Data = [
     // },
 ]
 
-export { Data }
+export { Data, technologies }
 

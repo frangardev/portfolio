@@ -16,17 +16,16 @@ function ProjectModal({
         <article
             className="Project__container"
         >
+            <div className='project__nav'>Develop and Design</div>
             <img className="image-project" src={project.image} alt={project.name} />
 
             <div className="Close-modal__button__container">
-                <div className="Close-modal__button-bg"></div>
+                <div className='Close-modal__button--decoration'></div>
+                <div className='Close-modal__button--decoration'></div>
                 <button
                     className='Close-modal__button'
                     onClick={() => setOpenModal(false)}
                 >
-                    {/* <span className='icon-close'>
-                        x
-                    </span> */}
                     <Icon icon="pixelarticons:close" className='icon-close' />
                 </button>
             </div>
@@ -73,13 +72,13 @@ function ProjectModal({
                 </div>
                 <div className="buttons__container-project">
                     <Button
-                        type="secondary button-project"
+                        type="primary button-project"
                         text={<span>ver</span>}
                         url={project.url}
                     />
                     {project.repository && (
                         <Button
-                            type="primary button-project"
+                            type="secondary button-project"
                             text={<span>GitHub</span>}
                             url={project.repository}
                         />

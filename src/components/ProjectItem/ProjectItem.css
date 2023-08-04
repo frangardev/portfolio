@@ -88,8 +88,11 @@
 }
 .ProjectItem--hover{
     box-shadow: 6px 6px 0px #504E69;
+    transform: scale(1.005) !important;
 }
-
+/* .ProjectItem--hover img{
+    transform: scale(1.05);
+} */
 img.loaded{
     position: relative;
     opacity: 1;

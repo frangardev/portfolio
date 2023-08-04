@@ -24,17 +24,17 @@ function Contact() {
             <ul className="Social">
                 <li>
                     <a href="https://www.linkedin.com/in/frangardev/" target="_blank" rel="noopener noreferrer" >
-                        <img className="Social__icon" loading="lazy" src="https://i.ibb.co/92bjHY0/logo-linkedin-color.png" alt="logo-linkedin-color" border="0" />
+                        <img className="Social__icon" loading="lazy" src="https://i.ibb.co/FYmFSQs/logo-linkedin.png" alt="logo-linkedin-color" border="0" />
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/frangardev" target="_blank" rel="noopener noreferrer" >
-                        <img className="Social__icon" loading="lazy" src="https://i.ibb.co/zV2Vb4C/logo-github.png" alt="logo-github" border="0" />
+                        <img className="Social__icon" loading="lazy" src="https://i.ibb.co/Gcn3c29/logo-github.png" alt="logo-github" border="0" />
                     </a>
                 </li>
                 <li>
                     <a href="https://twitter.com/frangardev" target="_blank" rel="noopener noreferrer" >
-                        <img className="Social__icon" loading="lazy" src="https://i.ibb.co/Jk0xdWm/logo-twittwer-color.png" alt="logo-twittwer-color" border="0" />
+                        <img className="Social__icon" loading="lazy" src="https://i.ibb.co/7SBHdgp/logo-twittwer.png" alt="logo-twittwer-color" border="0" />
                     </a>
                 </li>
                 {/* <li>

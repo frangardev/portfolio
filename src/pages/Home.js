@@ -11,6 +11,7 @@ import { NavbarHome } from '../Components/Navbar/NavbarHome'
 
 import { Modal } from '../Components/Modal/Modal'
 import { ProjectModal } from '../Components/ProjectModal/ProjectModal'
+import Banner from "../components/Banner/Banner";
 
 function Home() {
     const [openModal, setOpenModal] = React.useState(false)
@@ -33,6 +34,8 @@ function Home() {
                     modal={openModal}
                 />
             </Header>
+            
+            {/* <Banner/> */}
 
             <main>
                 <AboutMe />

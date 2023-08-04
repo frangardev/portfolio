@@ -28,6 +28,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+            /* align-items: center; */
     padding: 0;
     margin: 0;
     width: 100%;
@@ -72,6 +73,11 @@
     padding: 10px 15px 0 0;
     position: relative;
     cursor: pointer;
+}
+
+.logo__container{
+    width: 3.5em;
+    margin-bottom: 2em;
 }
 .Menu-icon::after,
 .Menu-icon::before{
@@ -128,7 +134,7 @@
         position: static;
         width: auto;
         height: auto;
-        margin: 40px 0 50px;
+        margin: 75px 0 50px;
         background-color: transparent;
     }
     .Menu{

@@ -5,9 +5,9 @@
       grid-template-areas: 
       ".            .         borde-up      borde-up      .                   .          "
       ".            image     image         .             borde-right-up      .          "
-      "borde-left   image     image         info          info               borde-right"
-      "borde-left   image     image         info          info         borde-right"
-      "borde-left   image     image         info          info              borde-right"
+      "borde-left   image     image         info          info                borde-right"
+      "borde-left   image     image         info          info                borde-right"
+      "borde-left   image     image         info          info                borde-right"
       "borde-left   image     image         info          info                borde-right"
       ".            image     image          .            borde-right-down    .          "
       ".            .         borde-down    borde-down    .                   .          "
@@ -28,6 +28,24 @@
   z-index: 120; 
 }
 
+.project__nav{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width:calc(100% - 20px);
+  /* min-width: 320px;
+  max-width: 1200px; */
+  padding: 14px 0px;
+  background-color: var(--white);
+  color: #1e1e1e;
+  border-bottom: 10px solid var(--dark);
+  font-family: "Arvo", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+  font-size: 24px;
+
+  }
+
 .image-project{
   -ms-grid-row: 2;
   -ms-grid-row-span: 6;
@@ -35,6 +53,7 @@
   -ms-grid-column-span: 2;
   grid-area: image;
   width: 100%;
+  padding-top: 65px;
 }
 .container__info{
   -ms-grid-row: 3;
@@ -81,14 +100,14 @@
   margin-bottom: 4em;
 }
 .Tech-project svg{
-  font-size: 1.5rem;
-  margin-right: .5em;
+  font-size: 1rem;
+  margin-right: 8px;
 }
 .Tech-project h3{
   text-align: start;
   margin: 0 21px 30px;
 
-  font-family: 'Arvo';
+  font-family: 'Arvo', Arial, Helvetica, sans-serif;
 font-style: normal;
 font-weight: 700;
 /* font-size: 12px; */
@@ -107,15 +126,20 @@ color: #101010;
   -ms-flex-wrap:wrap;
       flex-wrap:wrap;
   list-style:none;
+  padding-left: 21px;
 }
 .Tech-project ul li{
   /* border: 5px solid; */
-  padding: 0.5em 1em;
-  font-size: 1rem;
-
+  display: flex;
+  align-items: end;
+  padding: 5px 15px;
+  background-color: #312D47;
+  color: #fff;
+  border-radius: 30px;
+  font-family: 'Hind', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
   text-transform: uppercase;
-  background-color: #73C4EB;
-  border-radius: 9px;
 
 }
 .buttons__container-project{
@@ -195,8 +219,12 @@ color: #101010;
 }
 .Close-modal__button__container{
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 3px;
+  right: 35px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
   width: calc(50% - 10px);
   height: 70px;
   z-index: 30;
@@ -207,14 +235,30 @@ color: #101010;
   background: transparent;
 }
 .Close-modal__button{
-  position: absolute;
+  /* position: absolute;
   top: 10px;
-  right: 15px;
-  padding: 5px 8px;
+  right: 15px; */
+  padding: 2px 2px;
   cursor: pointer;
   border: none;
   background-color: transparent;
+  border: solid 4px var(--dark);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    
 }
+.Close-modal__button--decoration{
+  width: 22px;
+  height: 22px;
+  border: solid 4px var(--dark);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+.Close-modal__button:hover svg{
+  color: red;
+}
+
 
 .Close-modal__button i{
   font-size: 1.2rem;
@@ -265,7 +309,10 @@ color: #101010;
     }
     .Close-modal__button__container{
       width: calc(100% - 20px);
-      left: 10px;
+      /* left: 10px; */
+    }
+    .project__nav{
+      color: var(--white);
     }
     .Close-modal__button-bg{ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
       background: -webkit-gradient(linear,  left top, left bottom,  from(rgba(0,0,0,0.65)),color-stop(36%, rgba(0,0,0,0.26)),color-stop(60%, rgba(0,0,0,0)),color-stop(73%, rgba(0,0,0,0)));
@@ -274,10 +321,10 @@ color: #101010;
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
       opacity: .9;
     }
-    .icon-close{
+    /* .icon-close{
       color: var(--white);
       font-size: 1.2rem;
-    }
+    } */
     .Title-project{
       margin-top: 5%;
       font-size: 20px;

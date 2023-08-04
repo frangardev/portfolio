@@ -11,9 +11,11 @@ function Header({ children }) {
 
             {children}
 
+
+            <h1 className="title-header">¡Hola, Soy Fran! <span className="title-header__span">Programador y Diseñador UI/UX</span></h1>
             <p className="username">@frangardev</p>
 
-            <h1 className="title-header">¡Hola, Soy Fran! <span className="title-header__span">Programador frontend y diseñador UX</span></h1>
+            <img className="decoration" src="https://i.ibb.co/kJc6gCh/decoration-portfolio.png" alt="decoration"/>
 
 
             <figure className="drawing-header__container">
@@ -33,13 +35,6 @@ function Header({ children }) {
 
             </figure>
 
-            {/* <Button
-                type="secondary btn__header-secondary"
-                text={
-                    <span>CV</span>
-                }
-                url='https://drive.google.com/file/d/18ZbruNFTW6912EJMTJL4Kf1BiwhEeKck/view?usp=sharing'
-            /> */}
             <div className="buttons-container">
                 <Button
                     type="primary btn__header-primary"

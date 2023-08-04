@@ -1,4 +1,5 @@
 .header{
+    position: relative;
     width: 100vw;
     display: -ms-grid;
     display: grid;
@@ -15,6 +16,7 @@
     background-color: var(--primary-color);
     max-width: 100%;
     margin-bottom: 35px;
+    /* margin-bottom: 0; */
     color: var(--black);
 }
 
@@ -25,6 +27,12 @@
     -ms-grid-row-align: center;
     -ms-grid-column-align: center;
     place-self: center;
+}
+.decoration{
+    position: absolute;
+    top: 5%;
+    left: -20%;
+    width: 0%;
 }
 .username{
     -ms-grid-row: 1;
@@ -432,6 +440,10 @@ a.btn__header-primary{
     .square-7{
         -ms-grid-row: 3;
         -ms-grid-column: 9;
+      }
+      .decoration{
+        width: 50%;
+        max-width: 740px;
       }
 }  
     
