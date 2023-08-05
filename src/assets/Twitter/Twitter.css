@@ -1,0 +1,14 @@
+.Twitter .cls-1 {
+  fill: #fff;
+}
+.Twitter .cls-2 {
+  fill: #1d1d1b;
+}
+
+.Twitter:hover .cls-1 {
+  fill: var(--black);
+  /* fill: var(--secondary-color); */
+}
+.Twitter:hover .cls-2 {
+  fill: #fff;
+}

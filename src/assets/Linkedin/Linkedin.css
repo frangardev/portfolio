@@ -1,0 +1,14 @@
+.Linkedin .cls-1 {
+  fill: #fff;
+}
+.Linkedin .cls-2 {
+  fill: #1d1d1b;
+}
+
+.Linkedin:hover .cls-1 {
+  fill: var(--black);
+  /* fill: var(--secondary-color); */
+}
+.Linkedin:hover .cls-2 {
+  fill: #fff;
+}

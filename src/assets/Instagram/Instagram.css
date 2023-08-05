@@ -1,0 +1,14 @@
+.Instagram .cls-1 {
+  fill: #fff;
+}
+.Instagram .cls-2 {
+  fill: var(--black);
+}
+
+.Instagram:hover .cls-1 {
+  fill: var(--black);
+}
+.Instagram:hover .cls-2 {
+  fill: #fff;
+  /* fill: var(--secondary-color); */
+}
