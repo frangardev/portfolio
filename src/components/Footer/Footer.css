@@ -1,8 +1,9 @@
 .footer {
   width: 100%;
-  padding: 32px 0;
+  padding-bottom: 32px;
   background-color: var(--primary-color);
   /* border-top: 4px solid #1e1e1e; */
+  color: var(--black);
 }
 .footer__flex--container,
 .footer__text {
@@ -59,6 +60,7 @@
   font-family: "Hind", Arial, Helvetica, sans-serif;
   padding-top: 11px;
   border-top: 2px solid var(--black);
+  opacity: 0.7;
 }
 .footer__icons--container {
   display: flex;

@@ -13,7 +13,7 @@ function Logo({ isNotCompleteLogo }) {
       <g id="Capa_1-2" data-name="Capa 1">
         <g>
           <polygon
-            class="cls-2"
+            className="cls-2"
             points="116.36 72.72 101.82 72.72 101.82 87.27 101.82 101.82 116.36 101.82 116.36 87.27 116.36 72.72"
           />
           <g>
@@ -39,16 +39,16 @@ function Logo({ isNotCompleteLogo }) {
           </g>
           {!isNotCompleteLogo && (
             <g>
-              <rect class="cls-3" x="43.63" width="14.55" height="14.54" />
+              <rect className="cls-3" x="43.63" width="14.55" height="14.54" />
               <rect
-                class="cls-3"
+                className="cls-3"
                 x="29.09"
                 y="14.54"
                 width="14.54"
                 height="14.55"
               />
               <rect
-                class="cls-3"
+                className="cls-3"
                 x="43.63"
                 y="29.09"
                 width="14.55"
@@ -59,26 +59,26 @@ function Logo({ isNotCompleteLogo }) {
 
           <g>
             <polygon
-              class="cls-3"
+              className="cls-3"
               points="14.54 72.72 14.54 58.18 0 58.18 0 72.72 0 87.27 0 101.82 14.54 101.82 14.54 87.27 14.54 72.72"
             />
             <polygon
-              class="cls-3"
+              className="cls-3"
               points="87.27 58.18 87.27 72.72 87.27 87.27 87.27 101.82 101.82 101.82 101.82 87.27 101.82 72.72 101.82 58.18 87.27 58.18"
             />
             <rect
-              class="cls-3"
+              className="cls-3"
               x="72.72"
               y="101.82"
               width="14.55"
               height="14.54"
             />
             <polygon
-              class="cls-3"
+              className="cls-3"
               points="43.63 116.36 29.09 116.36 29.09 130.91 43.63 130.91 58.18 130.91 72.72 130.91 72.72 116.36 58.18 116.36 43.63 116.36"
             />
             <rect
-              class="cls-3"
+              className="cls-3"
               x="14.54"
               y="101.82"
               width="14.55"

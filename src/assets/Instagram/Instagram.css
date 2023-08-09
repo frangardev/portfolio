@@ -9,6 +9,6 @@
   fill: var(--black);
 }
 .Instagram:hover .cls-2 {
-  fill: #fff;
-  /* fill: var(--secondary-color); */
+  /* fill: #fff; */
+  fill: var(--secondary-color);
 }

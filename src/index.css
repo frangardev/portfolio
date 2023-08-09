@@ -1,70 +1,68 @@
+:root {
+  --white: #f2f4f6;
+  --black: #1e1e1e;
+  --dark: #312d47;
+  --primary-color: #b1ade8;
+  --secondary-color: #6adbff;
+  --square-bg: rgba(49, 45, 71, 0.5);
+  --error: #ff3b81;
+  --ok: #5effcc;
 
-:root{
-    --white: #F2F4F6;
-    --black: #1E1E1E;
-    --dark: #312D47;
-    --primary-color: #B1ADE8;
-    --secondary-color: #6ADBFF;
-    --square-bg: rgba(49, 45, 71, .5);
+  /* Dark colors */
+  --dark-white: #a79cb1;
+  --dark-black: #01081d;
+  --dark-dark: #241f3d;
+  --dark-primary-color: #6c6696;
+  --dark-secondary-color: #6996aa;
+  --dark-square-bg: rgba(32, 29, 53, 0.5);
 
-/* Dark colors */
-    --dark-white: #a79cb1;
-    --dark-black: #01081d;
-    --dark-dark: #241f3d;
-    --dark-primary-color: #6c6696;
-    --dark-secondary-color: #6996aa;
-    --dark-square-bg: rgba(32, 29, 53, 0.5);
-
-    --button-color-press: #4183a1;
+  --button-color-press: #4183a1;
 }
 
-body{
-    background-color: var(--white);
-    text-align: center;
-    font-family: 'Press Start 2P', cursive;
-    color: var(--dark);
-    width: 100vw;
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
+body {
+  background-color: var(--white);
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  color: var(--dark);
+  width: 100vw;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
-
-
 
 /* Global style */
 
-.Sub-title{
-    font-weight: bold;
-    font-size: 1.1rem;
-    /* line-height: 10px;á */
-    letter-spacing: 5px;
-    line-height: 136%;
+.Sub-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  /* line-height: 10px;á */
+  letter-spacing: 5px;
+  line-height: 136%;
 }
 
-.link{
-    text-decoration: none;
-    color: var(--secondary-color);
-    font-size: .8rem;
+.link {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 0.8rem;
 }
 
-.text{
-    /* font-family: 'DM Sans', sans-serif; */
-    font-family: 'Hind', Arial, Helvetica, sans-serif;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-size: .9rem;
-    line-height: 150%;
-    margin: 12px 0 5px;
-    /* color: rgba(49, 45, 71, 0.8); */
-    color: #312D47;
-    
+.text {
+  /* font-family: 'DM Sans', sans-serif; */
+  font-family: "Hind", Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 0.9rem;
+  line-height: 150%;
+  margin: 12px 0 5px;
+  /* color: rgba(49, 45, 71, 0.8); */
+  color: #312d47;
 }
 
 @media (min-width: 1000px) {
-    .text{
-        font-size: 1rem;
-    }
-    .Sub-title{
-        font-size: 1.3rem;
-    }
+  .text {
+    font-size: 1rem;
+  }
+  .Sub-title {
+    font-size: 1.3rem;
+  }
 }

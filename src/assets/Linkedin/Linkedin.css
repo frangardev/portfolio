@@ -10,5 +10,6 @@
   /* fill: var(--secondary-color); */
 }
 .Linkedin:hover .cls-2 {
-  fill: #fff;
+  /* fill: #fff; */
+  fill: var(--secondary-color);
 }

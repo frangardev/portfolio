@@ -42,12 +42,6 @@ function Footer() {
         </div>
       </div>
 
-      {/* <div className="footer__icons--container">
-        <GitHub />
-        <Linkedin />
-        <Twitter />
-        <Instagram />
-      </div> */}
       <ul className="footer__icons--container">
         <li>
           <a

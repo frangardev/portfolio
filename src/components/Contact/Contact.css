@@ -1,4 +1,69 @@
 .Contact {
+  width: 100%;
+}
+.Contact .Sub-title {
+  width: 80%;
+  margin: 0 auto 22px;
+  line-height: 176%;
+}
+.contact__flex-container {
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: column-reverse; */
+  align-items: center;
+  justify-content: center;
+}
+.ContactForm--container,
+.ContactInfoImage--container {
+  width: 100%;
+}
+
+.ContactInfoImage--container {
+  position: relative;
+}
+.ContactInfoImage__decoration {
+  position: absolute;
+  width: 0%;
+  aspect-ratio: 1/1;
+  background-color: #73c4eb;
+  opacity: 0;
+}
+.ContactInfoImage__decoration--1 {
+  top: -8%;
+  right: -8%;
+}
+.ContactInfoImage__decoration--2 {
+  top: 15%;
+  left: -8%;
+}
+.ContactInfoImage__decoration--3 {
+  bottom: -15%;
+  right: -3%;
+}
+/* .contactIsView .ContactInfoImage__decoration--1 {
+  position: relative;
+  top: -10%;
+  left: 10%;
+  opacity: 0;
+  animation: moveSquare 1s 1;
+  animation-delay: 0.6s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.contactIsView .ContactInfoImage__decoration--2 {
+  animation: moveSquare 0.5s 1;
+  animation-delay: 1.7s;
+  animation-timing-function: cubic-bezier(0.59, -0.08, 1, 0.54);
+  animation-fill-mode: forwards;
+}
+.contactIsView .ContactInfoImage__decoration--3 {
+  animation: moveSquare 0.5s 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+} */
+/* miniContact-------------- */
+
+.miniContact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,6 +134,25 @@ h2.sub-title--contact {
 }
 
 @media (min-width: 1000px) {
+  .Contact {
+    width: 80%;
+    max-width: 1160px;
+    margin: 0 auto 82px;
+  }
+  .Contact .Sub-title {
+    margin-bottom: 52px;
+  }
+  .contact__flex-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ContactForm--container {
+    width: 35%;
+  }
+  .ContactInfoImage--container {
+    width: 55%;
+  }
+
   .Social {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -79,4 +163,19 @@ h2.sub-title--contact {
   h2.sub-title--contact {
     font-size: 2rem;
   }
+  .ContactInfoImage__decoration {
+    opacity: 0.2;
+    width: 15%;
+  }
 }
+
+/* @keyframes moveSquare {
+  20% {
+    opacity: 0.05;
+  }
+  to {
+    top: 0%;
+    left: 0%;
+    opacity: 0.2;
+  }
+} */

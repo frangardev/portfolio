@@ -1,70 +1,50 @@
 import React from "react";
 import "./Contact.css";
 
+import ContactForm from "../ContactForm/ContactForm";
 import { Button } from "../Button/Button";
-import Linkedin from "../../assets/Linkedin/Linkedin";
-import GitHub from "../../assets/GitHub/GitHub";
-import Twitter from "../../assets/Twitter/Twitter";
+import ContactInfoImage from "../ContactInfoImage/ContactInfoImage";
 
 function Contact() {
-  return (
-    <section className="Contact" id="contact">
-      <div className="Contact__container--text">
-        <h2 className="Sub-title sub-title--contact">Trabajemos Juntos</h2>
-        {/* <p className="text text--contact">Empecemos desde ahora mismo a trabajar y cumplir todas nuestras metas juntos &lt;3.</p> */}
-        <Button
-          type="primary wide"
-          text={
-            <span className="contact__button">
-              <img
-                src="https://i.ibb.co/qyww5Fz/icon-mail.png"
-                alt="icon-mail"
-                border="0"
-              />
-              <span className="contact__buton__text">Contactar</span>
-            </span>
-          }
-          url="mailto:frangardev@outlook.com"
-        />
-      </div>
+  const contactRef = React.useRef(null);
+  // Actualiza la información sobre si está en observer el header para hacer el cambio de los estilos en el navbar
+  const callbackFunction = (entries) => {
+    const [entry] = entries;
+    // setIsViewHeader(entry.isIntersecting)
+    console.log("----------");
+    console.log(entry.isIntersecting);
+  };
+  // Opciones  del IntersectionObserver
+  const options = {
+    root: null,
+    rootMargin: "10px",
+    threshold: 1,
+  };
 
-      <ul className="Social">
-        <li>
-          <a
-            href="https://www.linkedin.com/in/frangardev/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="Social__icon"
-          >
-            <Linkedin />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/frangardev"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="Social__icon"
-          >
-            <GitHub />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://twitter.com/frangardev"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="Social__icon"
-          >
-            <Twitter />
-          </a>
-        </li>
-        {/* <li>
-                    <a href="https://instagram.com/frangardev" target="_blank" rel="noopener noreferrer" >
-                        <img className="Social__icon" src="https://i.ibb.co/Dwrz7cB/logo-instagram-color.png" alt="logo-instagram-color" border="0" />
-                    </a>
-                </li> */}
-      </ul>
+  // Crea y elimina el IntersectionObserver
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(callbackFunction, options);
+    if (contactRef.current) observer.observe(contactRef.current);
+
+    return () => {
+      if (contactRef.current) observer.unobserve(contactRef.current);
+    };
+  }, [contactRef]);
+
+  return (
+    <section className="Contact" id="contact" ref={contactRef}>
+      <h2 className="Sub-title">Trabajemos Juntos</h2>
+      <div className="contact__flex-container">
+        <div className="ContactForm--container">
+          <ContactForm />
+        </div>
+        <div className="ContactInfoImage--container contactIsView">
+          <ContactInfoImage />
+          <div className="ContactInfoImage__decoration ContactInfoImage__decoration--1"></div>
+          <div className="ContactInfoImage__decoration ContactInfoImage__decoration--2"></div>
+          <div className="ContactInfoImage__decoration ContactInfoImage__decoration--3"></div>
+        </div>
+      </div>
     </section>
   );
 }

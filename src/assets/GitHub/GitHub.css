@@ -11,5 +11,6 @@
   /* fill: var(--secondary-color); */
 }
 .GitHub:hover .cls-2 {
-  fill: #fff;
+  /* fill: #fff; */
+  fill: var(--secondary-color);
 }

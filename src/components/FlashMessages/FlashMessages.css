@@ -1,0 +1,60 @@
+.FlashMessages {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 90%;
+  padding: 22px 5%;
+  color: white;
+  background-color: var(--black);
+  z-index: 10000;
+  border-bottom: 4px solid var(--ok);
+}
+.FlashMessages__error {
+  border-bottom-color: var(--error);
+}
+.FlashMessages div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.FlashMessages__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--ok);
+}
+.FlashMessages__error .FlashMessages__icon {
+  background-color: var(--error);
+}
+.FlashMessages__icon svg {
+  font-size: 2.5rem;
+}
+.FlashMessages__message {
+  font-size: 1.25rem;
+  margin: 0;
+}
+.FlashMessages__message span {
+  font-family: "Hind", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+}
+.FlashMessages__message--email {
+  color: var(--secondary-color);
+}
+.FlashMessages__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.FlashMessages__btn svg {
+  color: #fff;
+}
+.FlashMessages__btn:hover svg {
+  color: var(--error);
+}

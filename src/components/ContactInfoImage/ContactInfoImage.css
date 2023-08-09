@@ -1,0 +1,68 @@
+.contactInfoImage {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "img    img"
+    "info   redes";
+  padding: 0 10%;
+  background-color: #e3f3fb;
+}
+.contactInfoImage__info-contact {
+  grid-area: info;
+  place-self: center start;
+}
+.contactInfoImage__redes {
+  grid-area: redes;
+  place-self: center end;
+}
+.contactInfoImage__image {
+  grid-area: img;
+  place-self: center;
+  width: 100%;
+}
+
+.contactInfoImage ul {
+  padding: 0;
+}
+.contactInfoImage ul li {
+  list-style: none;
+}
+.contactInfoImage__redes,
+.contactInfoImage__info-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contactInfoImage__info-contact li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: "Hind", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.contactInfoImage__info-contact li svg {
+  width: 30px;
+}
+.contactInfoImage__redes svg {
+  width: 30px;
+}
+
+@media (min-width: 800px) {
+  .contactInfoImage {
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 80% 20%;
+    grid-template-areas:
+      "info    img"
+      "redes   img";
+    padding: 70px 52px;
+
+    width: calc(100% - 104px);
+  }
+  .contactInfoImage__redes {
+    place-self: end center;
+    margin: 0;
+    flex-direction: row;
+  }
+}
