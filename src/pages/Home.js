@@ -13,9 +13,11 @@ import { Modal } from "../Components/Modal/Modal";
 import { ProjectModal } from "../Components/ProjectModal/ProjectModal";
 import Banner from "../components/Banner/Banner";
 import Footer from "../components/Footer/Footer";
+import UpButton from "../components/UpButton/UpButton";
 
 function Home() {
   const [openModal, setOpenModal] = React.useState(false);
+  const [isNotViewNav, setIsNotViewNav] = React.useState(false);
   const [dataProject, setDataProject] = React.useState("");
 
   if (openModal) {
@@ -31,14 +33,14 @@ function Home() {
   return (
     <React.Fragment>
       <Header>
-        <NavbarHome modal={openModal} />
+        <NavbarHome modal={openModal} setIsNotViewNav={setIsNotViewNav} />
       </Header>
 
       {/* <Banner/> */}
 
       <main>
+        {isNotViewNav && <UpButton />}
         <AboutMe />
-
         <Projects>
           {Data.map((item) => {
             return (

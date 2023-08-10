@@ -1,5 +1,4 @@
 import React from "react";
-import "./Arrow.css";
 
 function Arrow({ bgColor, color }) {
   return (

@@ -1,126 +1,129 @@
-.skills__container{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 90%;
-    margin: 64px auto 84px;
+.skills__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 64px auto 84px;
 }
-.container__herramientas{
-    width: 100%;
+.container__herramientas {
+  width: 90%;
+  margin: 0 auto;
 }
-.skills__title{
-    font-size: 1rem;
-    text-align: start;
-    margin-bottom: 41px;
+.skills__title {
+  font-size: 1rem;
+  text-align: start;
+  margin-bottom: 41px;
 }
-.flex-container{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
-.div__skill{
-    text-align: start;
-    font-family: "Hind", Arial, Helvetica, sans-serif;
-    width: 100%;
+.div__skill {
+  text-align: start;
+  font-family: "Hind", Arial, Helvetica, sans-serif;
+  width: 100%;
 }
-.subtitle__skills{
-    font-family: 'Arvo', 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    margin: 0;
+.subtitle__skills {
+  font-family: "Arvo", "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
 }
-.skill__ul{
-    padding: 0 0 0 12px;
+.skill__ul {
+  padding: 0 0 0 12px;
 }
-.skill__ul .skill__avanzado{
-    list-style: square inside url("https://i.ibb.co/xj45p3V/avanzado-rectangle.png");
+.skill__ul .skill__avanzado {
+  list-style: square inside
+    url("https://i.ibb.co/xj45p3V/avanzado-rectangle.png");
 }
-.skill__ul .skill__intermedio{
-    list-style: square inside url("https://i.ibb.co/2MT7xrm/intermedio-rectangle.png");
+.skill__ul .skill__intermedio {
+  list-style: square inside
+    url("https://i.ibb.co/2MT7xrm/intermedio-rectangle.png");
 }
-.skill__ul .skill__basico{
-    list-style: square inside url("https://i.ibb.co/jwTb2HD/basico-rectangle.png");
+.skill__ul .skill__basico {
+  list-style: square inside url("https://i.ibb.co/jwTb2HD/basico-rectangle.png");
 }
 
 /* Nivel de las skills */
-.level-skills__container{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 38px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    margin: 30px 0 20px;
+.level-skills__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 38px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  margin: 30px 0 20px;
 }
-.level-skill{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 8px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+.level-skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-.square__level{
-    width: 14px;
-    height: 14px;
+.square__level {
+  width: 14px;
+  height: 14px;
 }
-.square__level--avanzado{
-    background-color: #73FDBB;
+.square__level--avanzado {
+  background-color: #73fdbb;
 }
-.square__level--intermedio{
-    background-color: #FAFD73;
+.square__level--intermedio {
+  background-color: #fafd73;
 }
-.square__level--basico{
-    background-color: #FDC673;
+.square__level--basico {
+  background-color: #fdc673;
 }
-.level-skill span{
-    font-family: "Hind", Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    padding-top: 4px;
+.level-skill span {
+  font-family: "Hind", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  padding-top: 4px;
 }
 
-.container__cursos{
-    position: relative;
-    width: 100%;
+.container__cursos {
+  position: relative;
+  width: 100%;
 }
 
 @media (min-width: 650px) {
-    .div__skill{
-        width: 50%;
-    }
+  .div__skill {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1000px) {
-    .skills__container{
-        margin: 32px auto;
-    }
-    .container__herramientas{
-        width: 45%;
-        padding-left: 10%;
-    }
-    .container__cursos{
-        position: relative;
-        width: 45%;
-    }
-    
+  .skills__container {
+    margin: 32px auto;
+    /* width: 100%; */
+  }
+  .container__herramientas {
+    width: 45%;
+    padding-left: 10%;
+  }
+  .container__cursos {
+    position: relative;
+    width: 45%;
+  }
 }
