@@ -6,33 +6,8 @@ import { Button } from "../Button/Button";
 import ContactInfoImage from "../ContactInfoImage/ContactInfoImage";
 
 function Contact() {
-  const contactRef = React.useRef(null);
-  // Actualiza la información sobre si está en observer el header para hacer el cambio de los estilos en el navbar
-  const callbackFunction = (entries) => {
-    const [entry] = entries;
-    // setIsViewHeader(entry.isIntersecting)
-    console.log("----------");
-    console.log(entry.isIntersecting);
-  };
-  // Opciones  del IntersectionObserver
-  const options = {
-    root: null,
-    rootMargin: "10px",
-    threshold: 1,
-  };
-
-  // Crea y elimina el IntersectionObserver
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(callbackFunction, options);
-    if (contactRef.current) observer.observe(contactRef.current);
-
-    return () => {
-      if (contactRef.current) observer.unobserve(contactRef.current);
-    };
-  }, [contactRef]);
-
   return (
-    <section className="Contact" id="contact" ref={contactRef}>
+    <section className="Contact" id="contact">
       <h2 className="Sub-title">Trabajemos Juntos</h2>
       <div className="contact__flex-container">
         <div className="ContactForm--container">

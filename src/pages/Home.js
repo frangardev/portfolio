@@ -36,9 +36,8 @@ function Home() {
         <NavbarHome modal={openModal} setIsNotViewNav={setIsNotViewNav} />
       </Header>
 
-      {/* <Banner/> */}
-
       <main>
+        <Banner />
         {isNotViewNav && <UpButton />}
         <AboutMe />
         <Projects>

@@ -65,7 +65,7 @@ function ContactInfoImage() {
       </ul>
 
       <img
-        src="https://i.ibb.co/WH8DLrF/image-header.gif"
+        src="https://i.ibb.co/wLy1sbH/yo-contact.jpg"
         alt="contact drawing"
         className="contactInfoImage__image"
       />
