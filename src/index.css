@@ -16,7 +16,7 @@
   --dark-secondary-color: #6996aa;
   --dark-square-bg: rgba(32, 29, 53, 0.5);
 
-  --button-color-press: #4183a1;
+  --button-color-press: #10799b;
 }
 
 body {
@@ -43,7 +43,7 @@ body {
 
 .link {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: #10799b;
   font-size: 0.8rem;
 }
 

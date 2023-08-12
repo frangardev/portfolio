@@ -13,32 +13,31 @@ function ContactForm() {
     initialValues: initialValues(),
     validationSchema: Yup.object(validationSchema()),
     validateOnChange: false,
-    onSubmit: (values, { setSubmitting, resetForm }) => {
+    onSubmit: (values) => {
       try {
         emailjs
           .send(
-            // "service_cma02e3",
-            import.meta.env.SERVICE,
-            // "template_js29u7x",
-            import.meta.env.TEMPLATE,
+            "service_cma02e3",
+            "template_js29u7x",
             values,
-            import.meta.env.USE_ID
-            // "DU3niBxsNTV5FaiCm"
+            "DU3niBxsNTV5FaiCm"
           )
           .then(() => {
-            sentMessage.classList.add("success");
-            sentMessage.innerHTML = CONTACT_ERROR.success;
-            setButtonState("Send Email");
-            setSubmitting(false);
-            resetForm();
+            // sentMessage.classList.add("success");
+            // sentMessage.innerHTML = CONTACT_ERROR.success;
+            // setButtonState("Send Email");
+            // setSubmitting(false);
+            // resetForm();
             setIsSendMessages(true);
+            console.log("Mensaje enviado");
           });
       } catch {
-        sentMessage.classList.add("error");
-        sentMessage.innerHTML = CONTACT_ERROR.error;
-        setButtonState("Send Email");
-        setSubmitting(false);
+        // sentMessage.classList.add("error");
+        // sentMessage.innerHTML = CONTACT_ERROR.error;
+        // setButtonState("Send Email");
+        // setSubmitting(false);
         setIsErrorSendMessages(true);
+        console.log("Error Mensaje no enviado");
       }
     },
   });
@@ -49,7 +48,9 @@ function ContactForm() {
         Envíame un mensaje y hagamos realidad ese proyecto que tienes en mente.
       </p>
       <form onSubmit={formik.handleSubmit} className="form">
-        <label htmlFor="firstName">Nombre</label>
+        <label htmlFor="user_name" for="user_name">
+          Nombre
+        </label>
         <input
           id="user_name"
           name="user_name"
@@ -57,7 +58,7 @@ function ContactForm() {
           onChange={formik.handleChange}
           value={formik.values.user_name}
         />
-        <label htmlFor="email">Email</label>
+        <label htmlFor="user_email">Email</label>
         {formik.errors.user_email && <p>*{formik.errors.user_email}</p>}
         <input
           id="user_email"
@@ -66,7 +67,7 @@ function ContactForm() {
           onChange={formik.handleChange}
           value={formik.values.user_email}
         />
-        <label htmlFor="lastName">Mensaje</label>
+        <label htmlFor="message">Mensaje</label>
         {formik.errors.message && <p>*{formik.errors.message}</p>}
         <textarea
           id="message"

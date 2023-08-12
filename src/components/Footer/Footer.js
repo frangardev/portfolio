@@ -46,6 +46,7 @@ function Footer() {
         <li>
           <a
             href="https://www.linkedin.com/in/frangardev/"
+            aria-label="Linkedin"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -55,6 +56,7 @@ function Footer() {
         <li>
           <a
             href="https://github.com/frangardev"
+            aria-label="GitHub"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -64,6 +66,7 @@ function Footer() {
         <li>
           <a
             href="https://twitter.com/frangardev"
+            aria-label="Twitter o X"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -73,6 +76,7 @@ function Footer() {
         <li>
           <a
             href="https://instagram.com/frangardev"
+            aria-label="Instagram"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -82,7 +86,7 @@ function Footer() {
       </ul>
 
       <p className="footer__text">
-        Copyright © 2023 frangardev Todos los derechos reservados
+        Hecho con &#128159; en React por @frangardev
       </p>
     </footer>
   );

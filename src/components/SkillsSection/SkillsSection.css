@@ -5,7 +5,7 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
-  margin: 64px auto 84px;
+  margin: 64px auto 0;
 }
 .container__herramientas {
   width: 90%;

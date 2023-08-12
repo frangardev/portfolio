@@ -1,21 +1,21 @@
-.Projects__container{
-    position: relative;
-    column-count: 2;
-    column-width: 150px;
-    column-rule-width: 350px;
-    column-gap: 1em;
-    width: 95%;
-    max-width: 1160px;
-    margin: 0 auto 50px;
+.Projects__container {
+  position: relative;
+  column-count: 2;
+  column-width: 150px;
+  column-rule-width: 350px;
+  column-gap: 1em;
+  width: 95%;
+  max-width: 1160px;
+  margin: 0 auto 62px;
 }
-.Sub-title--mis-proyectos{
-    margin-bottom: 30px;
+.Sub-title--mis-proyectos {
+  margin-bottom: 30px;
 }
 
 @media (min-width: 500px) {
-    .Projects__container{
-        column-count: 3;
-        column-gap: 1em;
-        width: 80%;
-    }
+  .Projects__container {
+    column-count: 3;
+    column-gap: 1em;
+    width: 80%;
+  }
 }

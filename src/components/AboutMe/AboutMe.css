@@ -1,49 +1,50 @@
-.AboutMe, .Photo__container{
-    margin: 0 auto 30px;
+.AboutMe,
+.Photo__container {
+  margin: 0 auto 30px;
 }
 
-.AboutMe{
-     width: 80%;
-     max-width: 850px;
-     margin-bottom: 40px;
+.AboutMe {
+  width: 80%;
+  max-width: 850px;
+  margin-bottom: 62px;
 }
 
-.Photo__container{
-     width: 45%;
-     max-width: 13em;
+.Photo__container {
+  width: 45%;
+  max-width: 13em;
 }
-.Photo{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    -webkit-transition: all 1.3s;
-    -o-transition: all 1.3s;
-    transition: all 1.3s;
-    border-radius: 50%;
-    opacity: 0;
+.Photo {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 1.3s;
+  -o-transition: all 1.3s;
+  transition: all 1.3s;
+  border-radius: 50%;
+  opacity: 0;
 }
-.Photo-loaded{
-    position: relative;
-    opacity: 1;
+.Photo-loaded {
+  position: relative;
+  opacity: 1;
 }
 
- .Name__title{
-     font-weight: bold;
-     font-size: 1.1rem;
-     line-height: 18px;
-     line-height: 150%;
- }
- .work__title{
-     font-weight: bold;
-     font-size: 1rem;
-     line-height: 115%;
-     color: var(--black);
- }
- @media (min-width: 1000px) {
-    .Name__title{
-        font-size: 1.7rem;
-    }
-    .work__title{
-        font-size: 1.4rem;
-    }
+.Name__title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 18px;
+  line-height: 150%;
+}
+.work__title {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 115%;
+  color: var(--black);
+}
+@media (min-width: 1000px) {
+  .Name__title {
+    font-size: 1.7rem;
+  }
+  .work__title {
+    font-size: 1.4rem;
+  }
 }

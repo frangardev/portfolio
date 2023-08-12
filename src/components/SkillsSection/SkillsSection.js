@@ -26,9 +26,9 @@ function SkillsSection() {
             <h4 className="subtitle__skills">Lenguajes de programación</h4>
             <ul className="skill__ul">
               <li className="skill__avanzado">JavaScript</li>
-              <li className="skill__avanzado">Python</li>
-              <li className="skill__basico">PHP</li>
               <li className="skill__intermedio">TypeScript</li>
+              <li className="skill__intermedio">Python</li>
+              <li className="skill__basico">PHP</li>
             </ul>
           </div>
         </div>

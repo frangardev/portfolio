@@ -51,7 +51,7 @@
 
 @media (min-width: 800px) {
   .contactInfoImage {
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 45% 55%;
     grid-template-rows: 80% 20%;
     grid-template-areas:
       "info    img"

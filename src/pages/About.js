@@ -31,26 +31,17 @@ function About() {
         </div>
 
         <p className="text about__text">
-          Soy programador, Front-end y diseñador UI/UX. Han pasado ya más de 6
-          años desde que escribí mi primer “hola mundo” y 3 años desde que hice
-          mi primera página web. ✨
+          Soy desarrollador frontend especializado en React. Apasionado por la
+          programación y el diseño ui/ux. ✨
           <br />
           <br />
-          Me encanta la programación y el diseño. Uno de mis hobbys favoritos es
-          aprender cosas nuevas, talvez por eso amo tanto esta carrera, ya que
-          siempre hay algo nuevo que aprender.
+          Tengo alrededor de 2 años de experiencia desarrollando y diseñando
+          sitios web, experiencia que me ha permitido desarrollar mis
+          habilidades en programación, diseño, trabajo en equipo, liderazgo y
+          planificación de proyectos.
           <br />
           <br />
-          Durante mi carrera. He creado y diseñado interfases web. Utilizando
-          tecnologías como HTML, CSS, SASS, Chakra, Tailwindcss, JavaScript,
-          React, Next.js, Gatsby y algunas cositas en wordpress. Siempre
-          intentando que mis bebes, mis proyectos, sean 100% responsivos. Otras
-          tecnologías que he utilizado son Git y Github, Webpack, Babel y NPM.
-          Adicionalmente cuento con conocimientos en Photoshop, Illustrator y
-          Figma.
-          <br />
-          <br />
-          Me considero una persona proactiva y como buen programador siempre
+          Soy una persona creativa, proactiva y como buen programador, siempre
           intento encontrar la manera más eficiente de hacer las cosas.
         </p>
       </section>

@@ -71,13 +71,13 @@
 .primary:hover,
 .primary:hover::after,
 .primary:hover::before {
-  background-color: var(--button-color-press) !important;
+  background-color: #a1e7fd;
   /* width: 11px; */
 }
 .secondary:hover,
 .secondary:hover::after,
 .secondary:hover::before {
-  background-color: var(--dark-primary-color);
+  background-color: #cac7f7;
 }
 
 .button__data-project {

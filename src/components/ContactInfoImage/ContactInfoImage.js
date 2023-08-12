@@ -14,22 +14,43 @@ function ContactInfoImage() {
       <ul className="contactInfoImage__info-contact">
         <li>
           {" "}
-          <Linkedin color={"#1e1e1e"} bgColor={"none"} />{" "}
+          <a
+            href="https://www.linkedin.com/in/frangardev/"
+            aria-label="linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Linkedin color={"#1e1e1e"} bgColor={"none"} />{" "}
+          </a>
           <span>/frangardev</span>
         </li>
         <li>
           {" "}
-          <Phone color={"#1e1e1e"} bgColor={"none"} />{" "}
+          <a
+            href="tel:+52425-108-8907"
+            aria-label="Teléfono"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Phone color={"#1e1e1e"} bgColor={"none"} />{" "}
+          </a>
           <span>+52 4251088907</span>
         </li>
         <li>
           {" "}
-          <Email
-            color={"#1e1e1e"}
-            // bgColorEmail={"#fff"}
-            bgColorEmail={"transparent"}
-            bgColor={"none"}
-          />{" "}
+          <a
+            href="mailto:frangardev@outlook.com"
+            aria-label="Email"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Email
+              color={"#1e1e1e"}
+              // bgColorEmail={"#fff"}
+              bgColorEmail={"transparent"}
+              bgColor={"none"}
+            />{" "}
+          </a>
           <span>frangardev@outlook.com</span>
         </li>
       </ul>
@@ -38,6 +59,7 @@ function ContactInfoImage() {
         <li>
           <a
             href="https://github.com/frangardev"
+            aria-label="GitHub"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -47,6 +69,7 @@ function ContactInfoImage() {
         <li>
           <a
             href="https://twitter.com/frangardev"
+            aria-label="Twitter o X"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -56,6 +79,7 @@ function ContactInfoImage() {
         <li>
           <a
             href="https://instagram.com/frangardev"
+            aria-label="instagram"
             target="_blank"
             rel="noopener noreferrer"
           >

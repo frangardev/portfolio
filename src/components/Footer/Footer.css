@@ -60,7 +60,7 @@
   font-family: "Hind", Arial, Helvetica, sans-serif;
   padding-top: 11px;
   border-top: 2px solid var(--black);
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .footer__icons--container {
   display: flex;
