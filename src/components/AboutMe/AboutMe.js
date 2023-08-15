@@ -12,8 +12,8 @@ function AboutMe() {
       <figure className="Photo__container">
         <img
           className={`Photo ${!loadProfile && "Photo-loaded"}`}
-          src="https://i.ibb.co/fv90Jtf/franciasco-alejandro-garcia-munguia-1.jpg"
-          // src="https://i.ibb.co/5xnQWSd/frangardev.png"
+          // src="https://i.ibb.co/fv90Jtf/franciasco-alejandro-garcia-munguia-1.jpg"
+          src="https://i.ibb.co/Dk9Qwxd/fran.png"
           alt="Fotografía de Francisco Alejandro García Munguía"
           onLoad={() => setLoadProfile(false)}
         />

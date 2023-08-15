@@ -46,6 +46,10 @@ body {
   color: #10799b;
   font-size: 0.8rem;
 }
+.link:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
 
 .text {
   /* font-family: 'DM Sans', sans-serif; */

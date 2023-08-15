@@ -23,12 +23,17 @@
   justify-content: flex-start;
   align-items: baseline;
   gap: 6px;
+  margin-bottom: 1em;
 }
 .footer__logo svg {
   width: 32px;
+  padding: 0;
+  margin: 0;
 }
 .footer__logo p {
   font-size: 1rem;
+  margin: 0;
+  padding: 0;
 }
 .footer__sections h4 {
   font-size: 1rem;
@@ -82,12 +87,12 @@
     width: 80%;
   }
   .footer__logo {
-    gap: 12px;
-    align-items: center;
+    gap: 16px;
+    /* align-items: center; */
   }
   .footer__logo svg {
     width: 72px;
-    padding-bottom: 31px;
+    /* padding-bottom: 31px; */
   }
   .footer__logo p {
     font-size: 2rem;

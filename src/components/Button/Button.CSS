@@ -7,6 +7,7 @@
   padding: 20px 5px;
   display: inline-block;
   margin: 0 auto 35px;
+  border: transparent;
   font-size: 1rem;
   text-decoration: none;
   color: var(--dark);
@@ -71,13 +72,14 @@
 .primary:hover,
 .primary:hover::after,
 .primary:hover::before {
-  background-color: #a1e7fd;
-  /* width: 11px; */
+  /* background-color: #a1e7fd; */
+  background-color: var(--button-color-press);
 }
 .secondary:hover,
 .secondary:hover::after,
 .secondary:hover::before {
-  background-color: #cac7f7;
+  /* background-color: #cac7f7; */
+  background-color: var(--dark-primary-color);
 }
 
 .button__data-project {

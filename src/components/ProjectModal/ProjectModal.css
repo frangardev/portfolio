@@ -341,8 +341,9 @@
     } */
   .Title-project {
     margin-top: 5%;
-    font-size: 20px;
+    font-size: 1.5rem !important;
   }
+
   .image-project {
     -ms-grid-row: 2;
     -ms-grid-row-span: 2;

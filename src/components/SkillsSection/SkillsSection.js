@@ -15,7 +15,7 @@ function SkillsSection() {
               <li className="skill__avanzado">React</li>
               <li className="skill__avanzado">React Native</li>
               <li className="skill__intermedio">Next.js</li>
-              <li className="skill__avanzado">Gatsby</li>
+              <li className="skill__intermedio">Gatsby</li>
               <li className="skill__avanzado">Chackra ui</li>
               <li className="skill__avanzado">SASS</li>
               <li className="skill__basico">Tailwind CSS</li>
@@ -46,9 +46,8 @@ function SkillsSection() {
             <ul className="skill__ul">
               <li className="skill__avanzado">HTML</li>
               <li className="skill__avanzado">CSS</li>
-              {/* <li className='skill__intermedio'>MySQL</li> */}
               <li className="skill__avanzado">WordPress</li>
-              <li className="skill__intermedio">Git y GitHub</li>
+              <li className="skill__avanzado">Git y GitHub</li>
             </ul>
           </div>
         </div>

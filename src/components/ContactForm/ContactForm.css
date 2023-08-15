@@ -29,6 +29,7 @@
 }
 .form input,
 .form textarea {
+  width: calc(100% - 4px);
   font-family: "Hind", Arial, Helvetica, sans-serif;
   border: none;
   border-bottom: 2px solid #7a7772;
