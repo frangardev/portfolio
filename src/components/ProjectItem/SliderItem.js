@@ -7,6 +7,7 @@ import './ProjectItem.css'
 function SliderItem({
     name,
     image,
+    imageRef,
     url,
     repository,
     tech,
@@ -49,10 +50,11 @@ function SliderItem({
                 {image.map(item => (
                     <img
                         key={item}
-                        className={`ImageProject ${loadingImage && 'loaded'}`}
-                        // loading="lazy" 
+                        className={`ImageProject loading ${loadingImage && 'loaded'} ImageProject_slide`}
+                        loading="lazy" 
                         src={item}
                         alt={name}
+                        ref={imageRef}
                     />
                 ))}
             </div>

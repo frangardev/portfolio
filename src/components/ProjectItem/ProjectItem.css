@@ -97,7 +97,9 @@ img.loaded{
     position: relative;
     opacity: 1;
 }
-
+.ImageProject_slide{
+    min-width: 100%;
+}
 .container__image--slider{
     display:-webkit-box;
     display:-ms-flexbox;

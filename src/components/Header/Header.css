@@ -14,6 +14,7 @@
     "btn-1  btn-1   btn-1";
   background-color: var(--primary-color);
   max-width: 100%;
+  min-height: 90vh;
   /* margin-bottom: 35px; */
   /* margin-bottom: 0; */
   color: var(--black);

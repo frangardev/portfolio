@@ -25,7 +25,8 @@
   position: absolute;
   width: 0%;
   aspect-ratio: 1/1;
-  background-color: #73c4eb;
+  background-color: #C4BBF0;
+  border-radius: 9px;
   opacity: 0;
 }
 .ContactInfoImage__decoration--1 {

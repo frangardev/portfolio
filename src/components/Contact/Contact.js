@@ -15,9 +15,9 @@ function Contact() {
         </div>
         <div className="ContactInfoImage--container contactIsView">
           <ContactInfoImage />
-          <div className="ContactInfoImage__decoration ContactInfoImage__decoration--1"></div>
+          {/* <div className="ContactInfoImage__decoration ContactInfoImage__decoration--1"></div>
           <div className="ContactInfoImage__decoration ContactInfoImage__decoration--2"></div>
-          <div className="ContactInfoImage__decoration ContactInfoImage__decoration--3"></div>
+          <div className="ContactInfoImage__decoration ContactInfoImage__decoration--3"></div> */}
         </div>
       </div>
     </section>

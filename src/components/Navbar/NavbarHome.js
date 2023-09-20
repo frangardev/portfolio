@@ -45,7 +45,7 @@ function NavbarHome({ modal, setIsNotViewNav }) {
       <ul className="Menu">
         <li>
           <Link
-            activeClass="active"
+            // activeClass="active"
             to="home"
             smooth={true}
             duration={600}
@@ -57,7 +57,7 @@ function NavbarHome({ modal, setIsNotViewNav }) {
         <li>
           <Link
             onClick={() => setOpenMenu(!openMenu)}
-            activeClass="active"
+            // activeClass="active"
             to="AboutMe"
             smooth={true}
             duration={800}
@@ -68,7 +68,7 @@ function NavbarHome({ modal, setIsNotViewNav }) {
         <li>
           <Link
             onClick={() => setOpenMenu(!openMenu)}
-            activeClass="active"
+            // activeClass="active"
             to="projects"
             smooth={true}
             duration={1000}
@@ -79,7 +79,7 @@ function NavbarHome({ modal, setIsNotViewNav }) {
         <li>
           <Link
             onClick={() => setOpenMenu(!openMenu)}
-            activeClass="active"
+            // activeClass="active"
             to="contact"
             smooth={true}
             duration={1700}
@@ -89,7 +89,7 @@ function NavbarHome({ modal, setIsNotViewNav }) {
         </li>
         <li>
           <a
-            activeClass="active"
+            // activeClass="active"
             href="https://drive.google.com/file/d/1Pcw5LvJk_FTaBG_v7qv-wAp_1YHN5FQM/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"

@@ -30,6 +30,10 @@ function Home() {
   // const loadingImage = imgs.length >= Data.length
   const loadingImage = true;
 
+  const randomID = (name='project') => name + Math.floor(Math.random() * 999999);
+
+  console.log(randomID());
+
   return (
     <React.Fragment>
       <Header>
@@ -43,19 +47,22 @@ function Home() {
         <Projects>
           {Data.map((item) => {
             return (
-              <ProjectItem
-                key={item.name}
-                name={item.name}
-                image={item.image}
-                url={item.url}
-                repository={item.repository}
-                tech={item.tech}
-                description={item.description}
-                openModal={openModal}
-                setOpenModal={setOpenModal}
-                setDataProject={setDataProject}
-                loadingImage={loadingImage}
-              />
+              <div
+                key={randomID(item.name)}
+              >  
+                <ProjectItem
+                  name={item.name}
+                  image={item.image}
+                  url={item.url}
+                  repository={item.repository}
+                  tech={item.tech}
+                  description={item.description}
+                  openModal={openModal}
+                  setOpenModal={setOpenModal}
+                  setDataProject={setDataProject}
+                  loadingImage={loadingImage}
+                />
+              </div>
             );
           })}
         </Projects>

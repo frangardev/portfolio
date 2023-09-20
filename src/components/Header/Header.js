@@ -4,8 +4,13 @@ import './Header.css'
 import { Button } from '../Button/Button'
 
 
-function Header({ children }) {
+function Header({ children, setIsLoading }) {
     const [loadImage, setLoadImage] = React.useState(false)
+    const loadPage = () => {;
+        setTimeout(() => {
+            setLoadImage(true)
+          }, "1000");
+    }
     return (
         <header className="header" id="home">
 
@@ -17,12 +22,10 @@ function Header({ children }) {
 
             <img className="decoration" src="https://i.ibb.co/kJc6gCh/decoration-portfolio.png" alt="decoration"/>
 
-
             <figure className="drawing-header__container">
-                <img className="drawing-header" src="https://i.ibb.co/WH8DLrF/image-header.gif" alt="Dibjo de Fran" onLoad={() => setLoadImage(true)} />
+                <img className="drawing-header" src="https://i.ibb.co/WH8DLrF/image-header.gif" alt="Dibjo de Fran" onLoad={loadPage} />
                 {loadImage && (
                     <React.Fragment>
-
                         <div className="square square-1"></div>
                         <div className="square square-2"></div>
                         <div className="square square-3"></div>

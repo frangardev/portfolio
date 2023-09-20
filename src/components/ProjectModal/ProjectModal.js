@@ -9,7 +9,7 @@ function ProjectModal({ nameProject, data, setOpenModal }) {
   return (
     <article className="Project__container">
       <div className="project__nav">Develop and Design</div>
-      <img className="image-project" src={project.image} alt={project.name} />
+      <img className="image-project loading" src={project.image} alt={project.name} />
 
       <div className="Close-modal__button__container">
         <div className="Close-modal__button--decoration"></div>

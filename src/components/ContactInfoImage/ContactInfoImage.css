@@ -7,7 +7,9 @@
     "img    img"
     "info   redes";
   padding: 0 10%;
-  background-color: #e3f3fb;
+  background-color: #E6DFF1;
+  border-radius: 9px;
+  /* background-color: #C8C5EE; */
 }
 .contactInfoImage__info-contact {
   grid-area: info;
@@ -21,6 +23,7 @@
   grid-area: img;
   place-self: center;
   width: 100%;
+  border-radius: 9px;
 }
 
 .contactInfoImage ul {
